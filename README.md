@@ -1,6 +1,8 @@
 # CAFM-Connect
 CAFM-Connect is a standard to exchange data of facilities based on IFC4.
 
+Find further information [here](https://github.com/CAFM-Connect/CAFM-Connect/wiki).
+
 Was ist CAFM-Connect?
 CAFM-Connect ist eine Initiative des CAFM-Rings und steht dem Markt als offene Schnittstelle im Facility-Management zur Verfügung. Mit CAFM-Connect können Daten von Gebäuden zwischen Softwaresystemen abpsrachlos und sicher ausgetauscht werden. Weitere Informationen finden Sie hier: http://www.cafm-connect.org.
 
