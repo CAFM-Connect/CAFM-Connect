@@ -1,0 +1,2720 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ifcXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ifc="http://www.buildingsmart-tech.org/ifcXML/IFC4/final" id="i91fcXML4" xmlns="http://www.buildingsmart-tech.org/ifcXML/IFC4/final" xsi:schemaLocation="http://www.buildingsmart-tech.org/ifcXML/IFC4/final ifcXML4.xsd">
+	<header>
+		<name>Katalog GEFMA 198</name>
+		<time_stamp>2015-11-06T18:51:47.3587387+02:00</time_stamp>
+		<author>Aengenvoort, Klaus</author>
+		<organization>eTASK Service-Management GmbH</organization>
+		<preprocessor_version>etask.ifc4.dll</preprocessor_version>
+		<originating_system>eTASK.FM-Portal</originating_system>
+		<authorization>Glauche, Ulrich</authorization>
+		<documentation>GEFMA198</documentation>
+	</header>
+	<IfcProject id="i91100" GlobalId="3W_wCy4R58hgkAO0WsiUkm" Name="Katalog GEFMA 198" Description="Katalog von Dokumententyoen nach GEFMA 198"/>
+	<IfcClassification id="i91101" Source="CAFM-Connect-Katalog-Ausschuss" Edition="1.06" EditionDate="2014-12-09T06:23:37" Name="Katalog Dokumententypen nach GEFMA 198" Description="CAFMConnectCatalogueOfDocumentTypes"/>
+	<IfcClassificationReference id="i91103" Identification="4712" Name="Abbruchgenehmigung" Description="Beschreibung Abbruchgenehmigung" Sort="1">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91104" Identification="4712" Name="Abfallbilanzen" Description="Beschreibung Abfallbilanzen" Sort="2">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91105" Identification="4712" Name="Abgasmeßprotokoll" Description="Beschreibung Abgasmeßprotokoll" Sort="3">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91106" Identification="4712" Name="Ablaufpläne (Netzplantechnik für EDV)" Description="Beschreibung Ablaufpläne (Netzplantechnik für EDV)" Sort="4">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91107" Identification="4712" Name="Abnahme (-protokolle)" Description="Beschreibung Abnahme (-protokolle)" Sort="5">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91108" Identification="4712" Name="Abnahmeprotokolle" Description="Beschreibung Abnahmeprotokolle" Sort="6">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91109" Identification="4712" Name="Abnahmezeugnis für Feuerlöscheinrichtungen" Description="Beschreibung Abnahmezeugnis für Feuerlöscheinrichtungen" Sort="7">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91110" Identification="4712" Name="Abschlagsrechnung" Description="Beschreibung Abschlagsrechnung" Sort="8">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91111" Identification="4712" Name="Abwasser-, Wasser- und Gasanlagen - Anlagenschema" Description="Beschreibung Abwasser-, Wasser- und Gasanlagen - Anlagenschema" Sort="9">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91112" Identification="4712" Name="Adressierungspläne" Description="Beschreibung Adressierungspläne" Sort="10">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91113" Identification="4712" Name="Alarm- und Gefahrenabwehrpläne" Description="Beschreibung Alarm- und Gefahrenabwehrpläne" Sort="11">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91114" Identification="4712" Name="Alarmpläne" Description="Beschreibung Alarmpläne" Sort="12">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91115" Identification="4712" Name="alle Dokumente analog o.g. KG410" Description="Beschreibung alle Dokumente analog o.g. KG410" Sort="13">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91116" Identification="4712" Name="alle Dokumente analog o.g. KG420" Description="Beschreibung alle Dokumente analog o.g. KG420" Sort="14">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91117" Identification="4712" Name="alle Dokumente analog o.g. KG430" Description="Beschreibung alle Dokumente analog o.g. KG430" Sort="15">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91118" Identification="4712" Name="alle Dokumente analog o.g. KG440" Description="Beschreibung alle Dokumente analog o.g. KG440" Sort="16">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91119" Identification="4712" Name="alle Dokumente analog o.g. KG450" Description="Beschreibung alle Dokumente analog o.g. KG450" Sort="17">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91120" Identification="4712" Name="alle Dokumente analog o.g. KG470" Description="Beschreibung alle Dokumente analog o.g. KG470" Sort="18">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91121" Identification="4712" Name="Allgemeine Angaben für den Betrieb" Description="Beschreibung Allgemeine Angaben für den Betrieb" Sort="19">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91122" Identification="4712" Name="Allgemeine Anlagenbeschreibungen" Description="Beschreibung Allgemeine Anlagenbeschreibungen" Sort="20">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91123" Identification="4712" Name="Allgemeiner Bauunethaltungsaufwand und Investitionen" Description="Beschreibung Allgemeiner Bauunethaltungsaufwand und Investitionen" Sort="21">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91124" Identification="4712" Name="Angabe der zu erwartenden Setzungen" Description="Beschreibung Angabe der zu erwartenden Setzungen" Sort="22">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91125" Identification="4712" Name="Angaben zur Nutzung - Nutzerbedarfsprogramm" Description="Beschreibung Angaben zur Nutzung - Nutzerbedarfsprogramm" Sort="23">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91126" Identification="4712" Name="Angebote" Description="Beschreibung Angebote" Sort="24">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91127" Identification="4712" Name="Anlagenbeschreibung" Description="Beschreibung Anlagenbeschreibung" Sort="25">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91128" Identification="4712" Name="Anlagenbuch" Description="Beschreibung Anlagenbuch" Sort="26">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91129" Identification="4712" Name="Anlagenschema" Description="Beschreibung Anlagenschema" Sort="27">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91130" Identification="4712" Name="Anlagenschemata" Description="Beschreibung Anlagenschemata" Sort="28">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91131" Identification="4712" Name="Anlagezeichnungen" Description="Beschreibung Anlagezeichnungen" Sort="29">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91132" Identification="4712" Name="Anschlussplan" Description="Beschreibung Anschlussplan" Sort="30">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91133" Identification="4712" Name="Anschlusspläne" Description="Beschreibung Anschlusspläne" Sort="31">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91134" Identification="4712" Name="Ansichten" Description="Beschreibung Ansichten" Sort="32">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91135" Identification="4712" Name="Antrag auf Ausnahme von UVV" Description="Beschreibung Antrag auf Ausnahme von UVV" Sort="33">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91136" Identification="4712" Name="Antrag auf behördliche Abnahmen" Description="Beschreibung Antrag auf behördliche Abnahmen" Sort="34">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91137" Identification="4712" Name="Antrag auf Grundsteuerermäßigung" Description="Beschreibung Antrag auf Grundsteuerermäßigung" Sort="35">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91138" Identification="4712" Name="Anzeige der beabsichtigten Aufnahme der Nutzung" Description="Beschreibung Anzeige der beabsichtigten Aufnahme der Nutzung" Sort="36">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91139" Identification="4712" Name="Anzeige der Veräußerung der versicherten Sache" Description="Beschreibung Anzeige der Veräußerung der versicherten Sache" Sort="37">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91140" Identification="4712" Name="Anzeige einer Feuerungsanlage" Description="Beschreibung Anzeige einer Feuerungsanlage" Sort="38">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91141" Identification="4712" Name="Anzeige einer Gefahrerhöhung" Description="Beschreibung Anzeige einer Gefahrerhöhung" Sort="39">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91142" Identification="4712" Name="Anzeige eines Versicherungsfalles" Description="Beschreibung Anzeige eines Versicherungsfalles" Sort="40">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91143" Identification="4712" Name="Anzeige versicherungsrelevanter Umstände" Description="Beschreibung Anzeige versicherungsrelevanter Umstände" Sort="41">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91144" Identification="4712" Name="Anzeige von Verantwortlichkeiten gegenüber Dritten" Description="Beschreibung Anzeige von Verantwortlichkeiten gegenüber Dritten" Sort="42">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91145" Identification="4712" Name="Arbeits-/Personalverträge" Description="Beschreibung Arbeits-/Personalverträge" Sort="43">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91146" Identification="4712" Name="Arbeitsfreigaben" Description="Beschreibung Arbeitsfreigaben" Sort="44">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91147" Identification="4712" Name="Architektenverträge" Description="Beschreibung Architektenverträge" Sort="45">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91148" Identification="4712" Name="AS-Prüfung" Description="Beschreibung AS-Prüfung" Sort="46">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91149" Identification="4712" Name="Aufbau- und Verwendungsanleitung" Description="Beschreibung Aufbau- und Verwendungsanleitung" Sort="47">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91150" Identification="4712" Name="Aufbauzeichnungen von Verteilungen" Description="Beschreibung Aufbauzeichnungen von Verteilungen" Sort="48">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91151" Identification="4712" Name="Aufforderung zur Mängelbeseitigung /Nacherfüllung" Description="Beschreibung Aufforderung zur Mängelbeseitigung /Nacherfüllung" Sort="49">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91152" Identification="4712" Name="Auflassung" Description="Beschreibung Auflassung" Sort="50">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91153" Identification="4712" Name="Auflistung der Gewährleistungsfristen" Description="Beschreibung Auflistung der Gewährleistungsfristen" Sort="51">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91154" Identification="4712" Name="Auflistung der wichtigsten (sicherheitsrelevanten) technischen Anlagen" Description="Beschreibung Auflistung der wichtigsten (sicherheitsrelevanten) technischen Anlagen" Sort="52">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91155" Identification="4712" Name="Aufmaß" Description="Beschreibung Aufmaß" Sort="53">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91156" Identification="4712" Name="Aufzeichnung festgelegter Maßnahmen des Arbeitsschutzes" Description="Beschreibung Aufzeichnung festgelegter Maßnahmen des Arbeitsschutzes" Sort="54">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91157" Identification="4712" Name="Aufzeichnungen über durchgeführte Prüfungen" Description="Beschreibung Aufzeichnungen über durchgeführte Prüfungen" Sort="55">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91158" Identification="4712" Name="Aufzeichnungen über zusätzliche Funktionsmessungen" Description="Beschreibung Aufzeichnungen über zusätzliche Funktionsmessungen" Sort="56">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91159" Identification="4712" Name="Aufzeichnungen von Erste-Hilfe-Leistungen" Description="Beschreibung Aufzeichnungen von Erste-Hilfe-Leistungen" Sort="57">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91160" Identification="4712" Name="Ausführungspläne" Description="Beschreibung Ausführungspläne" Sort="58">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91161" Identification="4712" Name="Ausführungsunterlagen" Description="Beschreibung Ausführungsunterlagen" Sort="59">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91162" Identification="4712" Name="Aushang über die Erste Hilfe" Description="Beschreibung Aushang über die Erste Hilfe" Sort="60">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91163" Identification="4712" Name="Auslobung" Description="Beschreibung Auslobung" Sort="61">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91164" Identification="4712" Name="Ausrüstungs- und Inventarverzeichnisse" Description="Beschreibung Ausrüstungs- und Inventarverzeichnisse" Sort="62">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91165" Identification="4712" Name="Ausschreibungszeichnungen" Description="Beschreibung Ausschreibungszeichnungen" Sort="63">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91166" Identification="4712" Name="Außenanlagen, Flächen" Description="Beschreibung Außenanlagen, Flächen" Sort="64">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91167" Identification="4712" Name="Außenanlagenplan" Description="Beschreibung Außenanlagenplan" Sort="65">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91168" Identification="4712" Name="Außenanlagenplan mit Zuordnung der Flächen (Parkplatz, Grünanlagen, öffentliche Wege etc.)" Description="Beschreibung Außenanlagenplan mit Zuordnung der Flächen (Parkplatz, Grünanlagen, öffentliche Wege etc.)" Sort="66">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91169" Identification="4712" Name="Auszüge aus dem Katasterkartenwerk" Description="Beschreibung Auszüge aus dem Katasterkartenwerk" Sort="67">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91170" Identification="4712" Name="Automationsstations-Belegungspläne" Description="Beschreibung Automationsstations-Belegungspläne" Sort="68">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91171" Identification="4712" Name="Barrierefreie Nutzung des Gebäudes " Description="Beschreibung Barrierefreie Nutzung des Gebäudes " Sort="69">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91172" Identification="4712" Name="Bau- und Werkverträge" Description="Beschreibung Bau- und Werkverträge" Sort="70">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91173" Identification="4712" Name="Bauantrag" Description="Beschreibung Bauantrag" Sort="71">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91174" Identification="4712" Name="Baubeschreibung" Description="Beschreibung Baubeschreibung" Sort="72">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91175" Identification="4712" Name="Baugenehmigung" Description="Beschreibung Baugenehmigung" Sort="73">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91176" Identification="4712" Name="Baugrundgutachten" Description="Beschreibung Baugrundgutachten" Sort="74">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91177" Identification="4712" Name="Baukostenaufstellung DIN 276" Description="Beschreibung Baukostenaufstellung DIN 276" Sort="75">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91178" Identification="4712" Name="Baumkataster" Description="Beschreibung Baumkataster" Sort="76">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91179" Identification="4712" Name="Bauordnungs- und bauplanungsrechtliche Berechnungen" Description="Beschreibung Bauordnungs- und bauplanungsrechtliche Berechnungen" Sort="77">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91180" Identification="4712" Name="Bauordnungsrechtliche und sonst. Öff.-rechtl. Lasten" Description="Beschreibung Bauordnungsrechtliche und sonst. Öff.-rechtl. Lasten" Sort="78">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91181" Identification="4712" Name="Bauphysikalische Nachweise zum Brandschutz" Description="Beschreibung Bauphysikalische Nachweise zum Brandschutz" Sort="79">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91182" Identification="4712" Name="Baustellenbestandspläne" Description="Beschreibung Baustellenbestandspläne" Sort="80">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91183" Identification="4712" Name="Baustelleneinrichtung" Description="Beschreibung Baustelleneinrichtung" Sort="81">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91184" Identification="4712" Name="Bautagebuch" Description="Beschreibung Bautagebuch" Sort="82">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91185" Identification="4712" Name="Bautechnische Nachweise" Description="Beschreibung Bautechnische Nachweise" Sort="83">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91186" Identification="4712" Name="Bauvermessung" Description="Beschreibung Bauvermessung" Sort="84">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91187" Identification="4712" Name="Bauvorlagen" Description="Beschreibung Bauvorlagen" Sort="85">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91188" Identification="4712" Name="Bauvorlagen beim Vorbescheid" Description="Beschreibung Bauvorlagen beim Vorbescheid" Sort="86">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91189" Identification="4712" Name="Bauwerks- und Betriebs-Kosten-Nutzen-Analyse" Description="Beschreibung Bauwerks- und Betriebs-Kosten-Nutzen-Analyse" Sort="87">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91190" Identification="4712" Name="Bauzustandsanzeige" Description="Beschreibung Bauzustandsanzeige" Sort="88">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91191" Identification="4712" Name="Beauftragung / Übertragung von Pflichten" Description="Beschreibung Beauftragung / Übertragung von Pflichten" Sort="89">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91192" Identification="4712" Name="Bebeauungsplan" Description="Beschreibung Bebeauungsplan" Sort="90">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91193" Identification="4712" Name="Bedarfsplan" Description="Beschreibung Bedarfsplan" Sort="91">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91194" Identification="4712" Name="Bedienanleitung Brandmeldeanlage / BOS-Gebäudefunk " Description="Beschreibung Bedienanleitung Brandmeldeanlage / BOS-Gebäudefunk " Sort="92">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91195" Identification="4712" Name="Bedienanleitung Einbruch Meldeanage" Description="Beschreibung Bedienanleitung Einbruch Meldeanage" Sort="93">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91196" Identification="4712" Name="Bedienanleitung Hausalarmanlage" Description="Beschreibung Bedienanleitung Hausalarmanlage" Sort="94">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91197" Identification="4712" Name="Bedienanleitung Schrankenanlage" Description="Beschreibung Bedienanleitung Schrankenanlage" Sort="95">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91198" Identification="4712" Name="Bedienanleitung Sicherheitslichtanlage " Description="Beschreibung Bedienanleitung Sicherheitslichtanlage " Sort="96">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91199" Identification="4712" Name="Bedienanleitung Sonnenschutzanlage " Description="Beschreibung Bedienanleitung Sonnenschutzanlage " Sort="97">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91200" Identification="4712" Name="Bedienanleitung Türsprechanlage" Description="Beschreibung Bedienanleitung Türsprechanlage" Sort="98">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91201" Identification="4712" Name="Bedienanleitung Videoanlage " Description="Beschreibung Bedienanleitung Videoanlage " Sort="99">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91202" Identification="4712" Name="Bedienungs- /Gebrauchsanleitungen" Description="Beschreibung Bedienungs- /Gebrauchsanleitungen" Sort="100">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91203" Identification="4712" Name="Bedienungsaleitung" Description="Beschreibung Bedienungsaleitung" Sort="101">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91204" Identification="4712" Name="Bedienungsanleitung" Description="Beschreibung Bedienungsanleitung" Sort="102">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91205" Identification="4712" Name="Befähigungsnachweise" Description="Beschreibung Befähigungsnachweise" Sort="103">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91206" Identification="4712" Name="Bekanntmachung" Description="Beschreibung Bekanntmachung" Sort="104">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91207" Identification="4712" Name="Belegungspläne" Description="Beschreibung Belegungspläne" Sort="105">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91208" Identification="4712" Name="Benennung von Brandbekämpfern" Description="Beschreibung Benennung von Brandbekämpfern" Sort="106">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91209" Identification="4712" Name="Benennung von Ersthelfern" Description="Beschreibung Benennung von Ersthelfern" Sort="107">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91210" Identification="4712" Name="Benennung von Evakuierungsbeauftragten" Description="Beschreibung Benennung von Evakuierungsbeauftragten" Sort="108">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91211" Identification="4712" Name="Benutzungsinformation für persönliche Schutzausrüstung (PSA)" Description="Beschreibung Benutzungsinformation für persönliche Schutzausrüstung (PSA)" Sort="109">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91212" Identification="4712" Name="Berechnung der Gründung" Description="Beschreibung Berechnung der Gründung" Sort="110">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91213" Identification="4712" Name="Berechnung und Bemessung" Description="Beschreibung Berechnung und Bemessung" Sort="111">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91214" Identification="4712" Name="Berechnung wesentlicher tragender Teile" Description="Beschreibung Berechnung wesentlicher tragender Teile" Sort="112">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91215" Identification="4712" Name="Berechnungen nach militärischen Lastenklassen (MLC)" Description="Beschreibung Berechnungen nach militärischen Lastenklassen (MLC)" Sort="113">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91216" Identification="4712" Name="Berechnungen und Angaben zur Kostenermittlung" Description="Beschreibung Berechnungen und Angaben zur Kostenermittlung" Sort="114">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91217" Identification="4712" Name="Bericht über Prüfungen vor erster Inbetriebnahme in Sonderbauten" Description="Beschreibung Bericht über Prüfungen vor erster Inbetriebnahme in Sonderbauten" Sort="115">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91218" Identification="4712" Name="Berichte über Prüfungen nach wesentlicher Änderung" Description="Beschreibung Berichte über Prüfungen nach wesentlicher Änderung" Sort="116">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91219" Identification="4712" Name="Berichte über Prüfungen vor erster Inbetriebnahme" Description="Beschreibung Berichte über Prüfungen vor erster Inbetriebnahme" Sort="117">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91220" Identification="4712" Name="Berichte über wiederkehrende Prüfungen" Description="Beschreibung Berichte über wiederkehrende Prüfungen" Sort="118">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91221" Identification="4712" Name="Berichte über wiederkehrende Prüfungen von Feuerlöschanlagen" Description="Beschreibung Berichte über wiederkehrende Prüfungen von Feuerlöschanlagen" Sort="119">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91222" Identification="4712" Name="Berichtswesen und Qualitätsmanagement - Gewährleistungs- / Mängelanspruchsverfolgung" Description="Beschreibung Berichtswesen und Qualitätsmanagement - Gewährleistungs- / Mängelanspruchsverfolgung" Sort="120">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91223" Identification="4712" Name="Bescheide über Anschlußgebühren für die Abwasserbeseitigung" Description="Beschreibung Bescheide über Anschlußgebühren für die Abwasserbeseitigung" Sort="121">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91224" Identification="4712" Name="Bescheide über Anschlußgebühren für die öffentliche oder private Wasserversorgung und Rohrnetzkosten" Description="Beschreibung Bescheide über Anschlußgebühren für die öffentliche oder private Wasserversorgung und Rohrnetzkosten" Sort="122">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91225" Identification="4712" Name="Bescheide über Anschlußgebühren für die Stromversorgung" Description="Beschreibung Bescheide über Anschlußgebühren für die Stromversorgung" Sort="123">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91226" Identification="4712" Name="Bescheide über Erschließungsbeiträge für Straßen und Wege" Description="Beschreibung Bescheide über Erschließungsbeiträge für Straßen und Wege" Sort="124">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91227" Identification="4712" Name="Bescheinigung  Abnahmeprotokoll des AG" Description="Beschreibung Bescheinigung  Abnahmeprotokoll des AG" Sort="125">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91228" Identification="4712" Name="Bescheinigung Bescheinigung nach BGV A 3" Description="Beschreibung Bescheinigung Bescheinigung nach BGV A 3" Sort="126">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91229" Identification="4712" Name="Bescheinigung Einweisungsbestätigung Betreiberpersonal" Description="Beschreibung Bescheinigung Einweisungsbestätigung Betreiberpersonal" Sort="127">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91230" Identification="4712" Name="Bescheinigung Errichterbescheinigung" Description="Beschreibung Bescheinigung Errichterbescheinigung" Sort="128">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91231" Identification="4712" Name="Bescheinigung Errichterbescheinigung über die Einhaltung der MLAR" Description="Beschreibung Bescheinigung Errichterbescheinigung über die Einhaltung der MLAR" Sort="129">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91232" Identification="4712" Name="Bescheinigung Messprotokolle" Description="Beschreibung Bescheinigung Messprotokolle" Sort="130">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91233" Identification="4712" Name="Bescheinigung Nachweis des Errichters über die Brandschottungen" Description="Beschreibung Bescheinigung Nachweis des Errichters über die Brandschottungen" Sort="131">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91234" Identification="4712" Name="Bescheinigung Nachweis des Funktionserhalts der Kabel gem. DIN 4102 - 3" Description="Beschreibung Bescheinigung Nachweis des Funktionserhalts der Kabel gem. DIN 4102 - 3" Sort="132">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91235" Identification="4712" Name="Bescheinigung TÜV Abnahmeprotokoll" Description="Beschreibung Bescheinigung TÜV Abnahmeprotokoll" Sort="133">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91236" Identification="4712" Name="Bescheinigung über (wiederkehrende) Dichtheitsprüfung" Description="Beschreibung Bescheinigung über (wiederkehrende) Dichtheitsprüfung" Sort="134">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91237" Identification="4712" Name="Bescheinigung über das Ergebnis der Messung an einer Feuerungsanlage" Description="Beschreibung Bescheinigung über das Ergebnis der Messung an einer Feuerungsanlage" Sort="135">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91238" Identification="4712" Name="Bescheinigungen über Dichtheitsprüfungen" Description="Beschreibung Bescheinigungen über Dichtheitsprüfungen" Sort="136">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91239" Identification="4712" Name="Beschreibung  (Schwachstrom) " Description="Beschreibung Beschreibung  (Schwachstrom) " Sort="137">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91240" Identification="4712" Name="Beschreibung  Hinweise zum witrschaftlichen Betrieb der Anlage" Description="Beschreibung Beschreibung  Hinweise zum witrschaftlichen Betrieb der Anlage" Sort="138">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91241" Identification="4712" Name="Beschreibung  Türfeststellanlagen / Schranken" Description="Beschreibung Beschreibung  Türfeststellanlagen / Schranken" Sort="139">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91242" Identification="4712" Name="Beschreibung  Türkommunikation" Description="Beschreibung Beschreibung  Türkommunikation" Sort="140">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91243" Identification="4712" Name="Beschreibung  Wartungsvertrag" Description="Beschreibung Beschreibung  Wartungsvertrag" Sort="141">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91244" Identification="4712" Name="Beschreibung aller Notfallsituationen / Alarme mit entsprech. Maßnahmen" Description="Beschreibung Beschreibung aller Notfallsituationen / Alarme mit entsprech. Maßnahmen" Sort="142">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91245" Identification="4712" Name="Beschreibung Allg. Stromversorgung im Zusammenhang mit Sicherheitsstromversorgung" Description="Beschreibung Beschreibung Allg. Stromversorgung im Zusammenhang mit Sicherheitsstromversorgung" Sort="143">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91246" Identification="4712" Name="Beschreibung Automatiktüren / Rolltore (Türen und Tore)" Description="Beschreibung Beschreibung Automatiktüren / Rolltore (Türen und Tore)" Sort="144">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91247" Identification="4712" Name="Beschreibung Blindstromkompensation" Description="Beschreibung Beschreibung Blindstromkompensation" Sort="145">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91248" Identification="4712" Name="Beschreibung Brandmeldeanlage / BOS-Gebäudefunk " Description="Beschreibung Beschreibung Brandmeldeanlage / BOS-Gebäudefunk " Sort="146">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91249" Identification="4712" Name="Beschreibung Einbruch Meldeanage " Description="Beschreibung Beschreibung Einbruch Meldeanage " Sort="147">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91250" Identification="4712" Name="Beschreibung Hausalarmanlage" Description="Beschreibung Beschreibung Hausalarmanlage" Sort="148">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91251" Identification="4712" Name="Beschreibung Hinweise zum sicheren Betrieb der Anlage" Description="Beschreibung Beschreibung Hinweise zum sicheren Betrieb der Anlage" Sort="149">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91252" Identification="4712" Name="Beschreibung Instandhaltungsanweisung mit Intervallen für Inspektion, Wartung, Prüfung" Description="Beschreibung Beschreibung Instandhaltungsanweisung mit Intervallen für Inspektion, Wartung, Prüfung" Sort="150">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91253" Identification="4712" Name="Beschreibung Jalousiesteuerung" Description="Beschreibung Beschreibung Jalousiesteuerung" Sort="151">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91254" Identification="4712" Name="Beschreibung Schrankenanlage" Description="Beschreibung Beschreibung Schrankenanlage" Sort="152">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91255" Identification="4712" Name="Beschreibung Sicherheitslichtanlage " Description="Beschreibung Beschreibung Sicherheitslichtanlage " Sort="153">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91256" Identification="4712" Name="Beschreibung Sonnenschutzanlage " Description="Beschreibung Beschreibung Sonnenschutzanlage " Sort="154">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91257" Identification="4712" Name="Beschreibung Störmeldeanlage" Description="Beschreibung Beschreibung Störmeldeanlage" Sort="155">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91258" Identification="4712" Name="Beschreibung Stromaufnahme und Einstellwerte Schutzorgane" Description="Beschreibung Beschreibung Stromaufnahme und Einstellwerte Schutzorgane" Sort="156">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91259" Identification="4712" Name="Beschreibung Türsprechanlage " Description="Beschreibung Beschreibung Türsprechanlage " Sort="157">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91260" Identification="4712" Name="Beschreibung Videoanlage" Description="Beschreibung Beschreibung Videoanlage" Sort="158">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91261" Identification="4712" Name="Beschreibung Videoanlage " Description="Beschreibung Beschreibung Videoanlage " Sort="159">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91262" Identification="4712" Name="Beschreibung Elektroinstallation u. Sicherheitsbeleuchtung" Description="Beschreibung Beschreibung Elektroinstallation u. Sicherheitsbeleuchtung" Sort="160">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91263" Identification="4712" Name="Beschreibung Ersatzstromanlage (Unterspannungsversorgung USV)" Description="Beschreibung Beschreibung Ersatzstromanlage (Unterspannungsversorgung USV)" Sort="161">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91264" Identification="4712" Name="Besondere Pläne, Beschreibungen und Nachweise" Description="Beschreibung Besondere Pläne, Beschreibungen und Nachweise" Sort="162">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91265" Identification="4712" Name="Bestandsaufnahme (Ergebnisse)" Description="Beschreibung Bestandsaufnahme (Ergebnisse)" Sort="163">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91266" Identification="4712" Name="Bestandspläne" Description="Beschreibung Bestandspläne" Sort="164">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91267" Identification="4712" Name="Bestandspläne, final (Gebäudefertigstellung)" Description="Beschreibung Bestandspläne, final (Gebäudefertigstellung)" Sort="165">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91268" Identification="4712" Name="Bestandszeichnung" Description="Beschreibung Bestandszeichnung" Sort="166">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91269" Identification="4712" Name="Bestandszeichnungen" Description="Beschreibung Bestandszeichnungen" Sort="167">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91270" Identification="4712" Name="Bestellung eines Betriebsbeauftragten für Immissionsschutz" Description="Beschreibung Bestellung eines Betriebsbeauftragten für Immissionsschutz" Sort="168">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91271" Identification="4712" Name="Bestellung eines Ordnungsdienstleiters" Description="Beschreibung Bestellung eines Ordnungsdienstleiters" Sort="169">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91272" Identification="4712" Name="Bestellung eines Störfallbeauftragten" Description="Beschreibung Bestellung eines Störfallbeauftragten" Sort="170">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91273" Identification="4712" Name="Bestellung von Betriebsärzten" Description="Beschreibung Bestellung von Betriebsärzten" Sort="171">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91274" Identification="4712" Name="Bestellung von Brandschutzbeauftragten" Description="Beschreibung Bestellung von Brandschutzbeauftragten" Sort="172">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91275" Identification="4712" Name="Bestellung von Fachkräften für Arbeitssicherheit" Description="Beschreibung Bestellung von Fachkräften für Arbeitssicherheit" Sort="173">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91276" Identification="4712" Name="Bestellung von Selbsthilfekräften" Description="Beschreibung Bestellung von Selbsthilfekräften" Sort="174">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91277" Identification="4712" Name="Bestellung von Sicherheitsbeauftragten" Description="Beschreibung Bestellung von Sicherheitsbeauftragten" Sort="175">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91278" Identification="4712" Name="Bestuhlungs- und Rettungswegeplan" Description="Beschreibung Bestuhlungs- und Rettungswegeplan" Sort="176">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91279" Identification="4712" Name="Beteiligtenliste" Description="Beschreibung Beteiligtenliste" Sort="177">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91280" Identification="4712" Name="Betreibermitteilung über die Prüffristen" Description="Beschreibung Betreibermitteilung über die Prüffristen" Sort="178">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91281" Identification="4712" Name="Betriebsanleitung" Description="Beschreibung Betriebsanleitung" Sort="179">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91282" Identification="4712" Name="Betriebsanweisungen" Description="Beschreibung Betriebsanweisungen" Sort="180">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91283" Identification="4712" Name="Betriebsbeschreibung" Description="Beschreibung Betriebsbeschreibung" Sort="181">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91284" Identification="4712" Name="Betriebsbuch" Description="Beschreibung Betriebsbuch" Sort="182">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91285" Identification="4712" Name="Betriebsbuch " Description="Beschreibung Betriebsbuch " Sort="183">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91286" Identification="4712" Name="Betriebshandbuch" Description="Beschreibung Betriebshandbuch" Sort="184">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91287" Identification="4712" Name="Betriebskostenberechnungen" Description="Beschreibung Betriebskostenberechnungen" Sort="185">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91288" Identification="4712" Name="Betriebsordnung" Description="Beschreibung Betriebsordnung" Sort="186">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91289" Identification="4712" Name="Betriebsplanung (Ergebnisse)" Description="Beschreibung Betriebsplanung (Ergebnisse)" Sort="187">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91290" Identification="4712" Name="Betriebstagebuch" Description="Beschreibung Betriebstagebuch" Sort="188">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91291" Identification="4712" Name="Bewehrungspläne" Description="Beschreibung Bewehrungspläne" Sort="189">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91292" Identification="4712" Name="Bodenkennwerte" Description="Beschreibung Bodenkennwerte" Sort="190">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91293" Identification="4712" Name="Brandschutzgutachten" Description="Beschreibung Brandschutzgutachten" Sort="191">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91294" Identification="4712" Name="Brandschutzkonzept" Description="Beschreibung Brandschutzkonzept" Sort="192">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91295" Identification="4712" Name="Brandschutzordnung" Description="Beschreibung Brandschutzordnung" Sort="193">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91296" Identification="4712" Name="Darstellung der Baugrunderkundungen" Description="Beschreibung Darstellung der Baugrunderkundungen" Sort="194">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91297" Identification="4712" Name="Darstellung der Labor- und Feldversuche" Description="Beschreibung Darstellung der Labor- und Feldversuche" Sort="195">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91298" Identification="4712" Name="Darstellung der Lösung" Description="Beschreibung Darstellung der Lösung" Sort="196">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91299" Identification="4712" Name="Darstellungen durch besondere Techniken" Description="Beschreibung Darstellungen durch besondere Techniken" Sort="197">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91300" Identification="4712" Name="Datenblätter" Description="Beschreibung Datenblätter" Sort="198">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91301" Identification="4712" Name="Datenerfassung, Analysen und Optimierungsprozesse (Ergebnisse)" Description="Beschreibung Datenerfassung, Analysen und Optimierungsprozesse (Ergebnisse)" Sort="199">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91302" Identification="4712" Name="Detaillierte Darstellung der Räume und Raumfogen" Description="Beschreibung Detaillierte Darstellung der Räume und Raumfogen" Sort="200">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91303" Identification="4712" Name="Detaillierte Objektbeschreibung als Raumbuch" Description="Beschreibung Detaillierte Objektbeschreibung als Raumbuch" Sort="201">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91304" Identification="4712" Name="Detaillierte Stahl- oder Stücklisten" Description="Beschreibung Detaillierte Stahl- oder Stücklisten" Sort="202">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91305" Identification="4712" Name="Detaillierter Vergleich von Schadstoffemissionen" Description="Beschreibung Detaillierter Vergleich von Schadstoffemissionen" Sort="203">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91306" Identification="4712" Name="Details" Description="Beschreibung Details" Sort="204">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91307" Identification="4712" Name="Dienstleistungsvertrag" Description="Beschreibung Dienstleistungsvertrag" Sort="205">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91308" Identification="4712" Name="Dienstleistungsverträge" Description="Beschreibung Dienstleistungsverträge" Sort="206">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91309" Identification="4712" Name="Differenzierte Zeit-, Kosten- oder Kapazitätspläne" Description="Beschreibung Differenzierte Zeit-, Kosten- oder Kapazitätspläne" Sort="207">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91310" Identification="4712" Name="Dokumentation des hydraulischen Abgleichs" Description="Beschreibung Dokumentation des hydraulischen Abgleichs" Sort="208">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91311" Identification="4712" Name="Dokumentation nach Anhang I Nr. 6.2 der Richtlinie 95/16/EG" Description="Beschreibung Dokumentation nach Anhang I Nr. 6.2 der Richtlinie 95/16/EG" Sort="209">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91312" Identification="4712" Name="Dokumente" Description="Beschreibung Dokumente" Sort="210">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91313" Identification="4712" Name="Dokumente für den Bau" Description="Beschreibung Dokumente für den Bau" Sort="211">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91314" Identification="4712" Name="Dokumente für die Ausschreibung" Description="Beschreibung Dokumente für die Ausschreibung" Sort="212">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91315" Identification="4712" Name="Dokumente für die Bauüberwachung" Description="Beschreibung Dokumente für die Bauüberwachung" Sort="213">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91316" Identification="4712" Name="Dokumente für die Planung" Description="Beschreibung Dokumente für die Planung" Sort="214">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91317" Identification="4712" Name="Dokumente über Planungsgrundlagen" Description="Beschreibung Dokumente über Planungsgrundlagen" Sort="215">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91318" Identification="4712" Name="Dokumente zum Nachweis der Aufbauorganisation" Description="Beschreibung Dokumente zum Nachweis der Aufbauorganisation" Sort="216">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91319" Identification="4712" Name="Draufsichten" Description="Beschreibung Draufsichten" Sort="217">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91320" Identification="4712" Name="EG-Konformitätserklärung" Description="Beschreibung EG-Konformitätserklärung" Sort="218">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91321" Identification="4712" Name="Einbaupläne" Description="Beschreibung Einbaupläne" Sort="219">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91322" Identification="4712" Name="Einbauten von Mietern" Description="Beschreibung Einbauten von Mietern" Sort="220">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91323" Identification="4712" Name="Einzelbeauftragungen, Verträge" Description="Beschreibung Einzelbeauftragungen, Verträge" Sort="221">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91324" Identification="4712" Name="Elektrische Anschlusspläne" Description="Beschreibung Elektrische Anschlusspläne" Sort="222">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91325" Identification="4712" Name="Elektrische Übersichtsschaltpläne" Description="Beschreibung Elektrische Übersichtsschaltpläne" Sort="223">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91326" Identification="4712" Name="Elementpläne" Description="Beschreibung Elementpläne" Sort="224">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91327" Identification="4712" Name="Emissionserklärung" Description="Beschreibung Emissionserklärung" Sort="225">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91328" Identification="4712" Name="Energiebedarfsausweis (prüffähiger Nachweis)" Description="Beschreibung Energiebedarfsausweis (prüffähiger Nachweis)" Sort="226">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91329" Identification="4712" Name="Energiekonzept" Description="Beschreibung Energiekonzept" Sort="227">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91330" Identification="4712" Name="Entsorgungskonzept" Description="Beschreibung Entsorgungskonzept" Sort="228">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91331" Identification="4712" Name="Entsorgungsnachweise" Description="Beschreibung Entsorgungsnachweise" Sort="229">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91332" Identification="4712" Name="Entwässerungsplan" Description="Beschreibung Entwässerungsplan" Sort="230">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91333" Identification="4712" Name="Entwurf" Description="Beschreibung Entwurf" Sort="231">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91334" Identification="4712" Name="Entwurfsvermessung" Description="Beschreibung Entwurfsvermessung" Sort="232">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91335" Identification="4712" Name="Entwurfszeichnungen" Description="Beschreibung Entwurfszeichnungen" Sort="233">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91336" Identification="4712" Name="Erfassung von Unfällen mit Personenschaden" Description="Beschreibung Erfassung von Unfällen mit Personenschaden" Sort="234">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91337" Identification="4712" Name="Ergebnisse der Überprüfung von Arbeitsschutzmaßnahmen" Description="Beschreibung Ergebnisse der Überprüfung von Arbeitsschutzmaßnahmen" Sort="235">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91338" Identification="4712" Name="Ermittlung der Anforderungen an befähigte Personen zur Prüfung" Description="Beschreibung Ermittlung der Anforderungen an befähigte Personen zur Prüfung" Sort="236">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91339" Identification="4712" Name="Ermittlung von Art, Umfang und Fristen erforderlicher Prüfungen" Description="Beschreibung Ermittlung von Art, Umfang und Fristen erforderlicher Prüfungen" Sort="237">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91340" Identification="4712" Name="Ermittlung von Mengen" Description="Beschreibung Ermittlung von Mengen" Sort="238">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91341" Identification="4712" Name="Ersatzteillisten" Description="Beschreibung Ersatzteillisten" Sort="239">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91342" Identification="4712" Name="Erschließung /Stellplätze" Description="Beschreibung Erschließung /Stellplätze" Sort="240">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91343" Identification="4712" Name="Explosionsschutzdokument" Description="Beschreibung Explosionsschutzdokument" Sort="241">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91344" Identification="4712" Name="Festigkeits- und Standfestigkeitsberechnung" Description="Beschreibung Festigkeits- und Standfestigkeitsberechnung" Sort="242">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91345" Identification="4712" Name="Feuerwehrlaufkarten" Description="Beschreibung Feuerwehrlaufkarten" Sort="243">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91346" Identification="4712" Name="Feuerwehrpläne" Description="Beschreibung Feuerwehrpläne" Sort="244">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91347" Identification="4712" Name="Finanzierungs-/Darlehensverträge" Description="Beschreibung Finanzierungs-/Darlehensverträge" Sort="245">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91348" Identification="4712" Name="Finanzierungspläne" Description="Beschreibung Finanzierungspläne" Sort="246">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91349" Identification="4712" Name="Flächenangaben für Gebäude" Description="Beschreibung Flächenangaben für Gebäude" Sort="247">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91350" Identification="4712" Name="Flächenaufstellungen (Garagen, Anzahl Stellplätze)" Description="Beschreibung Flächenaufstellungen (Garagen, Anzahl Stellplätze)" Sort="248">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91351" Identification="4712" Name="Flächennutzungsplan" Description="Beschreibung Flächennutzungsplan" Sort="249">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91352" Identification="4712" Name="Fluchtpläne, Rettungswegplan" Description="Beschreibung Fluchtpläne, Rettungswegplan" Sort="250">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91353" Identification="4712" Name="Fundamentpläne" Description="Beschreibung Fundamentpläne" Sort="251">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91354" Identification="4712" Name="Funktionsbeschreibung" Description="Beschreibung Funktionsbeschreibung" Sort="252">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91355" Identification="4712" Name="Funktionsbeschreibungen" Description="Beschreibung Funktionsbeschreibungen" Sort="253">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91356" Identification="4712" Name="Funktionsprogramm" Description="Beschreibung Funktionsprogramm" Sort="254">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91357" Identification="4712" Name="Funktionsschema bzw. Prinzipschaltbild" Description="Beschreibung Funktionsschema bzw. Prinzipschaltbild" Sort="255">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91358" Identification="4712" Name="Gastspielprüfbuch" Description="Beschreibung Gastspielprüfbuch" Sort="256">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91359" Identification="4712" Name="Gebäude- und Anlagenoptimierung (Ergebnisse)" Description="Beschreibung Gebäude- und Anlagenoptimierung (Ergebnisse)" Sort="257">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91360" Identification="4712" Name="Gebäude- und Raumbuch" Description="Beschreibung Gebäude- und Raumbuch" Sort="258">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91361" Identification="4712" Name="Gebrauchsanleitung" Description="Beschreibung Gebrauchsanleitung" Sort="259">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91362" Identification="4712" Name="Gefahrstoffverzeichnis" Description="Beschreibung Gefahrstoffverzeichnis" Sort="260">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91363" Identification="4712" Name="Genehmigungsantrag" Description="Beschreibung Genehmigungsantrag" Sort="261">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91364" Identification="4712" Name="Genehmigungsbescheid" Description="Beschreibung Genehmigungsbescheid" Sort="262">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91365" Identification="4712" Name="Geräteplan, Schaltbild oder Stromlaufplan" Description="Beschreibung Geräteplan, Schaltbild oder Stromlaufplan" Sort="263">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91366" Identification="4712" Name="Gewährleistungsverzeichnis" Description="Beschreibung Gewährleistungsverzeichnis" Sort="264">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91367" Identification="4712" Name="Grundabgabenbescheide" Description="Beschreibung Grundabgabenbescheide" Sort="265">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91368" Identification="4712" Name="Grundbuch (-eintragung)" Description="Beschreibung Grundbuch (-eintragung)" Sort="266">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91369" Identification="4712" Name="Grundrisse" Description="Beschreibung Grundrisse" Sort="267">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91370" Identification="4712" Name="Grundrisse (Schwachstrom)" Description="Beschreibung Grundrisse (Schwachstrom)" Sort="268">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91371" Identification="4712" Name="Grundrißpläne" Description="Beschreibung Grundrißpläne" Sort="269">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91372" Identification="4712" Name="Grundstücks- /Kaufvertrag" Description="Beschreibung Grundstücks- /Kaufvertrag" Sort="270">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91373" Identification="4712" Name="Gründung" Description="Beschreibung Gründung" Sort="271">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91374" Identification="4712" Name="Heizungsschema" Description="Beschreibung Heizungsschema" Sort="272">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91375" Identification="4712" Name="Heizungsschema/Anlagenschema" Description="Beschreibung Heizungsschema/Anlagenschema" Sort="273">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91376" Identification="4712" Name="Hinweise zur Auswirkung der Baumaßnahme auf Nachbarbauwerke" Description="Beschreibung Hinweise zur Auswirkung der Baumaßnahme auf Nachbarbauwerke" Sort="274">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91377" Identification="4712" Name="Hinweise zur Herstellung und Trockenhaltung der Baugrube und des Bauwerks" Description="Beschreibung Hinweise zur Herstellung und Trockenhaltung der Baugrube und des Bauwerks" Sort="275">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91378" Identification="4712" Name="Hygieneplan" Description="Beschreibung Hygieneplan" Sort="276">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91379" Identification="4712" Name="Immobilien-/Bewirtschaftsungsstrategie" Description="Beschreibung Immobilien-/Bewirtschaftsungsstrategie" Sort="277">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91380" Identification="4712" Name="Installationsattest" Description="Beschreibung Installationsattest" Sort="278">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91381" Identification="4712" Name="Instandhaltungsplanung/ Wartungsplanung und -organisation" Description="Beschreibung Instandhaltungsplanung/ Wartungsplanung und -organisation" Sort="279">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91382" Identification="4712" Name="Inventarverzeichnis" Description="Beschreibung Inventarverzeichnis" Sort="280">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91383" Identification="4712" Name="Jahresübersicht" Description="Beschreibung Jahresübersicht" Sort="281">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91384" Identification="4712" Name="Kabellisten" Description="Beschreibung Kabellisten" Sort="282">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91385" Identification="4712" Name="Kabelschema nach DIN 40719" Description="Beschreibung Kabelschema nach DIN 40719" Sort="283">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91386" Identification="4712" Name="Klärung der Aufgabenstellung (Ergebnisse)" Description="Beschreibung Klärung der Aufgabenstellung (Ergebnisse)" Sort="284">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91387" Identification="4712" Name="Klemmenpläne und Belegung" Description="Beschreibung Klemmenpläne und Belegung" Sort="285">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91388" Identification="4712" Name="Konformitätsbescheinigungen" Description="Beschreibung Konformitätsbescheinigungen" Sort="286">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91389" Identification="4712" Name="Konformitätserklärung" Description="Beschreibung Konformitätserklärung" Sort="287">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91390" Identification="4712" Name="Konstruktiver Entwurf mit zeichnerischer Darstellung" Description="Beschreibung Konstruktiver Entwurf mit zeichnerischer Darstellung" Sort="288">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91391" Identification="4712" Name="Konzept zur Verhinderung von Störfällen" Description="Beschreibung Konzept zur Verhinderung von Störfällen" Sort="289">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91392" Identification="4712" Name="Kopfdaten - Objektbeschreibung" Description="Beschreibung Kopfdaten - Objektbeschreibung" Sort="290">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91393" Identification="4712" Name="Kostenanschlag nach DIN 276" Description="Beschreibung Kostenanschlag nach DIN 276" Sort="291">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91394" Identification="4712" Name="Kostenberechnung nach DIN 276" Description="Beschreibung Kostenberechnung nach DIN 276" Sort="292">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91395" Identification="4712" Name="Kostenberechnung nach Mengengerüsten" Description="Beschreibung Kostenberechnung nach Mengengerüsten" Sort="293">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91396" Identification="4712" Name="Kostenfeststellung nach DIN 276" Description="Beschreibung Kostenfeststellung nach DIN 276" Sort="294">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91397" Identification="4712" Name="Kostenfeststellung zu Kostenrichtwerten" Description="Beschreibung Kostenfeststellung zu Kostenrichtwerten" Sort="295">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91398" Identification="4712" Name="Kostenschätzung nach DIN 276" Description="Beschreibung Kostenschätzung nach DIN 276" Sort="296">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91399" Identification="4712" Name="Kündigung Miet- /Pachtvertrag" Description="Beschreibung Kündigung Miet- /Pachtvertrag" Sort="297">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91400" Identification="4712" Name="Lageplan" Description="Beschreibung Lageplan" Sort="298">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91401" Identification="4712" Name="Lastenplan" Description="Beschreibung Lastenplan" Sort="299">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91402" Identification="4712" Name="Leasingvertrag" Description="Beschreibung Leasingvertrag" Sort="300">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91403" Identification="4712" Name="Leistungs- und Funktionsmessungen (Ergebnisse)" Description="Beschreibung Leistungs- und Funktionsmessungen (Ergebnisse)" Sort="301">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91404" Identification="4712" Name="Leistungsbeschreibungen" Description="Beschreibung Leistungsbeschreibungen" Sort="302">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91405" Identification="4712" Name="Leistungsbeschreibungen mit Leistungsverzeichnissen nach Leistungsbereichen" Description="Beschreibung Leistungsbeschreibungen mit Leistungsverzeichnissen nach Leistungsbereichen" Sort="303">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91406" Identification="4712" Name="Leistungsstandfeststellung" Description="Beschreibung Leistungsstandfeststellung" Sort="304">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91407" Identification="4712" Name="Leistungsverzeichnis" Description="Beschreibung Leistungsverzeichnis" Sort="305">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91408" Identification="4712" Name="Leistungsverzeichnisse" Description="Beschreibung Leistungsverzeichnisse" Sort="306">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91409" Identification="4712" Name="Leit- und Musterbeschreibungen" Description="Beschreibung Leit- und Musterbeschreibungen" Sort="307">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91410" Identification="4712" Name="Lieferverträge" Description="Beschreibung Lieferverträge" Sort="308">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91411" Identification="4712" Name="Liste  E-30-90 - Material" Description="Beschreibung Liste  E-30-90 - Material" Sort="309">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91412" Identification="4712" Name="Liste  Haupt- und Unterverteilungen" Description="Beschreibung Liste  Haupt- und Unterverteilungen" Sort="310">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91413" Identification="4712" Name="Liste  Kabelliste" Description="Beschreibung Liste  Kabelliste" Sort="311">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91414" Identification="4712" Name="Liste  Schaltschrankstückliste" Description="Beschreibung Liste  Schaltschrankstückliste" Sort="312">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91415" Identification="4712" Name="Liste  Wartungsliste nach VDMA / AMEV" Description="Beschreibung Liste  Wartungsliste nach VDMA / AMEV" Sort="313">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91416" Identification="4712" Name="Liste  Zählereinrichtungen und Verteilungen" Description="Beschreibung Liste  Zählereinrichtungen und Verteilungen" Sort="314">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91417" Identification="4712" Name="Liste der Ersatz- und Verschleissteile" Description="Beschreibung Liste der Ersatz- und Verschleissteile" Sort="315">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91418" Identification="4712" Name="Liste Doppelbodeninstallation" Description="Beschreibung Liste Doppelbodeninstallation" Sort="316">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91419" Identification="4712" Name="Liste Leuchten und Lampen (inkl. Anzahl und Art der eingesetzten Leuchtmittel)" Description="Beschreibung Liste Leuchten und Lampen (inkl. Anzahl und Art der eingesetzten Leuchtmittel)" Sort="317">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91420" Identification="4712" Name="Liste Wartungsfirmen" Description="Beschreibung Liste Wartungsfirmen" Sort="318">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91421" Identification="4712" Name="Liste/ Herstellerverzeichnis " Description="Beschreibung Liste/ Herstellerverzeichnis " Sort="319">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91422" Identification="4712" Name="Machbarkeitsstudien" Description="Beschreibung Machbarkeitsstudien" Sort="320">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91423" Identification="4712" Name="Mängel nach Abnahme" Description="Beschreibung Mängel nach Abnahme" Sort="321">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91424" Identification="4712" Name="Mangelanspruchsfristenliste" Description="Beschreibung Mangelanspruchsfristenliste" Sort="322">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91425" Identification="4712" Name="Mängelanzeigen" Description="Beschreibung Mängelanzeigen" Sort="323">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91426" Identification="4712" Name="Mängelliste" Description="Beschreibung Mängelliste" Sort="324">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91427" Identification="4712" Name="Messbericht über die Messung der Abgastrübung" Description="Beschreibung Messbericht über die Messung der Abgastrübung" Sort="325">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91428" Identification="4712" Name="Messbericht über Einzelmessungen von CO und NOx" Description="Beschreibung Messbericht über Einzelmessungen von CO und NOx" Sort="326">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91429" Identification="4712" Name="Mietverträge" Description="Beschreibung Mietverträge" Sort="327">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91430" Identification="4712" Name="Mitteilung über getroffene Maßnahmen des Arbeitsschutzes" Description="Beschreibung Mitteilung über getroffene Maßnahmen des Arbeitsschutzes" Sort="328">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91431" Identification="4712" Name="Mitteilung zur Betriebsorganisation" Description="Beschreibung Mitteilung zur Betriebsorganisation" Sort="329">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91432" Identification="4712" Name="Montagepläne" Description="Beschreibung Montagepläne" Sort="330">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91433" Identification="4712" Name="Montagezeichnungen und Beschreibungen" Description="Beschreibung Montagezeichnungen und Beschreibungen" Sort="331">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91434" Identification="4712" Name="Nachweis der Verwendbarkeit von Bauprodukten im Einzelfall" Description="Beschreibung Nachweis der Verwendbarkeit von Bauprodukten im Einzelfall" Sort="332">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91435" Identification="4712" Name="Nachweise der Erdbebensicherung" Description="Beschreibung Nachweise der Erdbebensicherung" Sort="333">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91436" Identification="4712" Name="Nebenkosten - Betriebskosten" Description="Beschreibung Nebenkosten - Betriebskosten" Sort="334">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91437" Identification="4712" Name="Niederschrift über die Unterweisung des Betriebspersonals" Description="Beschreibung Niederschrift über die Unterweisung des Betriebspersonals" Sort="335">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91438" Identification="4712" Name="Niederschrift über die Unterweisung des Betriebspersonals bzgl. Feuerlöscheinrichtung" Description="Beschreibung Niederschrift über die Unterweisung des Betriebspersonals bzgl. Feuerlöscheinrichtung" Sort="336">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91439" Identification="4712" Name="Notfall-Lageplan der Schalter-Schiebe-Hähne" Description="Beschreibung Notfall-Lageplan der Schalter-Schiebe-Hähne" Sort="337">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91440" Identification="4712" Name="Nutzerliste und Nutzungsgenehmigung" Description="Beschreibung Nutzerliste und Nutzungsgenehmigung" Sort="338">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91441" Identification="4712" Name="Nutzungskostenermittlung - Nutzungskostenanschlag" Description="Beschreibung Nutzungskostenermittlung - Nutzungskostenanschlag" Sort="339">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91442" Identification="4712" Name="Nutzungskostenermittlung - Nutzungskostenberechnung" Description="Beschreibung Nutzungskostenermittlung - Nutzungskostenberechnung" Sort="340">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91443" Identification="4712" Name="Nutzungskostenermittlung - Nutzungskostenfeststellung" Description="Beschreibung Nutzungskostenermittlung - Nutzungskostenfeststellung" Sort="341">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91444" Identification="4712" Name="Nutzungskostenermittlung - Nutzungskostenschätzung" Description="Beschreibung Nutzungskostenermittlung - Nutzungskostenschätzung" Sort="342">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91445" Identification="4712" Name="Oberflächenqualitäten" Description="Beschreibung Oberflächenqualitäten" Sort="343">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91446" Identification="4712" Name="Objektbegehnung - Bestandsaufnahme (Kontrolle/ Kundenbesuchsprotokolle)" Description="Beschreibung Objektbegehnung - Bestandsaufnahme (Kontrolle/ Kundenbesuchsprotokolle)" Sort="344">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91447" Identification="4712" Name="Objektbegehungsprotokolle" Description="Beschreibung Objektbegehungsprotokolle" Sort="345">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91448" Identification="4712" Name="Objektdaten/Objektsteckbrief" Description="Beschreibung Objektdaten/Objektsteckbrief" Sort="346">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91449" Identification="4712" Name="Objektinformationen - Aussenanlagenplan mit Zuordnung der Flächen" Description="Beschreibung Objektinformationen - Aussenanlagenplan mit Zuordnung der Flächen" Sort="347">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91450" Identification="4712" Name="Objektinformationen - Bilder - Luftbilder, Außen- und Innenaufnahmen" Description="Beschreibung Objektinformationen - Bilder - Luftbilder, Außen- und Innenaufnahmen" Sort="348">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91451" Identification="4712" Name="Objektinformationen - Hausordnung" Description="Beschreibung Objektinformationen - Hausordnung" Sort="349">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91452" Identification="4712" Name="Objektinformationen - Kunst am Bau" Description="Beschreibung Objektinformationen - Kunst am Bau" Sort="350">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91453" Identification="4712" Name="Objektinformationen - Objektbeschreibung " Description="Beschreibung Objektinformationen - Objektbeschreibung " Sort="351">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91454" Identification="4712" Name="Objektinformationen - Plan für Bereitschaftsdienst" Description="Beschreibung Objektinformationen - Plan für Bereitschaftsdienst" Sort="352">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91455" Identification="4712" Name="Objektinformationen - Schichtplan für Personal" Description="Beschreibung Objektinformationen - Schichtplan für Personal" Sort="353">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91456" Identification="4712" Name="Organisationshandbuch" Description="Beschreibung Organisationshandbuch" Sort="354">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91457" Identification="4712" Name="Organisationsplan" Description="Beschreibung Organisationsplan" Sort="355">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91458" Identification="4712" Name="Pflegeanleitung" Description="Beschreibung Pflegeanleitung" Sort="356">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91459" Identification="4712" Name="Pflegeflächen Sommerdienst/Winterdienst" Description="Beschreibung Pflegeflächen Sommerdienst/Winterdienst" Sort="357">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91460" Identification="4712" Name="Pflegehinweise" Description="Beschreibung Pflegehinweise" Sort="358">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91461" Identification="4712" Name="Plan  Ausbau Gewerbeküchen" Description="Beschreibung Plan  Ausbau Gewerbeküchen" Sort="359">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91462" Identification="4712" Name="Plan  Aussenanlagen" Description="Beschreibung Plan  Aussenanlagen" Sort="360">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91463" Identification="4712" Name="Plan  Ausstattung Gewerbeküchen" Description="Beschreibung Plan  Ausstattung Gewerbeküchen" Sort="361">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91464" Identification="4712" Name="Plan  BK-Versorgung" Description="Beschreibung Plan  BK-Versorgung" Sort="362">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91465" Identification="4712" Name="Plan  Brandmeldeanlage" Description="Beschreibung Plan  Brandmeldeanlage" Sort="363">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91466" Identification="4712" Name="Plan  Brandmeldeanlage / BOS-Gebäudefunk" Description="Beschreibung Plan  Brandmeldeanlage / BOS-Gebäudefunk" Sort="364">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91467" Identification="4712" Name="Plan  Detailpläne Schaltschränke etc." Description="Beschreibung Plan  Detailpläne Schaltschränke etc." Sort="365">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91468" Identification="4712" Name="Plan  Erdung und Potentialausgleich" Description="Beschreibung Plan  Erdung und Potentialausgleich" Sort="366">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91469" Identification="4712" Name="Plan  Erdung, Blitzschutz und Potentialausgleich mit Angabe der Messpunkte" Description="Beschreibung Plan  Erdung, Blitzschutz und Potentialausgleich mit Angabe der Messpunkte" Sort="367">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91470" Identification="4712" Name="Plan  Kabeltragsysteme/Bodenkanäle (Grundrisse)" Description="Beschreibung Plan  Kabeltragsysteme/Bodenkanäle (Grundrisse)" Sort="368">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91471" Identification="4712" Name="Plan  Stromlauf- und Klemmpläne nach DIN 40719" Description="Beschreibung Plan  Stromlauf- und Klemmpläne nach DIN 40719" Sort="369">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91472" Identification="4712" Name="Plan Brandmeldeanlage" Description="Beschreibung Plan Brandmeldeanlage" Sort="370">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91473" Identification="4712" Name="Plan Brandschutzschottungen" Description="Beschreibung Plan Brandschutzschottungen" Sort="371">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91474" Identification="4712" Name="Plan Elektroinstallation (Grundrisse, Strangschemata, Steigleitung u. Stromlaufpläne)" Description="Beschreibung Plan Elektroinstallation (Grundrisse, Strangschemata, Steigleitung u. Stromlaufpläne)" Sort="372">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91475" Identification="4712" Name="Plan Telefonverkabelung (Leitungsverlegung)" Description="Beschreibung Plan Telefonverkabelung (Leitungsverlegung)" Sort="373">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91476" Identification="4712" Name="Pläne für Anschlüsse von beigestellten Betriebsmitteln und Maschinen" Description="Beschreibung Pläne für Anschlüsse von beigestellten Betriebsmitteln und Maschinen" Sort="374">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91477" Identification="4712" Name="Pläne Sicherheitsbeleuchtung (Grundrisse, Steigleitungen und Stromlaufpläne)" Description="Beschreibung Pläne Sicherheitsbeleuchtung (Grundrisse, Steigleitungen und Stromlaufpläne)" Sort="375">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91478" Identification="4712" Name="Planungskonzept" Description="Beschreibung Planungskonzept" Sort="376">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91479" Identification="4712" Name="Planungskonzepte" Description="Beschreibung Planungskonzepte" Sort="377">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91480" Identification="4712" Name="Planunterlagen" Description="Beschreibung Planunterlagen" Sort="378">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91481" Identification="4712" Name="Planunterlagen - Lageplan" Description="Beschreibung Planunterlagen - Lageplan" Sort="379">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91482" Identification="4712" Name="Planunterlagen (Ausführungsplanung, Detailpläne)" Description="Beschreibung Planunterlagen (Ausführungsplanung, Detailpläne)" Sort="380">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91483" Identification="4712" Name="Planunterlagen (Genehmigungsplanung)" Description="Beschreibung Planunterlagen (Genehmigungsplanung)" Sort="381">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91484" Identification="4712" Name="Positionspläne" Description="Beschreibung Positionspläne" Sort="382">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91485" Identification="4712" Name="Preisspiegel" Description="Beschreibung Preisspiegel" Sort="383">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91486" Identification="4712" Name="Preisspiegel nach besonderen Anforderungen" Description="Beschreibung Preisspiegel nach besonderen Anforderungen" Sort="384">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91487" Identification="4712" Name="Produktkatalog/ Leistungsprofil FM" Description="Beschreibung Produktkatalog/ Leistungsprofil FM" Sort="385">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91488" Identification="4712" Name="Projekthandbuch" Description="Beschreibung Projekthandbuch" Sort="386">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91489" Identification="4712" Name="Projektmanagementdokumente" Description="Beschreibung Projektmanagementdokumente" Sort="387">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91490" Identification="4712" Name="Projektspezifische Programme und Daten auf Datenträgern" Description="Beschreibung Projektspezifische Programme und Daten auf Datenträgern" Sort="388">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91491" Identification="4712" Name="Protokoll über die Abgasmessung" Description="Beschreibung Protokoll über die Abgasmessung" Sort="389">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91492" Identification="4712" Name="Protokoll über die Beseitigung von Mängeln aus den Verjährungsfristen" Description="Beschreibung Protokoll über die Beseitigung von Mängeln aus den Verjährungsfristen" Sort="390">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91493" Identification="4712" Name="Protokoll über die Beseitigung von Mängeln aus der Abnahme" Description="Beschreibung Protokoll über die Beseitigung von Mängeln aus der Abnahme" Sort="391">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91494" Identification="4712" Name="Protokoll über die Einweisung des Wartungs- und Bedienungspersonals" Description="Beschreibung Protokoll über die Einweisung des Wartungs- und Bedienungspersonals" Sort="392">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91495" Identification="4712" Name="Protokoll über Inbetriebnahme und Einregulierung" Description="Beschreibung Protokoll über Inbetriebnahme und Einregulierung" Sort="393">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91496" Identification="4712" Name="Protokolle über Belehrungen der Betriebsangehörigen" Description="Beschreibung Protokolle über Belehrungen der Betriebsangehörigen" Sort="394">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91497" Identification="4712" Name="Protokolle über Belehrungen der Betriebsangehörigen bzgl. Feuerlöscheinrichtung" Description="Beschreibung Protokolle über Belehrungen der Betriebsangehörigen bzgl. Feuerlöscheinrichtung" Sort="395">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91498" Identification="4712" Name="Protokolle über Dichtheitsprüfungen" Description="Beschreibung Protokolle über Dichtheitsprüfungen" Sort="396">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91499" Identification="4712" Name="Protokolle über die Dichtheitsprüfung" Description="Beschreibung Protokolle über die Dichtheitsprüfung" Sort="397">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91500" Identification="4712" Name="Protokolle über die Druckprüfung" Description="Beschreibung Protokolle über die Druckprüfung" Sort="398">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91501" Identification="4712" Name="Protokolle über Druck- und Dichtheitsprüfungen" Description="Beschreibung Protokolle über Druck- und Dichtheitsprüfungen" Sort="399">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91502" Identification="4712" Name="Protokolle über Prüfung auf Betriebsfähigkeit" Description="Beschreibung Protokolle über Prüfung auf Betriebsfähigkeit" Sort="400">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91503" Identification="4712" Name="Protokolle über Prüfung nach den DIN-Normen" Description="Beschreibung Protokolle über Prüfung nach den DIN-Normen" Sort="401">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91504" Identification="4712" Name="Protokolle über Unterweisungen der Betriebsangehörigen" Description="Beschreibung Protokolle über Unterweisungen der Betriebsangehörigen" Sort="402">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91505" Identification="4712" Name="Prozessliste (Kern- und FM-Prozesse)" Description="Beschreibung Prozessliste (Kern- und FM-Prozesse)" Sort="403">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91506" Identification="4712" Name="Prüfbescheinigungen" Description="Beschreibung Prüfbescheinigungen" Sort="404">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91507" Identification="4712" Name="Prüfbuch" Description="Beschreibung Prüfbuch" Sort="405">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91508" Identification="4712" Name="Prüffähige statische Berechnungen" Description="Beschreibung Prüffähige statische Berechnungen" Sort="406">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91509" Identification="4712" Name="Prüfprotokolle" Description="Beschreibung Prüfprotokolle" Sort="407">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91510" Identification="4712" Name="Prüf-und Herstellerbescheinigungen (DVGW)" Description="Beschreibung Prüf-und Herstellerbescheinigungen (DVGW)" Sort="408">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91511" Identification="4712" Name="Prüfung der Umwelterheblichkeit (Ergebnisse)" Description="Beschreibung Prüfung der Umwelterheblichkeit (Ergebnisse)" Sort="409">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91512" Identification="4712" Name="Prüfung der Umweltverträglichkeit (Ergebnisse)" Description="Beschreibung Prüfung der Umweltverträglichkeit (Ergebnisse)" Sort="410">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91513" Identification="4712" Name="Prüfzeugnisse Hersteller" Description="Beschreibung Prüfzeugnisse Hersteller" Sort="411">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91514" Identification="4712" Name="Raumakustischer Entwurf" Description="Beschreibung Raumakustischer Entwurf" Sort="412">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91515" Identification="4712" Name="Raumbücher oder ähnliche listen mit raumspezifischen Ausstattungen" Description="Beschreibung Raumbücher oder ähnliche listen mit raumspezifischen Ausstattungen" Sort="413">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91516" Identification="4712" Name="Raumprogramm" Description="Beschreibung Raumprogramm" Sort="414">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91517" Identification="4712" Name="Regelschemata" Description="Beschreibung Regelschemata" Sort="415">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91518" Identification="4712" Name="Regelschemata mit Darstellung der wesentlichen Automationsfunktionen" Description="Beschreibung Regelschemata mit Darstellung der wesentlichen Automationsfunktionen" Sort="416">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91519" Identification="4712" Name="Reinigungsflächen" Description="Beschreibung Reinigungsflächen" Sort="417">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91520" Identification="4712" Name="Reinigungszyklen" Description="Beschreibung Reinigungszyklen" Sort="418">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91521" Identification="4712" Name="Revisionspläne" Description="Beschreibung Revisionspläne" Sort="419">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91522" Identification="4712" Name="Risikoanalysen" Description="Beschreibung Risikoanalysen" Sort="420">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91523" Identification="4712" Name="Risikomatrix (alle LZ-Phasen)" Description="Beschreibung Risikomatrix (alle LZ-Phasen)" Sort="421">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91524" Identification="4712" Name="Rohbauzeichnungen im Stahlbetonbau" Description="Beschreibung Rohbauzeichnungen im Stahlbetonbau" Sort="422">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91525" Identification="4712" Name="Schadstoffemissionsberechnungen" Description="Beschreibung Schadstoffemissionsberechnungen" Sort="423">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91526" Identification="4712" Name="Schallschutzgutachten" Description="Beschreibung Schallschutzgutachten" Sort="424">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91527" Identification="4712" Name="Schallschutznachweis" Description="Beschreibung Schallschutznachweis" Sort="425">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91528" Identification="4712" Name="Schalpläne" Description="Beschreibung Schalpläne" Sort="426">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91529" Identification="4712" Name="Schließpläne" Description="Beschreibung Schließpläne" Sort="427">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91530" Identification="4712" Name="Schlitz- und Durchbruchspläne" Description="Beschreibung Schlitz- und Durchbruchspläne" Sort="428">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91531" Identification="4712" Name="Schlussrechnung" Description="Beschreibung Schlussrechnung" Sort="429">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91532" Identification="4712" Name="Schnitte" Description="Beschreibung Schnitte" Sort="430">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91533" Identification="4712" Name="Schriftverkehr" Description="Beschreibung Schriftverkehr" Sort="431">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91534" Identification="4712" Name="Sicherheits- und Gesundheitsschutzplan (SiGe-Plan)" Description="Beschreibung Sicherheits- und Gesundheitsschutzplan (SiGe-Plan)" Sort="432">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91535" Identification="4712" Name="Sicherheitsbericht" Description="Beschreibung Sicherheitsbericht" Sort="433">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91536" Identification="4712" Name="Sicherheitsdatenblatt" Description="Beschreibung Sicherheitsdatenblatt" Sort="434">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91537" Identification="4712" Name="Sicherheitskonzept" Description="Beschreibung Sicherheitskonzept" Sort="435">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91538" Identification="4712" Name="Skizzenhafte Darstellung der Lösungsmöglichkeiten" Description="Beschreibung Skizzenhafte Darstellung der Lösungsmöglichkeiten" Sort="436">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91539" Identification="4712" Name="Sonderbereiche, sicherheitsrelevante Bereiche (z.B. Versammlungsräume, Kindergarten, Kinderspielplätze)" Description="Beschreibung Sonderbereiche, sicherheitsrelevante Bereiche (z.B. Versammlungsräume, Kindergarten, Kinderspielplätze)" Sort="437">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91540" Identification="4712" Name="Sonstige relevante Satzungen" Description="Beschreibung Sonstige relevante Satzungen" Sort="438">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91541" Identification="4712" Name="Spannprotokolle im Spannbetonbau" Description="Beschreibung Spannprotokolle im Spannbetonbau" Sort="439">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91542" Identification="4712" Name="Städtebauliche Verträge" Description="Beschreibung Städtebauliche Verträge" Sort="440">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91543" Identification="4712" Name="Standortanalyse" Description="Beschreibung Standortanalyse" Sort="441">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91544" Identification="4712" Name="Standsicherheitsnachweise" Description="Beschreibung Standsicherheitsnachweise" Sort="442">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91545" Identification="4712" Name="statische Berechnung" Description="Beschreibung statische Berechnung" Sort="443">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91546" Identification="4712" Name="Statische Berechnung und zeichnerische Darstellung" Description="Beschreibung Statische Berechnung und zeichnerische Darstellung" Sort="444">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91547" Identification="4712" Name="Statische Nachweise und Abnahmen zum Objekt" Description="Beschreibung Statische Nachweise und Abnahmen zum Objekt" Sort="445">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91548" Identification="4712" Name="Statische und bauphysikalische Nachweise" Description="Beschreibung Statische und bauphysikalische Nachweise" Sort="446">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91549" Identification="4712" Name="Steigleitung (Schwachstrom)" Description="Beschreibung Steigleitung (Schwachstrom)" Sort="447">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91550" Identification="4712" Name="Strangschema (Schwachstrom)" Description="Beschreibung Strangschema (Schwachstrom)" Sort="448">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91551" Identification="4712" Name="Stromlaufpläne" Description="Beschreibung Stromlaufpläne" Sort="449">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91552" Identification="4712" Name="Stromlaufpläne (Schwachstrom)" Description="Beschreibung Stromlaufpläne (Schwachstrom)" Sort="450">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91553" Identification="4712" Name="Stücklisten" Description="Beschreibung Stücklisten" Sort="451">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91554" Identification="4712" Name="Systemanalyse" Description="Beschreibung Systemanalyse" Sort="452">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91555" Identification="4712" Name="Tätigkeitsberichte" Description="Beschreibung Tätigkeitsberichte" Sort="453">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91556" Identification="4712" Name="Technische Spezifikationen" Description="Beschreibung Technische Spezifikationen" Sort="454">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91557" Identification="4712" Name="Technische Unterlagen Außenanlagen (analog TGA)" Description="Beschreibung Technische Unterlagen Außenanlagen (analog TGA)" Sort="455">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91558" Identification="4712" Name="technisches Raumbuch" Description="Beschreibung technisches Raumbuch" Sort="456">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91559" Identification="4712" Name="Teilbaugenehmigung" Description="Beschreibung Teilbaugenehmigung" Sort="457">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91560" Identification="4712" Name="Terminpläne für künftige Gefährdungsbeurteilungen" Description="Beschreibung Terminpläne für künftige Gefährdungsbeurteilungen" Sort="458">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91561" Identification="4712" Name="TÜV-Abnahmeprotokolle" Description="Beschreibung TÜV-Abnahmeprotokolle" Sort="459">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91562" Identification="4712" Name="Übereinstimmungserklärung" Description="Beschreibung Übereinstimmungserklärung" Sort="460">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91563" Identification="4712" Name="Übereinstimmungserklärung des Herstellers" Description="Beschreibung Übereinstimmungserklärung des Herstellers" Sort="461">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91564" Identification="4712" Name="Übereinstimmungsnachweise" Description="Beschreibung Übereinstimmungsnachweise" Sort="462">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91565" Identification="4712" Name="Übereinstimmungszertifikat" Description="Beschreibung Übereinstimmungszertifikat" Sort="463">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91566" Identification="4712" Name="Überschlägige statische Berechnung und Bemessung" Description="Beschreibung Überschlägige statische Berechnung und Bemessung" Sort="464">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91567" Identification="4712" Name="Übersichtsplan" Description="Beschreibung Übersichtsplan" Sort="465">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91568" Identification="4712" Name="Übersichtsschaltpläne" Description="Beschreibung Übersichtsschaltpläne" Sort="466">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91569" Identification="4712" Name="Umweltverträglichkeitsprüfung (UVP)" Description="Beschreibung Umweltverträglichkeitsprüfung (UVP)" Sort="467">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91570" Identification="4712" Name="Unfall- und Schadensanzeige" Description="Beschreibung Unfall- und Schadensanzeige" Sort="468">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91571" Identification="4712" Name="Unfallverhütungsvorschriften" Description="Beschreibung Unfallverhütungsvorschriften" Sort="469">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91572" Identification="4712" Name="Unterlagen für behördliche Genehmigungen und Abnahmen" Description="Beschreibung Unterlagen für behördliche Genehmigungen und Abnahmen" Sort="470">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91573" Identification="4712" Name="Unterlagen für besondere Prüfverfahren" Description="Beschreibung Unterlagen für besondere Prüfverfahren" Sort="471">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91574" Identification="4712" Name="Unterlagen für die Prüfungen" Description="Beschreibung Unterlagen für die Prüfungen" Sort="472">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91575" Identification="4712" Name="Unterlagen für Genehmigungsanträge" Description="Beschreibung Unterlagen für Genehmigungsanträge" Sort="473">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91576" Identification="4712" Name="Unterlagen für Prüfungen" Description="Beschreibung Unterlagen für Prüfungen" Sort="474">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91577" Identification="4712" Name="Unterlagen über durchgeführte Gefährdungsbeurteilungen" Description="Beschreibung Unterlagen über durchgeführte Gefährdungsbeurteilungen" Sort="475">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91578" Identification="4712" Name="Unterrichtungsprotokolle" Description="Beschreibung Unterrichtungsprotokolle" Sort="476">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91579" Identification="4712" Name="Unterrichtungsprotokolle bei Zusammenarbeit mehrerer AGs" Description="Beschreibung Unterrichtungsprotokolle bei Zusammenarbeit mehrerer AGs" Sort="477">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91580" Identification="4712" Name="Unterweisungsprotokolle" Description="Beschreibung Unterweisungsprotokolle" Sort="478">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91581" Identification="4712" Name="Urkunden über Versicherungsverträge (Versicherungsscheine)" Description="Beschreibung Urkunden über Versicherungsverträge (Versicherungsscheine)" Sort="479">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91582" Identification="4712" Name="Verbrauchsabrechnungen" Description="Beschreibung Verbrauchsabrechnungen" Sort="480">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91583" Identification="4712" Name="Vergabeunterlagen" Description="Beschreibung Vergabeunterlagen" Sort="481">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91584" Identification="4712" Name="Vergabevermerk" Description="Beschreibung Vergabevermerk" Sort="482">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91585" Identification="4712" Name="Vergabevorschlag" Description="Beschreibung Vergabevorschlag" Sort="483">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91586" Identification="4712" Name="Vergleichende Kostenübersichten" Description="Beschreibung Vergleichende Kostenübersichten" Sort="484">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91587" Identification="4712" Name="Vergleichsberechnungen für mehrere Lösungsmöglichkeiten" Description="Beschreibung Vergleichsberechnungen für mehrere Lösungsmöglichkeiten" Sort="485">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91588" Identification="4712" Name="Verpflichtung von Auftragnehmern zur Beachtung der Arbeitssicherheit" Description="Beschreibung Verpflichtung von Auftragnehmern zur Beachtung der Arbeitssicherheit" Sort="486">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91589" Identification="4712" Name="verschiedene Dokumente" Description="Beschreibung verschiedene Dokumente" Sort="487">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91590" Identification="4712" Name="Versicherungsbedingungen" Description="Beschreibung Versicherungsbedingungen" Sort="488">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91591" Identification="4712" Name="Versicherungsvertrag" Description="Beschreibung Versicherungsvertrag" Sort="489">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91592" Identification="4712" Name="Versorgungsverträge (Energielieferverträge)" Description="Beschreibung Versorgungsverträge (Energielieferverträge)" Sort="490">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91593" Identification="4712" Name="Verzeichnis relevanter Gesetze, Normen, Verordnungen und UVVorschriften" Description="Beschreibung Verzeichnis relevanter Gesetze, Normen, Verordnungen und UVVorschriften" Sort="491">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91594" Identification="4712" Name="Videoaufnahme der Entwässerungskanäle und Dichtigkeitsprüfung" Description="Beschreibung Videoaufnahme der Entwässerungskanäle und Dichtigkeitsprüfung" Sort="492">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91595" Identification="4712" Name="Voranfrage (Bauanfrage)" Description="Beschreibung Voranfrage (Bauanfrage)" Sort="493">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91596" Identification="4712" Name="Vorbescheid" Description="Beschreibung Vorbescheid" Sort="494">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91597" Identification="4712" Name="Vorgezogene Stahl- oder Holzmengenermittlung" Description="Beschreibung Vorgezogene Stahl- oder Holzmengenermittlung" Sort="495">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91598" Identification="4712" Name="Vorschlag für die Gründung" Description="Beschreibung Vorschlag für die Gründung" Sort="496">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91599" Identification="4712" Name="Wärmeschutznachweis" Description="Beschreibung Wärmeschutznachweis" Sort="497">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91600" Identification="4712" Name="Wartung und Pflege" Description="Beschreibung Wartung und Pflege" Sort="498">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91601" Identification="4712" Name="Wartungs- und Pflegeanweisungen" Description="Beschreibung Wartungs- und Pflegeanweisungen" Sort="499">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91602" Identification="4712" Name="Wartungsanleitung" Description="Beschreibung Wartungsanleitung" Sort="500">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91603" Identification="4712" Name="Wartungsanleitungen" Description="Beschreibung Wartungsanleitungen" Sort="501">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91604" Identification="4712" Name="Wartungsanleitungen Abwasser-, Wasser-, Gasanlagen" Description="Beschreibung Wartungsanleitungen Abwasser-, Wasser-, Gasanlagen" Sort="502">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91605" Identification="4712" Name="Wartungsanleitungen Fernmelde- und Informationsanlagen" Description="Beschreibung Wartungsanleitungen Fernmelde- und Informationsanlagen" Sort="503">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91606" Identification="4712" Name="Wartungsanleitungen Feuerlöschanlagen" Description="Beschreibung Wartungsanleitungen Feuerlöschanlagen" Sort="504">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91607" Identification="4712" Name="Wartungsanleitungen Förderanlagen" Description="Beschreibung Wartungsanleitungen Förderanlagen" Sort="505">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91608" Identification="4712" Name="Wartungsanleitungen Lufttechnischer Anlagen" Description="Beschreibung Wartungsanleitungen Lufttechnischer Anlagen" Sort="506">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91609" Identification="4712" Name="Wartungsanleitungen Starkstromanlagen" Description="Beschreibung Wartungsanleitungen Starkstromanlagen" Sort="507">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91610" Identification="4712" Name="Wartungsanleitungen Wärmeversorgungsanlagen" Description="Beschreibung Wartungsanleitungen Wärmeversorgungsanlagen" Sort="508">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91611" Identification="4712" Name="Wartungsheft" Description="Beschreibung Wartungsheft" Sort="509">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91612" Identification="4712" Name="Wartungsheft Feuerlöschanlagen" Description="Beschreibung Wartungsheft Feuerlöschanlagen" Sort="510">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91613" Identification="4712" Name="Wartungshinweise" Description="Beschreibung Wartungshinweise" Sort="511">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91614" Identification="4712" Name="Wartungsplanung und -organisation" Description="Beschreibung Wartungsplanung und -organisation" Sort="512">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91615" Identification="4712" Name="Wartungsprotokolle Abwasser-, Wasser-, Gasanlagen" Description="Beschreibung Wartungsprotokolle Abwasser-, Wasser-, Gasanlagen" Sort="513">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91616" Identification="4712" Name="Wartungsprotokolle Fernmelde- und Informationsanlagen" Description="Beschreibung Wartungsprotokolle Fernmelde- und Informationsanlagen" Sort="514">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91617" Identification="4712" Name="Wartungsprotokolle Feuerlöschanlagen" Description="Beschreibung Wartungsprotokolle Feuerlöschanlagen" Sort="515">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91618" Identification="4712" Name="Wartungsprotokolle Förderanlagen" Description="Beschreibung Wartungsprotokolle Förderanlagen" Sort="516">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91619" Identification="4712" Name="Wartungsprotokolle Gebäudeautomation" Description="Beschreibung Wartungsprotokolle Gebäudeautomation" Sort="517">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91620" Identification="4712" Name="Wartungsprotokolle Lufttechnische Anlagen" Description="Beschreibung Wartungsprotokolle Lufttechnische Anlagen" Sort="518">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91621" Identification="4712" Name="Wartungsprotokolle Lufttechnischer Anlagen" Description="Beschreibung Wartungsprotokolle Lufttechnischer Anlagen" Sort="519">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91622" Identification="4712" Name="Wartungsprotokolle Starkstromanlagen" Description="Beschreibung Wartungsprotokolle Starkstromanlagen" Sort="520">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91623" Identification="4712" Name="Wartungsprotokolle Wärmeversorgungsanlagen" Description="Beschreibung Wartungsprotokolle Wärmeversorgungsanlagen" Sort="521">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91624" Identification="4712" Name="Werkstattzeichnungen" Description="Beschreibung Werkstattzeichnungen" Sort="522">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91625" Identification="4712" Name="Werkstattzeichnungen im Stahl- und Holzbau" Description="Beschreibung Werkstattzeichnungen im Stahl- und Holzbau" Sort="523">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91626" Identification="4712" Name="Wesentliche konstruktive Festlegungen" Description="Beschreibung Wesentliche konstruktive Festlegungen" Sort="524">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91627" Identification="4712" Name="Wettbewerbsunterlagen, sonstige" Description="Beschreibung Wettbewerbsunterlagen, sonstige" Sort="525">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91628" Identification="4712" Name="Wirtschaftlichkeitsberechnung" Description="Beschreibung Wirtschaftlichkeitsberechnung" Sort="526">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91629" Identification="4712" Name="Wirtschaftspläne" Description="Beschreibung Wirtschaftspläne" Sort="527">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91630" Identification="4712" Name="Zahlungsplan" Description="Beschreibung Zahlungsplan" Sort="528">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91631" Identification="4712" Name="Zeichnerische Darstellung" Description="Beschreibung Zeichnerische Darstellung" Sort="529">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91632" Identification="4712" Name="Zeichnerische Darstellung der Anlagen" Description="Beschreibung Zeichnerische Darstellung der Anlagen" Sort="530">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91633" Identification="4712" Name="Zeichnerische Darstellung der Konstruktionen" Description="Beschreibung Zeichnerische Darstellung der Konstruktionen" Sort="531">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91634" Identification="4712" Name="Zeichnungen mit statischen Positionen und den Tragwerksabmessungen" Description="Beschreibung Zeichnungen mit statischen Positionen und den Tragwerksabmessungen" Sort="532">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91635" Identification="4712" Name="Zeichnungen über die ausgeführten Leistungen (Bestandspläne)" Description="Beschreibung Zeichnungen über die ausgeführten Leistungen (Bestandspläne)" Sort="533">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91636" Identification="4712" Name="Zeichnungen und/oder Beschreibungen" Description="Beschreibung Zeichnungen und/oder Beschreibungen" Sort="534">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91637" Identification="4712" Name="Zeit und Organisationsplan" Description="Beschreibung Zeit und Organisationsplan" Sort="535">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91638" Identification="4712" Name="Zeitplan (Balkenterminplan)" Description="Beschreibung Zeitplan (Balkenterminplan)" Sort="536">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91639" Identification="4712" Name="Zielkatalog (Programmziele)" Description="Beschreibung Zielkatalog (Programmziele)" Sort="537">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91640" Identification="4712" Name="Zusammenstellung der wichtigsten technischen Daten" Description="Beschreibung Zusammenstellung der wichtigsten technischen Daten" Sort="538">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91641" Identification="4712" Name="Zusammenstellung von Mengen" Description="Beschreibung Zusammenstellung von Mengen" Sort="539">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91642" Identification="4712" Name="Zusätzliche Bauvorlagen" Description="Beschreibung Zusätzliche Bauvorlagen" Sort="540">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+	<IfcClassificationReference id="i91643" Identification="4712" Name="Zustandsbericht nach ATV-M 149" Description="Beschreibung Zustandsbericht nach ATV-M 149" Sort="541">
+		<ReferencedSource>
+			<IfcClassification ref="i91101" xsi:nil="true"/>
+		</ReferencedSource>
+	</IfcClassificationReference>
+</ifcXML>
