@@ -1,24 +1,35 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Reflection;
-using System.Text;
 
 namespace CafmConnect
 {
     public class Workspace
     {
+        public Ifc.NET.Document Ifc4Document;
 
-        public Workspace()
+        /// <summary>
+        /// Opens an IFC file and instanciates the CAFM-Connect classes
+        /// </summary>
+        /// <param name="filename">Path to the file to open</param>
+        public void OpenFile(string filename) 
+
         {
 
         }
 
-        public void CreateFile(string filename)
+        /// <summary>
+        /// Create a new object based on the CAFM-Connect specification
+        /// </summary>
+        /// <param name="filename">Path to the file to open, without the extension. if an filename with extensions will be passed, the extension will be removed and the extension .ifcxml will be automatically applied</param>
+        /// <param name="author">Name of the author of the file</param>
+        /// <param name="organization">Name of the organisation, that created the file</param>
+        /// <param name="originatingSystem">name of the software spplication, that creates the file</param>
+        /// <param name="authorization">name of the person, that has authorized the content of the file</param>
+        public void CreateFile(string author, string organization, string originatingSystem, string authorization)
         { 
             // ------------------------------------------------------
-            // Please work every time withe the catalogue template file
+            // Please work every time with the catalogue template file
             // Check the Original Source: http://katalog.cafm-connect.org/CC-Katalog/CAFM-ConnectFacilitiesViewTemplate.ifcxml
             //-------------------------------------------------------
 
@@ -28,16 +39,24 @@ namespace CafmConnect
             {
                 using (var file = new FileStream(Path.Combine(tempPath, tempName), FileMode.Create, FileAccess.Write))
                 {
-                    resource.CopyTo(file);
+                    resource?.CopyTo(file);
                 }
             }
 
-            Ifc.NET.Document ifc4Document = null;
-            ifc4Document = Ifc.NET.Workspace.CurrentWorkspace.OpenDocument(Path.Combine(tempPath, tempName));
-            ifc4Document.PopulateDefaultUosHeader();
-            ifc4Document.PopulateIndividualUosHeader("MyName","MyCompany","MySoftware","MyAuthorization");
-            ifc4Document.Workspace.SaveDocument(filename);
+            Ifc4Document = Ifc.NET.Workspace.CurrentWorkspace.OpenDocument(Path.Combine(tempPath, tempName));
+            Ifc4Document.PopulateIndividualUosHeader(author,organization,originatingSystem,authorization);
         }
+
+        /// <summary>
+        /// Saves the the Ifc File based on the CAFM-Connect specification
+        /// </summary>
+        /// <param name="filename">Path to the file to open, without the extension. if an filename with extensions will be passed, the extension will be removed and the extension .ifcxml will be automatically applied</param>
+        public void SaveFile(string filename)
+        {
+           Ifc4Document.Workspace.SaveDocument(Path.GetFileNameWithoutExtension(filename) + "ifcxml");
+        }
+
+
 
     }
 }

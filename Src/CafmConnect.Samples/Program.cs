@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using CafmConnect;
+using Ifc.NET;
+using Workspace = CafmConnect.Workspace;
 
 namespace Ifc.Net.Samples
 {
@@ -10,10 +11,21 @@ namespace Ifc.Net.Samples
     {
         static void Main(string[] args)
         {
-            Workspace cc = new Workspace();
+ 
+            Workspace cc = new Workspace();        
+            cc.CreateFile( "MyName", "MyCompany", "MySoftware", "MyAuthorization");
 
-            string filename = @"c:\\tmp\\MyFirstEmptyCafmConnectFile.ifcxml";
-            cc.CreateFile(filename);
+            IfcProject ifcProject = new IfcProject {Name = "MyProject",LongName = "MyProject Description"};
+            IfcSite site = new IfcSite {Name = "MySite",LongName = "MySite Description"};
+
+            ifcProject.Sites.AddNewSite();
+
+            string checksum = cc.Ifc4Document.Checksum.ToString();
+
+            string filename = @"c:\\tmp\\MyFirstEmptyCafmConnectFile.xy";
+            cc.SaveFile(filename);
+
+
 
         }
     }
