@@ -22,6 +22,7 @@ namespace Ifc.Net.Samples
 
             string checksum = cc.Ifc4Document.Checksum.ToString();
 
+
             string filename = @"c:\\tmp\\MyFirstEmptyCafmConnectFile.xy";
             cc.SaveFile(filename);
 
