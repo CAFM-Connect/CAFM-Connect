@@ -4,13 +4,33 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CafmConnect
+namespace CafmConnect.Manufacturer
 {
     public class CcManufacturerProduct
     {
+        List<CcManufacturerProductDetail> m_attributes;
         string m_Code;
         string m_Description;
-        List<CcManufacturerProductDetail> m_attributes;
+        string m_name = "temp";
+
+        public CcManufacturerProduct(string classificationCode)
+        {
+            m_attributes = new List<CcManufacturerProductDetail>();
+            m_Code = classificationCode;
+        }
+
+        public List<CcManufacturerProductDetail> Attributes
+        {
+            get
+            {
+                return m_attributes;
+            }
+
+            set
+            {
+                m_attributes = value;
+            }
+        }
 
         public string Code
         {
@@ -32,47 +52,19 @@ namespace CafmConnect
                 m_Description = value;
             }
         }
-
-        public List<CcManufacturerProductDetail> Attributes
-        {
-            get
-            {
-                return m_attributes;
-            }
-
-            set
-            {
-                m_attributes = value;
-            }
-        }
-
-        public CcManufacturerProduct(string classificationCode)
-
-        {
-            m_Code = classificationCode;
-        }
+        public string Name { get { return m_name; } set { m_name = value; } }
     }
 
 
     public class CcManufacturerProductDetail
     {
-        string attributeName;
         string attributeDescription;
+        string attributeName;
         string attributeUnit;
         string attributeValue;
 
-        public string AttributeName
-        {
-            get
-            {
-                return attributeName;
-            }
-
-            set
-            {
-                attributeName = value;
-            }
-        }
+        public CcManufacturerProductDetail()
+        { }
 
         public string AttributeDescription
         {
@@ -87,6 +79,18 @@ namespace CafmConnect
             }
         }
 
+        public string AttributeName
+        {
+            get
+            {
+                return attributeName;
+            }
+
+            set
+            {
+                attributeName = value;
+            }
+        }
         public string AttributeUnit
         {
             get
