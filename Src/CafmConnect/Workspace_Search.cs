@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace CafmConnect
 {
     public partial class Workspace
@@ -13,9 +14,9 @@ namespace CafmConnect
         /// </summary>
         /// <param name="classificationCode"></param>
         /// <returns></returns>
-        public List<Ifc.NET.CcFacility> SearchObjects(string classificatioCode)
+        public List<Ifc4.CcFacility> SearchObjects(string classificatioCode)
         {
-            List<Ifc.NET.CcFacility> facs = new List<Ifc.NET.CcFacility>();
+            List<Ifc4.CcFacility> facs = new List<Ifc4.CcFacility>();
 
             return facs;
         }
