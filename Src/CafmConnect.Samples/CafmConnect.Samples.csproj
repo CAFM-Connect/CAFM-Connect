@@ -9,7 +9,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>CafmConnect.Samples</RootNamespace>
     <AssemblyName>CafmConnect.Samples</AssemblyName>
-    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
   </PropertyGroup>
@@ -39,7 +39,11 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Ifc.NET, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Ifc.NET.0.2\lib\net40\Ifc.NET.dll</HintPath>
+      <HintPath>..\packages\Ifc.NET.0.3.1\lib\net40\Ifc.NET.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ifc.NET.XmlSerializers, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Ifc.NET.0.3.1\lib\net40\Ifc.NET.XmlSerializers.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="log4net, Version=1.2.15.0, Culture=neutral, PublicKeyToken=669e0ddf0bb1aa2a, processorArchitecture=MSIL">

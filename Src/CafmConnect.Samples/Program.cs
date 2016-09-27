@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
-using Ifc.NET;
+using Ifc4;
 using Workspace = CafmConnect.Workspace;
 using System.IO;
 using System.Windows.Forms;

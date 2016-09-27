@@ -2,20 +2,20 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
-using Ifc.NET;
+using Ifc4;
 
 namespace CafmConnect
 {
     public partial class Workspace
     {
-        Dictionary<string, Ifc.NET.Document> m_ifc4Documents;
+        Dictionary<string, Ifc4.Document> m_ifc4Documents;
         static Workspace m_current = null;
         const string m_extension = ".ifcxml";
 
         public Workspace()
         {
             m_current = this;
-            m_ifc4Documents = new Dictionary<string, Ifc.NET.Document>();
+            m_ifc4Documents = new Dictionary<string, Ifc4.Document>();
         }
 
         public Dictionary<string, Document> Documents
@@ -68,7 +68,7 @@ namespace CafmConnect
 
             if(!Current.Documents.ContainsKey(tempModelFilename))
             {
-                Document doc = Ifc.NET.Workspace.CurrentWorkspace.OpenDocument(tempModelFilename, Ifc.NET.Document.IfcFileType.IfcXml);
+                Document doc = Ifc4.Workspace.CurrentWorkspace.OpenDocument(tempModelFilename, Ifc4.Document.IfcFileType.IfcXml);
                 doc.PopulateIndividualUosHeader(author,organization,originatingSystem,authorization);
                 Current.Documents.Add(tempModelFilename, doc);
             }
@@ -88,7 +88,7 @@ namespace CafmConnect
             {
                 if (!Current.Documents.ContainsKey(filename))
                 {
-                    Document doc = Ifc.NET.Workspace.CurrentWorkspace.OpenDocument(filename, Ifc.NET.Document.IfcFileType.IfcXml);
+                    Document doc = Ifc4.Workspace.CurrentWorkspace.OpenDocument(filename, Ifc4.Document.IfcFileType.IfcXml);
                     Current.Documents.Add(filename, doc);
                 }
             }
