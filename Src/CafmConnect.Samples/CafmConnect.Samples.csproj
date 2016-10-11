@@ -67,6 +67,12 @@
     <Compile Include="MainDLG.Designer.cs">
       <DependentUpon>MainDLG.cs</DependentUpon>
     </Compile>
+    <Compile Include="SimpleIfcViewer\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SimpleIfcViewer\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -86,6 +92,9 @@
   <ItemGroup>
     <EmbeddedResource Include="MainDLG.resx">
       <DependentUpon>MainDLG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SimpleIfcViewer\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

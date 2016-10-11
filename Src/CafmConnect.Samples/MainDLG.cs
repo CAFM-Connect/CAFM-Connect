@@ -46,5 +46,11 @@ namespace CafmConnect.Samples
 
             Workspace.Current.SaveCcFileAs(key, filename);
         }
+
+        private void _buttonViewer_Click(object sender, EventArgs e)
+        {
+            SimpleIfcViewer.MainForm dlg = new SimpleIfcViewer.MainForm();
+            dlg.Show();
+        }
     }
 }
