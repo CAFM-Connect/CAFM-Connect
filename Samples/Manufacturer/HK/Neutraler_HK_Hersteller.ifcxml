@@ -16370,25 +16370,26 @@ Außenhydrant unterflur</IfcLabel-wrapper>
     <RelatedObjects>
       <IfcSpaceHeater ref="i3309" xsi:nil="true" />
       <IfcSpaceHeater ref="i3323" xsi:nil="true" />
+      <IfcSpaceHeater ref="i3334" xsi:nil="true" />
     </RelatedObjects>
     <RelatingGroup xsi:type="IfcSystem" ref="i3308" xsi:nil="true" />
   </IfcRelAssignsToGroup>
-  <IfcSpaceHeater id="i3309" GlobalId="21spwqprb61OTrldaHcP27" Name="Konv Typ 1" Description="Typ 1 des Konvektors" Tag="001" />
+  <IfcSpaceHeater id="i3309" GlobalId="21spwqprb61OTrldaHcP27" Name="HK 1200 x 800 x 40" Description="" Tag="001" />
   <IfcPropertySet id="i3319">
     <HasProperties>
       <IfcPropertyEnumeratedValue id="i3311" Name="Ausführung">
         <EnumerationValues>
-          <IfcLabel-wrapper></IfcLabel-wrapper>
+          <IfcLabel-wrapper />
         </EnumerationValues>
       </IfcPropertyEnumeratedValue>
       <IfcPropertySingleValue id="i3312" Name="Bauhöhe m">
         <NominalValue>
-          <IfcLabel-wrapper>640</IfcLabel-wrapper>
+          <IfcLabel-wrapper>800</IfcLabel-wrapper>
         </NominalValue>
       </IfcPropertySingleValue>
       <IfcPropertySingleValue id="i3313" Name="Baujahr">
         <NominalValue>
-          <IfcLabel-wrapper></IfcLabel-wrapper>
+          <IfcLabel-wrapper />
         </NominalValue>
       </IfcPropertySingleValue>
       <IfcPropertySingleValue id="i3314" Name="Baulänge">
@@ -16398,17 +16399,17 @@ Außenhydrant unterflur</IfcLabel-wrapper>
       </IfcPropertySingleValue>
       <IfcPropertySingleValue id="i3315" Name="Bautiefe">
         <NominalValue>
-          <IfcLabel-wrapper>80</IfcLabel-wrapper>
+          <IfcLabel-wrapper>40</IfcLabel-wrapper>
         </NominalValue>
       </IfcPropertySingleValue>
       <IfcPropertySingleValue id="i3316" Name="Bautyp">
         <NominalValue>
-          <IfcLabel-wrapper></IfcLabel-wrapper>
+          <IfcLabel-wrapper />
         </NominalValue>
       </IfcPropertySingleValue>
       <IfcPropertySingleValue id="i3317" Name="Beschreibung">
         <NominalValue>
-          <IfcLabel-wrapper></IfcLabel-wrapper>
+          <IfcLabel-wrapper />
         </NominalValue>
       </IfcPropertySingleValue>
       <IfcPropertyEnumeratedValue id="i3318" Name="Heizkörperart">
@@ -16437,45 +16438,46 @@ Außenhydrant unterflur</IfcLabel-wrapper>
     <RelatedElements>
       <IfcSpaceHeater ref="i3309" xsi:nil="true" />
       <IfcSpaceHeater ref="i3323" xsi:nil="true" />
+      <IfcBuildingElementProxy ref="i3334" xsi:nil="true" />
     </RelatedElements>
     <RelatingStructure xsi:type="IfcSite" ref="i3321" xsi:nil="true" />
   </IfcRelContainedInSpatialStructure>
-  <IfcSpaceHeater id="i3323" GlobalId="3WcGOFyhD18hLGJlef47Hh" Name="Konv Typ 2" Description="Typ 2 des Konvektors" Tag="002" />
+  <IfcSpaceHeater id="i3323" GlobalId="3WcGOFyhD18hLGJlef47Hh" Name="HK 1600 x 800 x 40" Description="" Tag="002" />
   <IfcPropertySet id="i3332">
     <HasProperties>
       <IfcPropertyEnumeratedValue id="i3324" Name="Ausführung">
         <EnumerationValues>
-          <IfcLabel-wrapper></IfcLabel-wrapper>
+          <IfcLabel-wrapper />
         </EnumerationValues>
       </IfcPropertyEnumeratedValue>
       <IfcPropertySingleValue id="i3325" Name="Bauhöhe m">
         <NominalValue>
-          <IfcLabel-wrapper>640</IfcLabel-wrapper>
+          <IfcLabel-wrapper>800</IfcLabel-wrapper>
         </NominalValue>
       </IfcPropertySingleValue>
       <IfcPropertySingleValue id="i3326" Name="Baujahr">
         <NominalValue>
-          <IfcLabel-wrapper></IfcLabel-wrapper>
+          <IfcLabel-wrapper />
         </NominalValue>
       </IfcPropertySingleValue>
       <IfcPropertySingleValue id="i3327" Name="Baulänge">
         <NominalValue>
-          <IfcLabel-wrapper>800</IfcLabel-wrapper>
+          <IfcLabel-wrapper>1600</IfcLabel-wrapper>
         </NominalValue>
       </IfcPropertySingleValue>
       <IfcPropertySingleValue id="i3328" Name="Bautiefe">
         <NominalValue>
-          <IfcLabel-wrapper>80</IfcLabel-wrapper>
+          <IfcLabel-wrapper>40</IfcLabel-wrapper>
         </NominalValue>
       </IfcPropertySingleValue>
       <IfcPropertySingleValue id="i3329" Name="Bautyp">
         <NominalValue>
-          <IfcLabel-wrapper></IfcLabel-wrapper>
+          <IfcLabel-wrapper />
         </NominalValue>
       </IfcPropertySingleValue>
       <IfcPropertySingleValue id="i3330" Name="Beschreibung">
         <NominalValue>
-          <IfcLabel-wrapper></IfcLabel-wrapper>
+          <IfcLabel-wrapper />
         </NominalValue>
       </IfcPropertySingleValue>
       <IfcPropertyEnumeratedValue id="i3331" Name="Heizkörperart">
@@ -16494,6 +16496,63 @@ Außenhydrant unterflur</IfcLabel-wrapper>
   <IfcRelDefinesByTemplate>
     <RelatedPropertySets>
       <IfcPropertySet ref="i3332" xsi:nil="true" />
+    </RelatedPropertySets>
+    <RelatingTemplate ref="i1086" xsi:nil="true" />
+  </IfcRelDefinesByTemplate>
+  <IfcSpaceHeater id="i3334" GlobalId="2DtqHNy8T2EwKNZdN5HLL$" Name="HK 1200 x 500 x 80" Tag="003" />
+  <IfcPropertySet id="i3343">
+    <HasProperties>
+      <IfcPropertyEnumeratedValue id="i3335" Name="Ausführung">
+        <EnumerationValues>
+          <IfcLabel-wrapper></IfcLabel-wrapper>
+        </EnumerationValues>
+      </IfcPropertyEnumeratedValue>
+      <IfcPropertySingleValue id="i3336" Name="Bauhöhe m">
+        <NominalValue>
+          <IfcLabel-wrapper>500</IfcLabel-wrapper>
+        </NominalValue>
+      </IfcPropertySingleValue>
+      <IfcPropertySingleValue id="i3337" Name="Baujahr">
+        <NominalValue>
+          <IfcLabel-wrapper></IfcLabel-wrapper>
+        </NominalValue>
+      </IfcPropertySingleValue>
+      <IfcPropertySingleValue id="i3338" Name="Baulänge">
+        <NominalValue>
+          <IfcLabel-wrapper>1200</IfcLabel-wrapper>
+        </NominalValue>
+      </IfcPropertySingleValue>
+      <IfcPropertySingleValue id="i3339" Name="Bautiefe">
+        <NominalValue>
+          <IfcLabel-wrapper>80</IfcLabel-wrapper>
+        </NominalValue>
+      </IfcPropertySingleValue>
+      <IfcPropertySingleValue id="i3340" Name="Bautyp">
+        <NominalValue>
+          <IfcLabel-wrapper></IfcLabel-wrapper>
+        </NominalValue>
+      </IfcPropertySingleValue>
+      <IfcPropertySingleValue id="i3341" Name="Beschreibung">
+        <NominalValue>
+          <IfcLabel-wrapper></IfcLabel-wrapper>
+        </NominalValue>
+      </IfcPropertySingleValue>
+      <IfcPropertyEnumeratedValue id="i3342" Name="Heizkörperart">
+        <EnumerationValues>
+          <IfcLabel-wrapper>Konvektoren</IfcLabel-wrapper>
+        </EnumerationValues>
+      </IfcPropertyEnumeratedValue>
+    </HasProperties>
+  </IfcPropertySet>
+  <IfcRelDefinesByProperties id="i3344">
+    <RelatedObjects xsi:type="IfcSpaceHeater" ref="i3334" xsi:nil="true" />
+    <RelatingPropertyDefinition>
+      <IfcPropertySet ref="i3343" xsi:nil="true" />
+    </RelatingPropertyDefinition>
+  </IfcRelDefinesByProperties>
+  <IfcRelDefinesByTemplate>
+    <RelatedPropertySets>
+      <IfcPropertySet ref="i3343" xsi:nil="true" />
     </RelatedPropertySets>
     <RelatingTemplate ref="i1086" xsi:nil="true" />
   </IfcRelDefinesByTemplate>
