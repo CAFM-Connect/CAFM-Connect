@@ -103,15 +103,41 @@ namespace CafmConnect.Samples.SimpleIfcViewer
 
         private void PopulateSystems(Document document)
         {
-            CustomTreeNode systemsNode = new CustomTreeNode("Systeme" /*RESX.DW_STRUCTURE_NODERESOURCES*/ , null);
-            systemsNode.Expand();
+            CustomTreeNode systemsNode = new CustomTreeNode("Systeme" /*RESX.DW_STRUCTURE_NODERESOURCES*/ , document.Project.Facilities);
             tv.Nodes.Add(systemsNode);
 
-            var relatingSystemsRefs = document.IfcXmlDocument.Items.OfType<IfcRelAggregates>()
-                                                        .Where(root => root.RelatedObjects.Items.Exists(item => item.Ref == document.Project.Id))
-                                                        .Select(item => item.RelatingObject.Ref);
+            foreach (CcFacility faci in document.Project.Facilities)
+            {
+                Ifc4.IfcSystem sys = faci.IfcSystem;
+                CustomTreeNode system = new CustomTreeNode(sys.Name + "-" + sys.Description, faci);
+                systemsNode.Nodes.Add(system);
 
-            //var classifications = document..Classifications.Where(item => relatingSystemsRefs.Contains(item.Id));
+                var relassignGroups = document.IfcXmlDocument.Items.OfType<IfcRelAssignsToGroup>()
+                                            .Where(root => root.RelatingGroup.Ref == sys.Id); //.RelatedObjects.Items.Exists(item => item.Ref == document.Project.Id))
+                                            //.Select(item => item.RelatingClassification.Item.Ref);
+                List<IfcRelAssignsToGroup> grp = relassignGroups.ToList();
+                if(grp != null)
+                {
+                    foreach (IfcRelAssignsToGroup relgrp in grp)
+                    {
+                        foreach (var item in relgrp.RelatedObjects.Items)
+                        {
+                            if (item is IfcSpaceHeater)
+                            { 
+                                IfcSpaceHeater heat = item as IfcSpaceHeater;
+                                var relDefProp = document.IfcXmlDocument.Items.OfType<IfcRelDefinesByProperties>()
+                                                .Where(root => root.RelatedObjects.Ref == heat.Ref); //.RelatedObjects.Items.Exists(item => item.Ref == document.Project.Id))
+
+
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            systemsNode.Expand();
+            //
 
             //foreach (IfcClassification classification in classifications)
             //{

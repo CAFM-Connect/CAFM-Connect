@@ -22,11 +22,11 @@ namespace CafmConnect.Samples
         {
             string key = Workspace.Current.CreateCcFile("MyName", "MyCompany", "MySoftware", "MyAuthorization");
 
-            Manufacturer.ManufacturerUtils.InitializeManufacturerFile(key, "SampleManufacturer", "SampleManufacturer description");
+            Manufacturer.ManufacturerCreatorUtils.InitializeManufacturerFile(key, "SampleManufacturer", "SampleManufacturer description");
 
             // We want to add a rediator product definition to our new file
             // At first we have to get the CcManufaturerProduct, which is automatically filled with the required attibutes
-            Manufacturer.CcManufacturerProduct product = Manufacturer.ManufacturerUtils.LoadProductDataTemplate(key, "423.17");
+            Manufacturer.CcManufacturerProduct product = Manufacturer.ManufacturerCreatorUtils.LoadProductDataTemplate(key, "423.17");
 
             product.Name = "Name of my product";
             // Set the description for this product
@@ -38,7 +38,7 @@ namespace CafmConnect.Samples
                 detail.AttributeValue = "My Value";
             }
 
-            Manufacturer.ManufacturerUtils.AddManufacturerProductToFile(key, product);
+            Manufacturer.ManufacturerCreatorUtils.AddManufacturerProductToFile(key, product);
 
             string filename = @"c:\\tmp\\MyFirstEmptyCafmConnectManufacturerFile.ifcxml";
             if (File.Exists(filename))
@@ -51,6 +51,18 @@ namespace CafmConnect.Samples
         {
             SimpleIfcViewer.MainForm dlg = new SimpleIfcViewer.MainForm();
             dlg.Show();
+        }
+
+        List<CafmConnect.Manufacturer.CcManufacturerProduct> _prds = null;
+        private void _buttonConsume_Click(object sender, EventArgs e)
+        {
+            //Load ifcXML
+            CafmConnect.Workspace.Current.LoadFromPool();
+            _prds  =  CafmConnect.Manufacturer.ManufacturerConsumerUtils.GetManufacturerProductsForCode("423.17");
+            if(_prds != null)
+            {
+                _dataGridViewManuProducts.DataSource = _prds;
+            }
         }
     }
 }

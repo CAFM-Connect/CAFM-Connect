@@ -105,6 +105,25 @@ namespace CafmConnect
                 LoadCcFile(file);
             }
         }
+
+        const string m_ManufacturerPoolLocation = "ProductsPool";
+        public void LoadFromPool()
+        {
+            //Read pool position from configuration
+            CafmConnect.ConfigManager.ConfManager man = new ConfigManager.ConfManager(System.Reflection.Assembly.GetAssembly(this.GetType()));
+            string pathPool = man.GetValueForAppsetting(m_ManufacturerPoolLocation);
+            if (String.IsNullOrEmpty(pathPool))
+                return;
+
+            DirectoryInfo dirpool = new DirectoryInfo(pathPool);
+            if(dirpool.Exists)
+            {
+                foreach(FileInfo finf in dirpool.GetFiles("*.ifcxml"))
+                {
+                    LoadCcFile(finf.FullName);
+                }
+            }
+        }
         #endregion
 
         #region Save files

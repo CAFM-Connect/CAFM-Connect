@@ -4395,7 +4395,7 @@
           </EnumerationValues>
         </Enumerators>
       </IfcSimplePropertyTemplate>
-      <IfcSimplePropertyTemplate id="i1088" pos="1" GlobalId="0zjx7JWHX19ApDbYmQDmYF" Name="Bauhöhe m" Description="" TemplateType="p_singlevalue" PrimaryMeasureType="IfcLengthMeasure">
+      <IfcSimplePropertyTemplate id="i1088" pos="1" GlobalId="0zjx7JWHX19ApDbYmQDmYF" Name="Bauhöhe" Description="" TemplateType="p_singlevalue" PrimaryMeasureType="IfcLengthMeasure">
         <PrimaryUnit>
           <IfcSIUnit id="i1089" UnitType="lengthunit" Name="metre" />
         </PrimaryUnit>
@@ -16450,7 +16450,7 @@ Außenhydrant unterflur</IfcLabel-wrapper>
           <IfcLabel-wrapper />
         </EnumerationValues>
       </IfcPropertyEnumeratedValue>
-      <IfcPropertySingleValue id="i3325" Name="Bauhöhe m">
+      <IfcPropertySingleValue id="i3325" Name="Bauhöhe">
         <NominalValue>
           <IfcLabel-wrapper>800</IfcLabel-wrapper>
         </NominalValue>
@@ -16507,7 +16507,7 @@ Außenhydrant unterflur</IfcLabel-wrapper>
           <IfcLabel-wrapper></IfcLabel-wrapper>
         </EnumerationValues>
       </IfcPropertyEnumeratedValue>
-      <IfcPropertySingleValue id="i3336" Name="Bauhöhe m">
+      <IfcPropertySingleValue id="i3336" Name="Bauhöhe">
         <NominalValue>
           <IfcLabel-wrapper>500</IfcLabel-wrapper>
         </NominalValue>
