@@ -30,18 +30,16 @@
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this._buttonCreateManufacturerData = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this._buttonConsume = new System.Windows.Forms.Button();
             this._buttonViewer = new System.Windows.Forms.Button();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this._dataGridViewManuProducts = new System.Windows.Forms.DataGridView();
+            this._buttonTester = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this._dataGridViewManuProducts)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -67,29 +65,6 @@
             this._buttonCreateManufacturerData.UseVisualStyleBackColor = true;
             this._buttonCreateManufacturerData.Click += new System.EventHandler(this._buttonCreateManufacturerData_Click);
             // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this._dataGridViewManuProducts);
-            this.groupBox2.Controls.Add(this._buttonConsume);
-            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.groupBox2.Location = new System.Drawing.Point(0, 0);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(327, 406);
-            this.groupBox2.TabIndex = 1;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Customer";
-            // 
-            // _buttonConsume
-            // 
-            this._buttonConsume.Dock = System.Windows.Forms.DockStyle.Top;
-            this._buttonConsume.Location = new System.Drawing.Point(3, 16);
-            this._buttonConsume.Name = "_buttonConsume";
-            this._buttonConsume.Size = new System.Drawing.Size(321, 23);
-            this._buttonConsume.TabIndex = 0;
-            this._buttonConsume.Text = "Consume Manufacturer Data";
-            this._buttonConsume.UseVisualStyleBackColor = true;
-            this._buttonConsume.Click += new System.EventHandler(this._buttonConsume_Click);
-            // 
             // _buttonViewer
             // 
             this._buttonViewer.Dock = System.Windows.Forms.DockStyle.Top;
@@ -100,6 +75,17 @@
             this._buttonViewer.Text = "StartViewer";
             this._buttonViewer.UseVisualStyleBackColor = true;
             this._buttonViewer.Click += new System.EventHandler(this._buttonViewer_Click);
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this._buttonTester);
+            this.groupBox2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.groupBox2.Location = new System.Drawing.Point(0, 0);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(327, 406);
+            this.groupBox2.TabIndex = 1;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Customer";
             // 
             // splitContainer1
             // 
@@ -118,19 +104,16 @@
             this.splitContainer1.SplitterDistance = 318;
             this.splitContainer1.TabIndex = 2;
             // 
-            // _dataGridViewManuProducts
+            // _buttonTester
             // 
-            this._dataGridViewManuProducts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
-            this._dataGridViewManuProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this._dataGridViewManuProducts.Dock = System.Windows.Forms.DockStyle.Fill;
-            this._dataGridViewManuProducts.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically;
-            this._dataGridViewManuProducts.Location = new System.Drawing.Point(3, 39);
-            this._dataGridViewManuProducts.MultiSelect = false;
-            this._dataGridViewManuProducts.Name = "_dataGridViewManuProducts";
-            this._dataGridViewManuProducts.ReadOnly = true;
-            this._dataGridViewManuProducts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this._dataGridViewManuProducts.Size = new System.Drawing.Size(321, 364);
-            this._dataGridViewManuProducts.TabIndex = 1;
+            this._buttonTester.Dock = System.Windows.Forms.DockStyle.Top;
+            this._buttonTester.Location = new System.Drawing.Point(3, 16);
+            this._buttonTester.Name = "_buttonTester";
+            this._buttonTester.Size = new System.Drawing.Size(321, 23);
+            this._buttonTester.TabIndex = 2;
+            this._buttonTester.Text = "PresenterTester";
+            this._buttonTester.UseVisualStyleBackColor = true;
+            this._buttonTester.Click += new System.EventHandler(this._buttonTester_Click);
             // 
             // MainDLG
             // 
@@ -148,7 +131,6 @@
             this.splitContainer1.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this._dataGridViewManuProducts)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -158,9 +140,8 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Button _buttonCreateManufacturerData;
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button _buttonConsume;
         private System.Windows.Forms.Button _buttonViewer;
         private System.Windows.Forms.SplitContainer splitContainer1;
-        private System.Windows.Forms.DataGridView _dataGridViewManuProducts;
+        private System.Windows.Forms.Button _buttonTester;
     }
 }

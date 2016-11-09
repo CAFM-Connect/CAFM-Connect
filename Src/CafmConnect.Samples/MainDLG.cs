@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CafmConnect.Manufacturer.Model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -26,13 +27,13 @@ namespace CafmConnect.Samples
 
             // We want to add a rediator product definition to our new file
             // At first we have to get the CcManufaturerProduct, which is automatically filled with the required attibutes
-            Manufacturer.CcManufacturerProduct product = Manufacturer.ManufacturerCreatorUtils.LoadProductDataTemplate(key, "423.17");
+            CcManufacturerProduct product = Manufacturer.ManufacturerCreatorUtils.LoadProductDataTemplate(key, "423.17");
 
             product.Name = "Name of my product";
             // Set the description for this product
             product.Description = "Description of the radiator";
 
-            foreach (Manufacturer.CcManufacturerProductDetail detail in product.Attributes)
+            foreach (CcManufacturerProductDetail detail in product.Attributes)
             {
                 // Get here the manufacturer data from the own product catalogue
                 detail.AttributeValue = "My Value";
@@ -53,16 +54,10 @@ namespace CafmConnect.Samples
             dlg.Show();
         }
 
-        List<CafmConnect.Manufacturer.CcManufacturerProduct> _prds = null;
-        private void _buttonConsume_Click(object sender, EventArgs e)
+        private void _buttonTester_Click(object sender, EventArgs e)
         {
-            //Load ifcXML
-            CafmConnect.Workspace.Current.LoadFromPool();
-            _prds  =  CafmConnect.Manufacturer.ManufacturerConsumerUtils.GetManufacturerProductsForCode("423.17");
-            if(_prds != null)
-            {
-                _dataGridViewManuProducts.DataSource = _prds;
-            }
+            Manufacturer.UI.Presenter pr = new Manufacturer.UI.Presenter();
+            pr.StartSelection("423.17");
         }
     }
 }

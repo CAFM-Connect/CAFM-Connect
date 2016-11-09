@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Ifc4;
+using CafmConnect.Manufacturer.Model;
 
 namespace CafmConnect.Manufacturer
 {

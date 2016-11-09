@@ -1,4 +1,5 @@
-﻿using Ifc4;
+﻿using CafmConnect.Manufacturer.Model;
+using Ifc4;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,7 +10,7 @@ namespace CafmConnect.Manufacturer
 {
     public static class ManufacturerConsumerUtils
     {
-        public static List<CcManufacturerProduct>GetManufacturerProductsForCode(string code)
+        internal static List<CcManufacturerProduct>GetManufacturerProductsForCode(string code)
         {
             List<CcManufacturerProduct> _products = new List<CcManufacturerProduct>();
 
