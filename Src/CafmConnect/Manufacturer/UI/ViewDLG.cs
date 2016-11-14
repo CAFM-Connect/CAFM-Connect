@@ -43,9 +43,16 @@ namespace CafmConnect.Manufacturer.UI
         CcManufacturerProduct m_selprd = null;
         private void _dataGridViewManufacturers_SelectionChanged(object sender, EventArgs e)
         {
-            if(_dataGridViewManufacturers.SelectedRows != null)
+            try
             {
-                m_selprd = _dataGridViewManufacturers.SelectedRows[0].DataBoundItem as CcManufacturerProduct;
+                if (_dataGridViewManufacturers.SelectedRows != null)
+                {
+                    m_selprd = _dataGridViewManufacturers.SelectedRows[0].DataBoundItem as CcManufacturerProduct;
+                }
+            }
+            catch (Exception ex)
+            {
+
             }
         }
 

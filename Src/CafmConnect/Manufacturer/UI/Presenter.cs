@@ -12,9 +12,9 @@ namespace CafmConnect.Manufacturer.UI
         IView m_view = null;
         IModel m_model = null;
 
-        public Presenter()
+        public Presenter(IView view)
         {
-            m_view = new ViewDLG();
+            m_view = view;
             m_view.SetPresenter(this);
 
             m_model = new Model.Model();
@@ -31,6 +31,10 @@ namespace CafmConnect.Manufacturer.UI
             if(m_view.ShowSelectionDLG() == System.Windows.Forms.DialogResult.OK)
             {
                 m_prd = m_view.GetSelectedProduct();
+            }
+            else
+            {
+                m_prd = null;
             }
         }
 
