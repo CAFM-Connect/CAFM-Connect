@@ -4,19 +4,23 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CafmConnect.Manufacturer
+namespace CafmConnect.Manufacturer.Model
 {
-    public class CcManufacturerProduct
+    public partial class CcManufacturerProduct
     {
         List<CcManufacturerProductDetail> m_attributes;
         string m_Code;
         string m_Description;
         string m_name = "temp";
 
-        public CcManufacturerProduct(string classificationCode)
+        public CcManufacturerProduct(string classificationCode) : this()
+        {            
+            m_Code = classificationCode;
+        }
+
+        public CcManufacturerProduct()
         {
             m_attributes = new List<CcManufacturerProductDetail>();
-            m_Code = classificationCode;
         }
 
         public List<CcManufacturerProductDetail> Attributes
@@ -38,6 +42,10 @@ namespace CafmConnect.Manufacturer
             {
                 return m_Code;
             }
+            set
+            {
+                m_Code = value;
+            }
         }
 
         public string Description
@@ -56,7 +64,7 @@ namespace CafmConnect.Manufacturer
     }
 
 
-    public class CcManufacturerProductDetail
+    public partial class CcManufacturerProductDetail
     {
         string attributeDescription;
         string attributeName;

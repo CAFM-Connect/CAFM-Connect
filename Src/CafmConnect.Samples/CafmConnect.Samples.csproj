@@ -67,6 +67,12 @@
     <Compile Include="MainDLG.Designer.cs">
       <DependentUpon>MainDLG.cs</DependentUpon>
     </Compile>
+    <Compile Include="SimpleIfcViewer\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SimpleIfcViewer\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -87,8 +93,14 @@
     <EmbeddedResource Include="MainDLG.resx">
       <DependentUpon>MainDLG.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="SimpleIfcViewer\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>copy /Y "$(SolutionDir)CafmConnect\bin\$(ConfigurationName)\*.config" "$(TargetDir)"</PreBuildEvent>
+  </PropertyGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

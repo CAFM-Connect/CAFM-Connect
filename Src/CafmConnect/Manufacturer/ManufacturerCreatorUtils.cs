@@ -4,10 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Ifc4;
+using CafmConnect.Manufacturer.Model;
 
 namespace CafmConnect.Manufacturer
 {
-    public static class ManufacturerUtils
+    public static class ManufacturerCreatorUtils
     {
         public static void InitializeManufacturerFile(string key, string manufacurerName, string manufacturerDescription)
         {
