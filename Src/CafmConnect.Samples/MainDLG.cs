@@ -56,7 +56,8 @@ namespace CafmConnect.Samples
 
         private void _buttonTester_Click(object sender, EventArgs e)
         {
-            Manufacturer.UI.Presenter pr = new Manufacturer.UI.Presenter();
+            CafmConnect.Manufacturer.UI.ViewDLG dlg = new Manufacturer.UI.ViewDLG();
+            Manufacturer.UI.Presenter pr = new Manufacturer.UI.Presenter(dlg);
             pr.StartSelection("423.17");
         }
     }
