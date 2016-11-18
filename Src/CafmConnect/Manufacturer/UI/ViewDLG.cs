@@ -22,7 +22,7 @@ namespace CafmConnect.Manufacturer.UI
 
         public void SetCode(string code)
         {
-            label1.Text = code;
+            _textBoxCode.Text = code;
         }
 
         public void SetData(List<CcManufacturerProduct> data)

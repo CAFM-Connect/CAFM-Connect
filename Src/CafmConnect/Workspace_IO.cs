@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Reflection;
 using Ifc4;
+using System.Threading.Tasks;
 
 namespace CafmConnect
 {
@@ -118,10 +119,12 @@ namespace CafmConnect
             DirectoryInfo dirpool = new DirectoryInfo(pathPool);
             if(dirpool.Exists)
             {
-                foreach(FileInfo finf in dirpool.GetFiles("*.ifcxml"))
+                FileInfo[] files = dirpool.GetFiles("*.ifcxml");
+
+                Parallel.ForEach(files, f =>
                 {
-                    LoadCcFile(finf.FullName);
-                }
+                    LoadCcFile(f.FullName);
+                });
             }
         }
         #endregion

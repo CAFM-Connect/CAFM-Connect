@@ -31,7 +31,7 @@
             this._buttonOK = new System.Windows.Forms.Button();
             this._buttonCancel = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this._textBoxCode = new System.Windows.Forms.TextBox();
             this._dataGridViewManufacturers = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this._dataGridViewManufacturers)).BeginInit();
             this.SuspendLayout();
@@ -68,12 +68,13 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Code";
             // 
-            // textBox1
+            // _textBoxCode
             // 
-            this.textBox1.Location = new System.Drawing.Point(12, 28);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 3;
+            this._textBoxCode.Location = new System.Drawing.Point(12, 28);
+            this._textBoxCode.Name = "_textBoxCode";
+            this._textBoxCode.ReadOnly = true;
+            this._textBoxCode.Size = new System.Drawing.Size(100, 20);
+            this._textBoxCode.TabIndex = 3;
             // 
             // _dataGridViewManufacturers
             // 
@@ -98,7 +99,7 @@
             this._dataGridViewManufacturers.TabIndex = 4;
             this._dataGridViewManufacturers.SelectionChanged += new System.EventHandler(this._dataGridViewManufacturers_SelectionChanged);
             // 
-            // ManufacturerDLG
+            // ViewDLG
             // 
             this.AcceptButton = this._buttonOK;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -106,12 +107,12 @@
             this.CancelButton = this._buttonCancel;
             this.ClientSize = new System.Drawing.Size(341, 398);
             this.Controls.Add(this._dataGridViewManufacturers);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this._textBoxCode);
             this.Controls.Add(this.label1);
             this.Controls.Add(this._buttonCancel);
             this.Controls.Add(this._buttonOK);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow;
-            this.Name = "ManufacturerDLG";
+            this.Name = "ViewDLG";
             this.Text = "ManufacturerDLG";
             ((System.ComponentModel.ISupportInitialize)(this._dataGridViewManufacturers)).EndInit();
             this.ResumeLayout(false);
@@ -124,7 +125,7 @@
         private System.Windows.Forms.Button _buttonOK;
         private System.Windows.Forms.Button _buttonCancel;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox _textBoxCode;
         private System.Windows.Forms.DataGridView _dataGridViewManufacturers;
     }
 }
