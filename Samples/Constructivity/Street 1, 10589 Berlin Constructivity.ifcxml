@@ -1,0 +1,625 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ifcXML xmlns="http://www.buildingsmart-tech.org/ifcXML/IFC4/Add1" xmlns:ifc="http://www.buildingsmart-tech.org/ifcXML/IFC4/Add1" xmlns:schemaLocation="http://www.buildingsmart-tech.org/ifcXML/IFC4/Add1 http://www.buildingsmart-tech.org/ifcXML/IFC4/Add1/IFC4_ADD1.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.buildingsmart-tech.org/ifcXML/IFC4/Add1 http://www.buildingsmart-tech.org/ifcXML/IFC4/Add1/IFC4_ADD1.xsd">
+	<IfcProject GlobalId="3W_wCy4R58hgkAO0WsiUkm" Name="Sample Project" Description="Bürogebäude Street 1, 10589 Berlin" LongName="Street 1, 10589 Berlin">
+		<UnitsInContext>
+			<Units>
+				<IfcSIUnit id="i101" UnitType="lengthunit" Name="metre"/>
+				<IfcSIUnit id="i102" UnitType="lengthunit" Prefix="centi" Name="metre"/>
+				<IfcSIUnit id="i103" UnitType="lengthunit" Prefix="milli" Name="metre"/>
+				<IfcSIUnit id="i104" UnitType="areaunit" Name="square_metre"/>
+				<IfcSIUnit id="i105" UnitType="volumeunit" Name="cubic_metre"/>
+				<IfcSIUnit id="i106" UnitType="electricvoltageunit" Name="volt"/>
+				<IfcSIUnit id="i107" UnitType="thermodynamictemperatureunit" Name="degree_celsius"/>
+				<IfcSIUnit id="i108" UnitType="electriccurrentunit" Name="ampere"/>
+				<IfcDerivedUnit id="i109" UnitType="heatfluxdensityunit">
+					<Elements>
+						<IfcDerivedUnitElement id="i110" Exponent="1">
+							<Unit xsi:type="IfcSIUnit" UnitType="electriccurrentunit"/>
+						</IfcDerivedUnitElement>
+						<IfcDerivedUnitElement id="i111" Exponent="-1">
+							<Unit xsi:type="IfcConversionBasedUnit" UnitType="timeunit" Name="Hour">
+								<ConversionFactor>
+									<ValueComponent>
+										<IfcTimeMeasure-wrapper>3600</IfcTimeMeasure-wrapper>
+									</ValueComponent>
+									<UnitComponent>
+										<IfcSIUnit UnitType="timeunit"/>
+									</UnitComponent>
+								</ConversionFactor>
+							</Unit>
+						</IfcDerivedUnitElement>
+					</Elements>
+				</IfcDerivedUnit>
+				<IfcSIUnit id="i112" UnitType="frequencyunit" Name="hertz"/>
+				<IfcSIUnit id="i113" UnitType="massunit" Prefix="kilo" Name="gram"/>
+				<IfcDerivedUnit id="i114" UnitType="volumetricflowrateunit">
+					<Elements>
+						<IfcDerivedUnitElement id="i115" Exponent="3">
+							<Unit xsi:type="IfcSIUnit" UnitType="lengthunit"/>
+						</IfcDerivedUnitElement>
+						<IfcDerivedUnitElement id="i116" Exponent="-1">
+							<Unit xsi:type="IfcConversionBasedUnit" UnitType="timeunit" Name="Hour">
+								<ConversionFactor>
+									<ValueComponent>
+										<IfcTimeMeasure-wrapper>3600</IfcTimeMeasure-wrapper>
+									</ValueComponent>
+									<UnitComponent>
+										<IfcSIUnit UnitType="timeunit"/>
+									</UnitComponent>
+								</ConversionFactor>
+							</Unit>
+						</IfcDerivedUnitElement>
+					</Elements>
+				</IfcDerivedUnit>
+				<IfcDerivedUnit id="i117" UnitType="massdensityunit">
+					<Elements>
+						<IfcDerivedUnitElement id="i118" Exponent="1">
+							<Unit xsi:type="IfcSIUnit" UnitType="massunit"/>
+						</IfcDerivedUnitElement>
+						<IfcDerivedUnitElement id="i119" Exponent="-3">
+							<Unit xsi:type="IfcSIUnit" UnitType="lengthunit"/>
+						</IfcDerivedUnitElement>
+					</Elements>
+				</IfcDerivedUnit>
+				<IfcSIUnit id="i120" UnitType="powerunit" Name="watt"/>
+				<IfcSIUnit id="i121" UnitType="powerunit" Prefix="kilo" Name="watt"/>
+				<IfcSIUnit id="i122" UnitType="pressureunit" Name="pascal"/>
+				<IfcDerivedUnit id="i123" UnitType="soundpowerlevelunit">
+					<Elements>
+						<IfcDerivedUnitElement id="i124" Exponent="1">
+							<Unit xsi:type="IfcSIUnit" UnitType="powerunit"/>
+						</IfcDerivedUnitElement>
+						<IfcDerivedUnitElement id="i125" Exponent="-1">
+							<Unit xsi:type="IfcSIUnit" UnitType="powerunit"/>
+						</IfcDerivedUnitElement>
+					</Elements>
+				</IfcDerivedUnit>
+			</Units>
+		</UnitsInContext>
+		<Declares>
+			<IfcRelDeclares GlobalId="2ilD_$LhzA4BDJilYVa1Au">
+				<RelatedDefinitions>
+					<IfcProjectLibrary GlobalId="19At_y$aD8S80zkWxscr2q" Name="Name of Library">
+						<RepresentationContexts>
+							<IfcGeometricRepresentationContext ContextIdentifier="3D" ContextType="Model" CoordinateSpaceDimension="3" Precision="1E-05">
+								<WorldCoordinateSystem>
+									<IfcAxis2Placement3D>
+										<Location Coordinates="0 0 0"/>
+									</IfcAxis2Placement3D>
+								</WorldCoordinateSystem>
+							</IfcGeometricRepresentationContext>
+							<IfcGeometricRepresentationContext ContextIdentifier="2D" ContextType="Plan" CoordinateSpaceDimension="2" Precision="1E-05">
+								<WorldCoordinateSystem>
+									<IfcAxis2Placement3D>
+										<Location Coordinates="0 0 0"/>
+									</IfcAxis2Placement3D>
+								</WorldCoordinateSystem>
+							</IfcGeometricRepresentationContext>
+						</RepresentationContexts>
+						<UnitsInContext>
+							<Units>
+								<IfcSIUnit id="i10" UnitType="absorbeddoseunit" Name="gray"/>
+								<IfcSIUnit id="i15" UnitType="amountofsubstanceunit" Name="mole"/>
+								<IfcSIUnit id="i6" UnitType="areaunit" Name="square_metre"/>
+								<IfcSIUnit UnitType="doseequivalentunit" Name="sievert"/>
+								<IfcSIUnit UnitType="electriccapacitanceunit" Name="farad"/>
+								<IfcSIUnit UnitType="electricchargeunit" Name="coulomb"/>
+								<IfcSIUnit UnitType="electricconductanceunit" Name="siemens"/>
+								<IfcSIUnit UnitType="electriccurrentunit" Name="ampere"/>
+								<IfcSIUnit UnitType="electricresistanceunit" Name="ohm"/>
+								<IfcSIUnit UnitType="electricvoltageunit" Name="volt"/>
+								<IfcSIUnit id="i7" UnitType="energyunit" Name="joule"/>
+								<IfcSIUnit id="i11" UnitType="forceunit" Name="newton"/>
+								<IfcSIUnit UnitType="frequencyunit" Name="hertz"/>
+								<IfcSIUnit UnitType="illuminanceunit" Name="lux"/>
+								<IfcSIUnit UnitType="inductanceunit" Name="henry"/>
+								<IfcSIUnit id="i1" UnitType="lengthunit" Name="metre"/>
+								<IfcSIUnit id="i13" UnitType="luminousfluxunit" Name="lumen"/>
+								<IfcSIUnit id="i12" UnitType="luminousintensityunit" Name="candela"/>
+								<IfcSIUnit UnitType="magneticfluxdensityunit" Name="tesla"/>
+								<IfcSIUnit UnitType="magneticfluxunit" Name="weber"/>
+								<IfcSIUnit id="i8" UnitType="massunit" Prefix="kilo" Name="gram"/>
+								<IfcConversionBasedUnit id="i3" UnitType="planeangleunit" Name="degree">
+									<Dimensions LengthExponent="0" MassExponent="0" TimeExponent="0" ElectricCurrentExponent="0" ThermodynamicTemperatureExponent="0" AmountOfSubstanceExponent="0" LuminousIntensityExponent="0"/>
+									<ConversionFactor>
+										<ValueComponent>
+											<IfcPlaneAngleMeasure-wrapper>17453292519943296</IfcPlaneAngleMeasure-wrapper>
+										</ValueComponent>
+										<UnitComponent>
+											<IfcSIUnit UnitType="planeangleunit" Name="radian"/>
+										</UnitComponent>
+									</ConversionFactor>
+								</IfcConversionBasedUnit>
+								<IfcSIUnit id="i5" UnitType="powerunit" Name="watt"/>
+								<IfcSIUnit id="i4" UnitType="pressureunit" Name="pascal"/>
+								<IfcSIUnit UnitType="radioactivityunit" Name="becquerel"/>
+								<IfcSIUnit UnitType="solidangleunit" Name="steradian"/>
+								<IfcSIUnit UnitType="thermodynamictemperatureunit" Name="degree_celsius"/>
+								<IfcSIUnit id="i2" UnitType="timeunit" Name="second"/>
+								<IfcSIUnit id="i9" UnitType="volumeunit" Name="cubic_metre"/>
+								<IfcDerivedUnit UnitType="accelerationunit">
+									<Elements>
+										<IfcDerivedUnitElement Exponent="1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i1"/>
+										</IfcDerivedUnitElement>
+										<IfcDerivedUnitElement Exponent="-1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i2"/>
+										</IfcDerivedUnitElement>
+										<IfcDerivedUnitElement Exponent="-1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i2"/>
+										</IfcDerivedUnitElement>
+									</Elements>
+								</IfcDerivedUnit>
+								<IfcDerivedUnit UnitType="angularvelocityunit">
+									<Elements>
+										<IfcDerivedUnitElement Exponent="1">
+											<Unit xsi:type="IfcConversionBasedUnit" xsi:nil="true" href="i3"/>
+										</IfcDerivedUnitElement>
+										<IfcDerivedUnitElement Exponent="-1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i2"/>
+										</IfcDerivedUnitElement>
+									</Elements>
+								</IfcDerivedUnit>
+								<IfcDerivedUnit UnitType="compoundplaneangleunit">
+									<Elements>
+										<IfcDerivedUnitElement Exponent="1">
+											<Unit xsi:type="IfcConversionBasedUnit" xsi:nil="true" href="i3"/>
+										</IfcDerivedUnitElement>
+									</Elements>
+								</IfcDerivedUnit>
+								<IfcDerivedUnit UnitType="curvatureunit">
+									<Elements>
+										<IfcDerivedUnitElement Exponent="1">
+											<Unit xsi:type="IfcConversionBasedUnit" xsi:nil="true" href="i3"/>
+										</IfcDerivedUnitElement>
+										<IfcDerivedUnitElement Exponent="-1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i1"/>
+										</IfcDerivedUnitElement>
+									</Elements>
+								</IfcDerivedUnit>
+								<IfcDerivedUnit UnitType="dynamicviscosityunit">
+									<Elements>
+										<IfcDerivedUnitElement Exponent="1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i4"/>
+										</IfcDerivedUnitElement>
+										<IfcDerivedUnitElement Exponent="1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i2"/>
+										</IfcDerivedUnitElement>
+									</Elements>
+								</IfcDerivedUnit>
+								<IfcDerivedUnit UnitType="heatfluxdensityunit">
+									<Elements>
+										<IfcDerivedUnitElement Exponent="1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i5"/>
+										</IfcDerivedUnitElement>
+										<IfcDerivedUnitElement Exponent="-1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i6"/>
+										</IfcDerivedUnitElement>
+									</Elements>
+								</IfcDerivedUnit>
+								<IfcDerivedUnit UnitType="heatingvalueunit">
+									<Elements>
+										<IfcDerivedUnitElement Exponent="1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i7"/>
+										</IfcDerivedUnitElement>
+										<IfcDerivedUnitElement Exponent="-1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i8"/>
+										</IfcDerivedUnitElement>
+									</Elements>
+								</IfcDerivedUnit>
+								<IfcDerivedUnit UnitType="ionconcentrationunit">
+									<Elements>
+										<IfcDerivedUnitElement Exponent="1">
+											<Unit xsi:type="IfcSIUnit" id="i14" UnitType="massunit" Name="gram"/>
+										</IfcDerivedUnitElement>
+										<IfcDerivedUnitElement Exponent="-1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i9"/>
+										</IfcDerivedUnitElement>
+									</Elements>
+								</IfcDerivedUnit>
+								<IfcDerivedUnit UnitType="integercountrateunit">
+									<Elements>
+										<IfcDerivedUnitElement Exponent="-1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i2"/>
+										</IfcDerivedUnitElement>
+									</Elements>
+								</IfcDerivedUnit>
+								<IfcDerivedUnit UnitType="isothermalmoisturecapacityunit">
+									<Elements>
+										<IfcDerivedUnitElement Exponent="1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i9"/>
+										</IfcDerivedUnitElement>
+										<IfcDerivedUnitElement Exponent="-1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i10"/>
+										</IfcDerivedUnitElement>
+									</Elements>
+								</IfcDerivedUnit>
+								<IfcDerivedUnit UnitType="kinematicviscosityunit">
+									<Elements>
+										<IfcDerivedUnitElement Exponent="1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i6"/>
+										</IfcDerivedUnitElement>
+										<IfcDerivedUnitElement Exponent="-1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i2"/>
+										</IfcDerivedUnitElement>
+									</Elements>
+								</IfcDerivedUnit>
+								<IfcDerivedUnit UnitType="linearforceunit">
+									<Elements>
+										<IfcDerivedUnitElement Exponent="1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i11"/>
+										</IfcDerivedUnitElement>
+										<IfcDerivedUnitElement Exponent="-1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i1"/>
+										</IfcDerivedUnitElement>
+									</Elements>
+								</IfcDerivedUnit>
+								<IfcDerivedUnit UnitType="linearmomentunit">
+									<Elements>
+										<IfcDerivedUnitElement Exponent="1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i11"/>
+										</IfcDerivedUnitElement>
+										<IfcDerivedUnitElement Exponent="1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i1"/>
+										</IfcDerivedUnitElement>
+										<IfcDerivedUnitElement Exponent="-1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i1"/>
+										</IfcDerivedUnitElement>
+									</Elements>
+								</IfcDerivedUnit>
+								<IfcDerivedUnit UnitType="linearstiffnessunit">
+									<Elements>
+										<IfcDerivedUnitElement Exponent="1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i11"/>
+										</IfcDerivedUnitElement>
+										<IfcDerivedUnitElement Exponent="-1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i1"/>
+										</IfcDerivedUnitElement>
+									</Elements>
+								</IfcDerivedUnit>
+								<IfcDerivedUnit UnitType="linearvelocityunit">
+									<Elements>
+										<IfcDerivedUnitElement Exponent="1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i1"/>
+										</IfcDerivedUnitElement>
+										<IfcDerivedUnitElement Exponent="-1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i2"/>
+										</IfcDerivedUnitElement>
+									</Elements>
+								</IfcDerivedUnit>
+								<IfcDerivedUnit UnitType="luminousintensitydistributionunit">
+									<Elements>
+										<IfcDerivedUnitElement Exponent="1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i12"/>
+										</IfcDerivedUnitElement>
+										<IfcDerivedUnitElement Exponent="-1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i13"/>
+										</IfcDerivedUnitElement>
+									</Elements>
+								</IfcDerivedUnit>
+								<IfcDerivedUnit UnitType="massdensityunit">
+									<Elements>
+										<IfcDerivedUnitElement Exponent="1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i8"/>
+										</IfcDerivedUnitElement>
+										<IfcDerivedUnitElement Exponent="-1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i9"/>
+										</IfcDerivedUnitElement>
+									</Elements>
+								</IfcDerivedUnit>
+								<IfcDerivedUnit UnitType="massflowrateunit">
+									<Elements>
+										<IfcDerivedUnitElement Exponent="1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i8"/>
+										</IfcDerivedUnitElement>
+										<IfcDerivedUnitElement Exponent="-1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i2"/>
+										</IfcDerivedUnitElement>
+									</Elements>
+								</IfcDerivedUnit>
+								<IfcDerivedUnit UnitType="massperlengthunit">
+									<Elements>
+										<IfcDerivedUnitElement Exponent="1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i8"/>
+										</IfcDerivedUnitElement>
+										<IfcDerivedUnitElement Exponent="-1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i1"/>
+										</IfcDerivedUnitElement>
+									</Elements>
+								</IfcDerivedUnit>
+								<IfcDerivedUnit UnitType="modulusofelasticityunit">
+									<Elements>
+										<IfcDerivedUnitElement Exponent="1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i4"/>
+										</IfcDerivedUnitElement>
+									</Elements>
+								</IfcDerivedUnit>
+								<IfcDerivedUnit UnitType="modulusoflinearsubgradereactionunit">
+									<Elements>
+										<IfcDerivedUnitElement Exponent="1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i11"/>
+										</IfcDerivedUnitElement>
+										<IfcDerivedUnitElement Exponent="-1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i6"/>
+										</IfcDerivedUnitElement>
+									</Elements>
+								</IfcDerivedUnit>
+								<IfcDerivedUnit UnitType="modulusofrotationalsubgradereactionunit">
+									<Elements>
+										<IfcDerivedUnitElement Exponent="1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i11"/>
+										</IfcDerivedUnitElement>
+										<IfcDerivedUnitElement Exponent="1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i1"/>
+										</IfcDerivedUnitElement>
+										<IfcDerivedUnitElement Exponent="-1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i1"/>
+										</IfcDerivedUnitElement>
+										<IfcDerivedUnitElement Exponent="-1">
+											<Unit xsi:type="IfcConversionBasedUnit" xsi:nil="true" href="i3"/>
+										</IfcDerivedUnitElement>
+									</Elements>
+								</IfcDerivedUnit>
+								<IfcDerivedUnit UnitType="modulusofsubgradereactionunit">
+									<Elements>
+										<IfcDerivedUnitElement Exponent="1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i11"/>
+										</IfcDerivedUnitElement>
+										<IfcDerivedUnitElement Exponent="-1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i9"/>
+										</IfcDerivedUnitElement>
+									</Elements>
+								</IfcDerivedUnit>
+								<IfcDerivedUnit UnitType="moisturediffusivityunit">
+									<Elements>
+										<IfcDerivedUnitElement Exponent="1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i9"/>
+										</IfcDerivedUnitElement>
+										<IfcDerivedUnitElement Exponent="-1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i2"/>
+										</IfcDerivedUnitElement>
+									</Elements>
+								</IfcDerivedUnit>
+								<IfcDerivedUnit UnitType="molecularweightunit">
+									<Elements>
+										<IfcDerivedUnitElement Exponent="1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i14"/>
+										</IfcDerivedUnitElement>
+										<IfcDerivedUnitElement Exponent="-1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i15"/>
+										</IfcDerivedUnitElement>
+									</Elements>
+								</IfcDerivedUnit>
+								<IfcDerivedUnit UnitType="momentofinertiaunit">
+									<Elements>
+										<IfcDerivedUnitElement Exponent="4">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i1"/>
+										</IfcDerivedUnitElement>
+									</Elements>
+								</IfcDerivedUnit>
+								<IfcDerivedUnit UnitType="planarforceunit">
+									<Elements>
+										<IfcDerivedUnitElement Exponent="1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i11"/>
+										</IfcDerivedUnitElement>
+										<IfcDerivedUnitElement Exponent="-1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i6"/>
+										</IfcDerivedUnitElement>
+									</Elements>
+								</IfcDerivedUnit>
+								<IfcDerivedUnit UnitType="rotationalfrequencyunit">
+									<Elements>
+										<IfcDerivedUnitElement Exponent="-1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i2"/>
+										</IfcDerivedUnitElement>
+									</Elements>
+								</IfcDerivedUnit>
+								<IfcDerivedUnit UnitType="rotationalmassunit">
+									<Elements>
+										<IfcDerivedUnitElement Exponent="1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i8"/>
+										</IfcDerivedUnitElement>
+										<IfcDerivedUnitElement Exponent="-1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i6"/>
+										</IfcDerivedUnitElement>
+									</Elements>
+								</IfcDerivedUnit>
+								<IfcDerivedUnit UnitType="rotationalstiffnessunit">
+									<Elements>
+										<IfcDerivedUnitElement Exponent="1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i11"/>
+										</IfcDerivedUnitElement>
+										<IfcDerivedUnitElement Exponent="1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i1"/>
+										</IfcDerivedUnitElement>
+										<IfcDerivedUnitElement Exponent="-1">
+											<Unit xsi:type="IfcConversionBasedUnit" xsi:nil="true" href="i3"/>
+										</IfcDerivedUnitElement>
+									</Elements>
+								</IfcDerivedUnit>
+								<IfcDerivedUnit UnitType="sectionareaintegralunit">
+									<Elements>
+										<IfcDerivedUnitElement Exponent="5">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i1"/>
+										</IfcDerivedUnitElement>
+									</Elements>
+								</IfcDerivedUnit>
+								<IfcDerivedUnit UnitType="sectionmodulusunit">
+									<Elements>
+										<IfcDerivedUnitElement Exponent="3">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i1"/>
+										</IfcDerivedUnitElement>
+									</Elements>
+								</IfcDerivedUnit>
+								<IfcDerivedUnit UnitType="shearmodulusunit">
+									<Elements>
+										<IfcDerivedUnitElement Exponent="1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i4"/>
+										</IfcDerivedUnitElement>
+									</Elements>
+								</IfcDerivedUnit>
+								<IfcDerivedUnit UnitType="soundpowerunit">
+									<Elements>
+										<IfcDerivedUnitElement Exponent="0">
+											<Unit xsi:type="IfcSIUnit" UnitType="powerunit" Prefix="pico" Name="watt"/>
+										</IfcDerivedUnitElement>
+									</Elements>
+								</IfcDerivedUnit>
+								<IfcDerivedUnit UnitType="soundpressureunit">
+									<Elements>
+										<IfcDerivedUnitElement Exponent="0">
+											<Unit xsi:type="IfcSIUnit" UnitType="pressureunit" Prefix="micro" Name="pascal"/>
+										</IfcDerivedUnitElement>
+									</Elements>
+								</IfcDerivedUnit>
+								<IfcDerivedUnit UnitType="specificheatcapacityunit">
+									<Elements>
+										<IfcDerivedUnitElement Exponent="1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i7"/>
+										</IfcDerivedUnitElement>
+										<IfcDerivedUnitElement Exponent="-1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i8"/>
+										</IfcDerivedUnitElement>
+										<IfcDerivedUnitElement Exponent="-1">
+											<Unit xsi:type="IfcSIUnit" id="i16" UnitType="thermodynamictemperatureunit" Name="kelvin"/>
+										</IfcDerivedUnitElement>
+									</Elements>
+								</IfcDerivedUnit>
+								<IfcDerivedUnit UnitType="temperaturegradientunit">
+									<Elements>
+										<IfcDerivedUnitElement Exponent="1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i16"/>
+										</IfcDerivedUnitElement>
+										<IfcDerivedUnitElement Exponent="-1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i1"/>
+										</IfcDerivedUnitElement>
+									</Elements>
+								</IfcDerivedUnit>
+								<IfcDerivedUnit UnitType="temperaturerateofchangeunit">
+									<Elements>
+										<IfcDerivedUnitElement Exponent="1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i16"/>
+										</IfcDerivedUnitElement>
+										<IfcDerivedUnitElement Exponent="-1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i2"/>
+										</IfcDerivedUnitElement>
+									</Elements>
+								</IfcDerivedUnit>
+								<IfcDerivedUnit UnitType="thermaladmittanceunit">
+									<Elements>
+										<IfcDerivedUnitElement Exponent="1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i5"/>
+										</IfcDerivedUnitElement>
+										<IfcDerivedUnitElement Exponent="-1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i6"/>
+										</IfcDerivedUnitElement>
+										<IfcDerivedUnitElement Exponent="-1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i16"/>
+										</IfcDerivedUnitElement>
+									</Elements>
+								</IfcDerivedUnit>
+								<IfcDerivedUnit UnitType="thermalconductanceunit">
+									<Elements>
+										<IfcDerivedUnitElement Exponent="1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i5"/>
+										</IfcDerivedUnitElement>
+										<IfcDerivedUnitElement Exponent="-1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i16"/>
+										</IfcDerivedUnitElement>
+										<IfcDerivedUnitElement Exponent="-1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i1"/>
+										</IfcDerivedUnitElement>
+									</Elements>
+								</IfcDerivedUnit>
+								<IfcDerivedUnit UnitType="thermalexpansioncoefficientunit">
+									<Elements>
+										<IfcDerivedUnitElement Exponent="-1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i16"/>
+										</IfcDerivedUnitElement>
+									</Elements>
+								</IfcDerivedUnit>
+								<IfcDerivedUnit UnitType="thermalresistanceunit">
+									<Elements>
+										<IfcDerivedUnitElement Exponent="1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i6"/>
+										</IfcDerivedUnitElement>
+										<IfcDerivedUnitElement Exponent="1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i16"/>
+										</IfcDerivedUnitElement>
+										<IfcDerivedUnitElement Exponent="-1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i5"/>
+										</IfcDerivedUnitElement>
+									</Elements>
+								</IfcDerivedUnit>
+								<IfcDerivedUnit UnitType="thermaltransmittanceunit">
+									<Elements>
+										<IfcDerivedUnitElement Exponent="1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i5"/>
+										</IfcDerivedUnitElement>
+										<IfcDerivedUnitElement Exponent="-1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i6"/>
+										</IfcDerivedUnitElement>
+										<IfcDerivedUnitElement Exponent="1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i16"/>
+										</IfcDerivedUnitElement>
+									</Elements>
+								</IfcDerivedUnit>
+								<IfcDerivedUnit UnitType="torqueunit">
+									<Elements>
+										<IfcDerivedUnitElement Exponent="1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i11"/>
+										</IfcDerivedUnitElement>
+										<IfcDerivedUnitElement Exponent="1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i1"/>
+										</IfcDerivedUnitElement>
+									</Elements>
+								</IfcDerivedUnit>
+								<IfcDerivedUnit UnitType="vaporpermeabilityunit">
+									<Elements>
+										<IfcDerivedUnitElement Exponent="1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i8"/>
+										</IfcDerivedUnitElement>
+										<IfcDerivedUnitElement Exponent="-1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i2"/>
+										</IfcDerivedUnitElement>
+										<IfcDerivedUnitElement Exponent="-1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i1"/>
+										</IfcDerivedUnitElement>
+									</Elements>
+								</IfcDerivedUnit>
+								<IfcDerivedUnit UnitType="volumetricflowrateunit">
+									<Elements>
+										<IfcDerivedUnitElement Exponent="1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i9"/>
+										</IfcDerivedUnitElement>
+										<IfcDerivedUnitElement Exponent="-1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i2"/>
+										</IfcDerivedUnitElement>
+									</Elements>
+								</IfcDerivedUnit>
+								<IfcDerivedUnit UnitType="warpingconstantunit">
+									<Elements>
+										<IfcDerivedUnitElement Exponent="6">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i1"/>
+										</IfcDerivedUnitElement>
+									</Elements>
+								</IfcDerivedUnit>
+								<IfcDerivedUnit UnitType="warpingmomentunit">
+									<Elements>
+										<IfcDerivedUnitElement Exponent="1">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i11"/>
+										</IfcDerivedUnitElement>
+										<IfcDerivedUnitElement Exponent="2">
+											<Unit xsi:type="IfcSIUnit" xsi:nil="true" href="i1"/>
+										</IfcDerivedUnitElement>
+									</Elements>
+								</IfcDerivedUnit>
+								<IfcMonetaryUnit Currency="EUR"/>
+							</Units>
+						</UnitsInContext>
+					</IfcProjectLibrary>
+				</RelatedDefinitions>
+			</IfcRelDeclares>
+		</Declares>
+	</IfcProject>
+</ifcXML>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ifcXML 
+xmlns="http://www.buildingsmart-tech.org/ifcXML/IFC4/Add1"
+xmlns:ifc="http://www.buildingsmart-tech.org/ifcXML/IFC4/Add1"
+xmlns:schemaLocation="http://www.buildingsmart-tech.org/ifcXML/IFC4/Add1 http://www.buildingsmart-tech.org/ifcXML/IFC4/Add1/IFC4_ADD1.xsd" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+
+<?xml version="1.0" encoding="utf-8"?>
+<ifcXML 
+xmlns="http://www.buildingsmart-tech.org/ifcXML/IFC4/Add1" 
+xmlns:ifc="http://www.buildingsmart-tech.org/ifcXML/IFC4/Add1" 
+xmlns:schemaLocation="http://www.buildingsmart-tech.org/ifcXML/IFC4/Add1 http://www.buildingsmart-tech.org/ifcXML/IFC4/Add1/IFC4_ADD1.xsd" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://www.buildingsmart-tech.org/ifcXML/IFC4/Add1 http://www.buildingsmart-tech.org/ifcXML/IFC4/Add1/IFC4_ADD1.xsd">
