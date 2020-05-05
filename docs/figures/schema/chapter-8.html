@@ -1,0 +1,47 @@
+﻿<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="../ifc-styles.css">
+
+    <link rel="stylesheet" type="text/css" href="../details-shim.css">
+    <script type="text/javascript" src="../details-shim.js"></script>
+    <title>Resource definition data schemas</title>
+
+    <style type="text/css">
+      body { counter-reset: index1 7 index2 0 index3 0 index4 -1 index5 0; }
+    </style>
+  </head>
+
+  <body>
+
+
+<script type="text/javascript">
+<!--
+    parent.index.location.replace("toc-8.html#");
+//-->
+</script>
+
+<h1 class="num" id="scope">Resource definition data schemas</h1>
+<p>The resource definition data schemas consist of supporting data structures as shown highlighted in blue. Entities and types defined in this layer can be referenced by all entities in the layers below.</p>
+<p>Unlike entities in other layers, resource definition data structures cannot exist independently, but can only exist if referenced (directly or indirectly) by one or more entities deriving from <a href="ifckernel/lexical/ifcroot.html">IfcRoot</a>. As resource definitions do not have a concept of identity (such as a GUID), multiple objects referencing the same instance of a resource entity does not imply a relationship. For example, two polylines (<i>IfcPolyline</i>) sharing the same instance for a point (<i>IfcCartesianPoint</i>), and two polylines using different instances for identical points (such as both having cordinates 0,0,0) are semantically equivalent. It is recommended (but not required) for applications to minimize file size by sharing identical resource definition instances where possible.</p>
+<blockquote class="note">
+<p>NOTE  The resource definition layer should not be confused with construction resource entities (<i>IfcResource</i> subtypes). While the terms are similar, they are unrelated concepts.</p>
+</blockquote>
+<p>
+<a class="listing-link" href="ifcactorresource/content.html">8.1 IfcActorResource</a><br>
+<a class="listing-link" href="ifcdatetimeresource/content.html">8.2 IfcDateTimeResource</a><br>
+<a class="listing-link" href="ifcexternalreferenceresource/content.html">8.3 IfcExternalReferenceResource</a><br>
+<a class="listing-link" href="ifcgeometricconstraintresource/content.html">8.4 IfcGeometricConstraintResource</a><br>
+<a class="listing-link" href="ifcmaterialresource/content.html">8.5 IfcMaterialResource</a><br>
+<a class="listing-link" href="ifcmeasureresource/content.html">8.6 IfcMeasureResource</a><br>
+<a class="listing-link" href="ifcprofileresource/content.html">8.7 IfcProfileResource</a><br>
+<a class="listing-link" href="ifcpropertyresource/content.html">8.8 IfcPropertyResource</a><br>
+<a class="listing-link" href="ifcutilityresource/content.html">8.9 IfcUtilityResource</a><br>
+</p>
+<p><a href="https://github.com/buildingSMART/ProductData/issues/new?&title=chapter-8:%22" target="_blank" ><img src="../img/external.png" style="border: 0px" title="Report issue" alt="Report issue"/>&nbsp; Report an issue</a></p>
+<p><a href="../link/chapter-8.html" target="_blank" ><img src="../img/permlink.png" style="border: 0px" title="Link to this page" alt="Link to this page"/>&nbsp; Link to this page</a></p>
+  </body>
+</html>

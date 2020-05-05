@@ -1,0 +1,96 @@
+﻿<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="../../../ifc-styles.css">
+
+    <link rel="stylesheet" type="text/css" href="../../../details-shim.css">
+    <script type="text/javascript" src="../../../details-shim.js"></script>
+    <title>IfcSimpleProperty</title>
+
+    <style type="text/css">
+      body { counter-reset: index1 8 index2 6 index3 3 index4 4 index5 0; }
+    </style>
+  </head>
+
+  <body>
+
+
+<script type="text/javascript">
+<!--
+    parent.index.location.replace("../../toc-8.html#8.6.3.5");
+//-->
+</script>
+
+<h4 class="num">IfcSimpleProperty</h4>
+<a href="../../views/construction-objects-data-view/index.html" ><img src="../../../img/view-construction-objects-data-view.png" title="Construction Objects Data View"/></a>
+<details open="open"><summary>Natural language names</summary><table>
+<table class="gridtable">
+<tr><td><img src="../../../img/locale-de.png" /></td><td><b>Einfaches Merkmal</b></td></tr>
+<tr><td><img src="../../../img/locale-en.png" /></td><td><b>Simple Property</b></td></tr>
+<tr><td><img src="../../../img/locale-fr.png" /></td><td><b>Propriété simple</b></td></tr>
+</table>
+</details>
+<section>
+<h5 class="num">Semantic definitions at the entity</h5>
+<details open="open"><summary>Entity definition</summary><p><span class="self-ref">IfcSimpleProperty</span> is a generalization of a single property object. The various subtypes of <span class="self-ref">IfcSimpleProperty</span> establish different ways in which a property value can be set.</p>
+
+</details>
+</section>
+<section>
+<h5 class="num">Inherited definitions from supertypes</h5>
+<details open="open"><summary>Entity inheritance</summary><img src="../../../diagrams/ifcsimpleproperty.png" usemap="#f"/>
+<map name="f">
+<area shape="rect" coords="18,30,230,42" href="../../../schema/ifcpropertyresource/lexical/ifcproperty.html" alt="IfcProperty" />
+<area shape="rect" coords="6,6,242,18" href="../../../schema/ifcpropertyresource/lexical/ifcpropertyabstraction.html" alt="IfcPropertyAbstraction" />
+</map>
+</details>
+<details><summary>Attribute inheritance</summary><table class="attributes">
+<tr><th>#</th><th>Attribute</th><th>Type</th><th>Cardinality</th><th>Description</th><th>C</th></tr>
+<tr><td colspan="6"><i><a href="../../ifcpropertyresource/lexical/ifcpropertyabstraction.html">IfcPropertyAbstraction</a></i></td></tr>
+<tr><td colspan="6"><i><a href="../../ifcpropertyresource/lexical/ifcproperty.html">IfcProperty</a></i></td></tr>
+<tr><td>1</td><td>Name</td><td><a href="../../ifcmeasureresource/lexical/ifcidentifier.html">IfcIdentifier</a></td><td></td><td>
+Name for this property. This label is the significant name string that defines the semantic meaning for the property.
+</td><td>X</td></tr>
+<tr><td>2</td><td>Description</td><td><span class="self-ref">-</span></td><td></td><td>
+<i>This attribute is out of scope for this model view definition and shall not be set.</i></td><td></td></tr>
+<tr><td></td><td><i>PartOfPset</i></td><td><a href="../../ifckernel/lexical/ifcpropertyset.html">IfcPropertySet</a><br/>@HasProperties</td><td>S[0:?]</td><td>Reference to the <a href="../../ifckernel/lexical/ifcpropertyset.html">IfcPropertySet</a> by which the <span class="self-ref">IfcProperty</span> is referenced.
+
+
+</td><td>X</td></tr>
+<tr><td></td><td><i>PartOfComplex</i></td><td><a href="../../ifcpropertyresource/lexical/ifccomplexproperty.html">IfcComplexProperty</a><br/>@HasProperties</td><td>S[0:?]</td><td>Reference to the <a href="../../ifcpropertyresource/lexical/ifccomplexproperty.html">IfcComplexProperty</a> in which the <span class="self-ref">IfcProperty</span> is contained.
+
+
+</td><td></td></tr>
+<tr><td colspan="6"><i><a href="../../ifcpropertyresource/lexical/ifcsimpleproperty.html">IfcSimpleProperty</a></i></td></tr>
+</table>
+</details>
+</section>
+<section>
+<h5 class="num">Formal representations</h5>
+<details><summary>XML Specification</summary><div class="xsd"><code class="xsd">&nbsp;&lt;xs:element name=&quot;<a href="../../ifcpropertyresource/lexical/ifcsimpleproperty.html">IfcSimpleProperty</a>&quot; type=&quot;ifc:<a href="../../ifcpropertyresource/lexical/ifcsimpleproperty.html">IfcSimpleProperty</a>&quot; abstract=&quot;true&quot; substitutionGroup=&quot;ifc:<a href="../../ifcpropertyresource/lexical/ifcproperty.html">IfcProperty</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
+&nbsp;&lt;xs:complexType name=&quot;<a href="../../ifcpropertyresource/lexical/ifcsimpleproperty.html">IfcSimpleProperty</a>&quot; abstract=&quot;true&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../ifcpropertyresource/lexical/ifcproperty.html">IfcProperty</a>&quot;/&gt;<br/>
+&nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
+&nbsp;&lt;/xs:complexType&gt;<br/>
+</code></div></details>
+<details><summary>EXPRESS Specification</summary><div class="express"><code class="express">
+<span class="keyword">ENTITY</span> IfcSimpleProperty<br/>
+&nbsp;<span class="keyword">SUBTYPE OF</span> (<a href="../../ifcpropertyresource/lexical/ifcproperty.html">IfcProperty</a>)<b>;</b><br/>
+<span class="keyword">END_ENTITY;</span><br/>
+<p class="std"><a href="../../../annex/annex-d/ifcpropertyresource/diagram_0000.html" ><img src="../../../img/diagram.png" style="border: 0px" title="Link to EXPRESS-G diagram" alt="Link to EXPRESS-G diagram">&nbsp;EXPRESS-G diagram</a></p>
+</code></div>
+</details>
+<details><summary>JSON Specification</summary><div class="xsd"><code class="xsd">public class <a href="../../ifcpropertyresource/lexical/ifcsimpleproperty.html">IfcSimpleProperty</a> extends <a href="../../ifcpropertyresource/lexical/ifcproperty.html">IfcProperty</a><br/>
+{<br/>
+}<br/>
+</code></div></details>
+</section>
+</p>
+<p><a href="https://github.com/buildingSMART/ProductData/issues/new?&title=ifcsimpleproperty:%22" target="_blank" ><img src="../../../img/external.png" style="border: 0px" title="Report issue" alt="Report issue"/>&nbsp; Report an issue</a></p>
+<p><a href="../../../link/ifcsimpleproperty.html" target="_blank" ><img src="../../../img/permlink.png" style="border: 0px" title="Link to this page" alt="Link to this page"/>&nbsp; Link to this page</a></p>
+  </body>
+</html>

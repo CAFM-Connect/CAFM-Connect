@@ -1,0 +1,49 @@
+﻿<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="../../ifc-styles.css">
+
+    <link rel="stylesheet" type="text/css" href="../../details-shim.css">
+    <script type="text/javascript" src="../../details-shim.js"></script>
+    <title>IfcDateTimeResource</title>
+
+    <style type="text/css">
+      body { counter-reset: index1 8 index2 2 index3 0 index4 -1 index5 0; }
+    </style>
+  </head>
+
+  <body>
+
+
+<script type="text/javascript">
+<!--
+    parent.index.location.replace("../toc-8.html#8.2");
+//-->
+</script>
+
+<h2 class="std">8.2 IfcDateTimeResource</h2>
+<h3 class="std">8.2.1 Schema Definition</h3>
+<p>The <i>IfcDateTimeResource</i> schema defines several generic date and time specific concepts that can be used to identify context within calendars, schedules, and time series. These concepts include:</p>
+<p>\\\\\\\\\\\\\\*  <i>IfcDate</i>, <i>IfcTime</i>, <i>IfcDateTime</i> and <i>IfcDuration</i>. All given values should be provided in context and converted into a Gregorian date context and be shall be processable by a receiving application.
+\\\\\\\\\\\\\\* Time series, which are a set of discrete data each with an associated date and time stamp, allowing a natural association of data collected over intervals of time. Time series data can be represented using the following entities:
+\\\\\\\\\\\\\\*  <i>IfcRegularTimeSeries</i>: Time series data arrive predictably at predefined intervals and are represented by the entity, and
+\\\\\\\\\\\\\\*  <i>IfcIrregularTimeSeries</i>: some or all time stamps do not follow a repetitive pattern and unpredictable bursts of data may arrive at unspecified points in time.  Time series data must be normalized using the following rules:
+\\\\\\\\\\\\\\* All time (universal, local, daylight savings, and solar) is normalized against the ISO 8601 standard GMT/UTC (Universal Coordinated Time).
+\\\\\\\\\\\\\\* The normalized data refer to the preceding time unit.
+\\\\\\\\\\\\\\* Any rollover is handled by the application providing the data. Rollover occurs, for example, when the measurement device resets itself while measuring and the recording data do not include the data measured before the reset.
+\\\\\\\\\\\\\\* Only the time when data are taken is recorded.
+\\\\\\\\\\\\\\* Time associated with processes such as resource allocation (<i>IfcResourceTime</i>), time for task completion (<i>IfcTaskTime</i>), work patterns (<i>IfcWorkTime</i>), and scheduled events (<i>IfcEventTime</i>).</p>
+<blockquote class="note">
+<p>NOTE  The schema <i>IfcDateTimeResource</i> includes definitions that are based on <a href="../../bibliography.htm#iso-8601" class="int-ref">ISO 8601</a></p>
+</blockquote>
+
+
+<p><a href="../../annex/annex-d/ifcdatetimeresource/index.html" ><img src="../../img/diagram.png" style="border: 0px" title="Link to EXPRESS-G diagram" alt="Link to EXPRESS-G diagram">&nbsp;EXPRESS-G diagram</a></p>
+</p>
+<p><a href="https://github.com/buildingSMART/ProductData/issues/new?&title=ifcdatetimeresource:%22" target="_blank" ><img src="../../img/external.png" style="border: 0px" title="Report issue" alt="Report issue"/>&nbsp; Report an issue</a></p>
+<p><a href="../../link/ifcdatetimeresource.html" target="_blank" ><img src="../../img/permlink.png" style="border: 0px" title="Link to this page" alt="Link to this page"/>&nbsp; Link to this page</a></p>
+  </body>
+</html>

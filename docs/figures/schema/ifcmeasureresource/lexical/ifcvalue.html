@@ -1,0 +1,80 @@
+﻿<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="../../../ifc-styles.css">
+
+    <link rel="stylesheet" type="text/css" href="../../../details-shim.css">
+    <script type="text/javascript" src="../../../details-shim.js"></script>
+    <title>IfcValue</title>
+
+    <style type="text/css">
+      body { counter-reset: index1 8 index2 6 index3 2 index4 6 index5 0; }
+    </style>
+  </head>
+
+  <body>
+
+
+<script type="text/javascript">
+<!--
+    parent.index.location.replace("../../toc-8.html#8.6.2.7");
+//-->
+</script>
+
+<h4 class="num">IfcValue</h4>
+<a href="../../views/construction-objects-data-view/index.html" ><img src="../../../img/view-construction-objects-data-view.png" title="Construction Objects Data View"/></a>
+<details open="open"><summary>Natural language names</summary><table>
+<table class="gridtable">
+<tr><td><img src="../../../img/locale-de.png" /></td><td><b>Wert</b></td></tr>
+<tr><td><img src="../../../img/locale-en.png" /></td><td><b>Value</b></td></tr>
+<tr><td><img src="../../../img/locale-fr.png" /></td><td><b>Valeur</b></td></tr>
+</table>
+</details>
+<section>
+<h5 class="num">Semantic definitions at the type</h5>
+<details open="open"><summary>Type definition</summary><p><span class="self-ref">IfcValue</span> is a select type for selecting between more specialised select types <a href="../../ifcmeasureresource/lexical/ifcsimplevalue.html">IfcSimpleValue</a>, <i>IfcMeasureValue</i> and <i>IfcDerivedMeasureValue</i>.</p>
+<p>SELECT</p>
+<p>\\\\\\\\\\\\\\* \\\\\\\\\\\\\\*\\\\\\\\\\\\\\*IfcSimpleValue\\\\\\\\\\\\\\*\\\\\\\\\\\\\\* A select type for basic defined types of simple data type.
+\\\\\\\\\\\\\\* \\\\\\\\\\\\\\*\\\\\\\\\\\\\\*IfcMeasureValue\\\\\\\\\\\\\\*\\\\\\\\\\\\\\* A select type for basic measure types of ISO 10303-41.
+\\\\\\\\\\\\\\* \\\\\\\\\\\\\\*\\\\\\\\\\\\\\*IfcDerivedMeasureValue\\\\\\\\\\\\\\*\\\\\\\\\\\\\\* A select type for derived measure types.</p>
+
+</details>
+<details open="open"><summary>Select definition</summary><table class="attributes">
+<tr><th>Type</th><th>Description</th></tr>
+<tr><td><a href="../../ifcmeasureresource/lexical/ifcsimplevalue.html">IfcSimpleValue</a>
+</td><td></td></tr></table>
+</details>
+</section>
+<section>
+<h5 class="num">Formal representations</h5>
+<details><summary>XML Specification</summary><div class="xsd"><code class="xsd">&nbsp;&lt;xs:group name=&quot;<a href="../../ifcmeasureresource/lexical/ifcvalue.html">IfcValue</a>&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;xs:choice&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:element ref=&quot;ifc:<a href="../../ifcmeasureresource/lexical/ifcidentifier.html">IfcIdentifier</a>-wrapper&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:element ref=&quot;ifc:<a href="../../ifcmeasureresource/lexical/ifclabel.html">IfcLabel</a>-wrapper&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:element ref=&quot;ifc:<a href="../../ifcmeasureresource/lexical/ifclengthmeasure.html">IfcLengthMeasure</a>-wrapper&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:element ref=&quot;ifc:<a href="../../ifcmeasureresource/lexical/ifcnonnegativelengthmeasure.html">IfcNonNegativeLengthMeasure</a>-wrapper&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:element ref=&quot;ifc:<a href="../../ifcmeasureresource/lexical/ifctext.html">IfcText</a>-wrapper&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:element ref=&quot;ifc:<a href="../../ifcdatetimeresource/lexical/ifctimestamp.html">IfcTimeStamp</a>-wrapper&quot;/&gt;<br/>
+&nbsp;&nbsp;&lt;/xs:choice&gt;<br/>
+&nbsp;&lt;/xs:group&gt;<br/>
+</code></div></details>
+<details><summary>EXPRESS Specification</summary><div class="express"><code class="express">
+<span class="keyword">TYPE</span> IfcValue = <span class="keyword">SELECT</span> (<br/>
+&nbsp;<a href="../../ifcmeasureresource/lexical/ifcsimplevalue.html">IfcSimpleValue</a>);<br/><span class="keyword">END_TYPE;</span><br/>
+</p>
+<p class="std"><a href="../../../annex/annex-d/ifcmeasureresource/diagram_0000.html" ><img src="../../../img/diagram.png" style="border: 0px" title="Link to EXPRESS-G diagram" alt="Link to EXPRESS-G diagram">&nbsp;EXPRESS-G diagram</a></p>
+</code></div>
+</details>
+<details><summary>JSON Specification</summary><div class="xsd"><code class="xsd">public interface <a href="../../ifcmeasureresource/lexical/ifcvalue.html">IfcValue</a><br/>
+{<br/>
+}<br/>
+</code></div></details>
+</section>
+</p>
+<p><a href="https://github.com/buildingSMART/ProductData/issues/new?&title=ifcvalue:%22" target="_blank" ><img src="../../../img/external.png" style="border: 0px" title="Report issue" alt="Report issue"/>&nbsp; Report an issue</a></p>
+<p><a href="../../../link/ifcvalue.html" target="_blank" ><img src="../../../img/permlink.png" style="border: 0px" title="Link to this page" alt="Link to this page"/>&nbsp; Link to this page</a></p>
+  </body>
+</html>

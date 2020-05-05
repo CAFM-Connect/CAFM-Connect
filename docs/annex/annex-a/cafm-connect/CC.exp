@@ -1,0 +1,337 @@
+(*
+Copyright by:
+buildingSMART International Limited, 1996-2020
+
+Any technical documentation made available by buildingSMART International Limited
+is the copyrighted work of buildingSMART International Limited and is owned by the 
+buildingSMART International Limited. It may be photocopied, used in software development, 
+or translated into another computer language without prior written consent from 
+buildingSMART International Limited provided that full attribution is given. 
+Prior written consent is required if changes are made to the technical specification.
+
+This material is delivered to you as is and buildingSMART International Limited makes 
+no warranty of any kind with regard to it, including, but not limited to, the implied 
+warranties as to its accuracy or fitness for a particular purpose. Any use of the 
+technical documentation or the information contained therein is at the risk of the user. 
+Documentation may include technical or other inaccuracies or typographical errors. 
+buildingSMART International Limited shall not be liable for errors contained therein or 
+for incidental consequential damages in connection with the furnishing, performance or use 
+of the material. The information contained in this document is subject to change without notice.
+
+Issue date:
+05 May 2020
+
+*)
+
+SCHEMA IFC4;
+
+TYPE IfcStrippedOptional = BOOLEAN;
+END_TYPE;
+
+TYPE IfcDate = STRING;
+END_TYPE;
+
+TYPE IfcGloballyUniqueId = STRING(22) FIXED;
+END_TYPE;
+
+TYPE IfcIdentifier = STRING(255);
+END_TYPE;
+
+TYPE IfcLabel = STRING(255);
+END_TYPE;
+
+TYPE IfcText = STRING;
+END_TYPE;
+
+TYPE IfcTimeStamp = INTEGER;
+END_TYPE;
+
+TYPE IfcURIReference = STRING;
+END_TYPE;
+
+TYPE IfcSimplePropertyTemplateTypeEnum = ENUMERATION OF
+	(P_SINGLEVALUE
+	,P_ENUMERATEDVALUE
+	,P_BOUNDEDVALUE
+	,P_LISTVALUE
+	,P_TABLEVALUE
+	,P_REFERENCEVALUE
+	,Q_LENGTH
+	,Q_AREA
+	,Q_VOLUME
+	,Q_COUNT
+	,Q_WEIGHT
+	,Q_TIME);
+END_TYPE;
+
+TYPE IfcClassificationReferenceSelect = SELECT
+	(IfcClassification
+	,IfcClassificationReference);
+END_TYPE;
+
+TYPE IfcClassificationSelect = SELECT
+	(IfcClassification
+	,IfcClassificationReference);
+END_TYPE;
+
+TYPE IfcDefinitionSelect = SELECT
+	(IfcObjectDefinition
+	,IfcPropertyDefinition);
+END_TYPE;
+
+TYPE IfcPropertySetDefinitionSelect = SELECT
+	(IfcPropertySetDefinition);
+END_TYPE;
+
+TYPE IfcSimpleValue = SELECT
+	(IfcDate
+	,IfcIdentifier
+	,IfcLabel
+	,IfcText
+	,IfcTimeStamp);
+END_TYPE;
+
+TYPE IfcValue = SELECT
+	(IfcSimpleValue);
+END_TYPE;
+
+ENTITY IfcApplication;
+	ApplicationDeveloper : IfcOrganization;
+	Version : IfcLabel;
+	ApplicationFullName : IfcLabel;
+	ApplicationIdentifier : IfcIdentifier;
+ UNIQUE
+	UR1 : ApplicationIdentifier;
+	UR2 : ApplicationFullName, Version;
+END_ENTITY;
+
+ENTITY IfcClassification
+ SUBTYPE OF (IfcExternalInformation);
+	Source : OPTIONAL IfcLabel;
+	Edition : OPTIONAL IfcLabel;
+	EditionDate : OPTIONAL IfcDate;
+	Name : IfcLabel;
+	Description : OPTIONAL IfcText;
+	Location : OPTIONAL IfcStrippedOptional;
+	ReferenceTokens : OPTIONAL LIST [1:?] OF IfcStrippedOptional;
+ INVERSE
+	ClassificationForObjects : SET [0:?] OF IfcRelAssociatesClassification FOR RelatingClassification;
+	HasReferences : SET [0:?] OF IfcClassificationReference FOR ReferencedSource;
+END_ENTITY;
+
+ENTITY IfcClassificationReference
+ SUBTYPE OF (IfcExternalReference);
+	ReferencedSource : OPTIONAL IfcClassificationReferenceSelect;
+	Description : OPTIONAL IfcText;
+	Sort : OPTIONAL IfcStrippedOptional;
+ INVERSE
+	ClassificationRefForObjects : SET [0:?] OF IfcRelAssociatesClassification FOR RelatingClassification;
+	HasReferences : SET [0:?] OF IfcClassificationReference FOR ReferencedSource;
+END_ENTITY;
+
+ENTITY IfcContext
+ ABSTRACT SUPERTYPE OF (ONEOF
+    (IfcProject
+    ,IfcProjectLibrary))
+ SUBTYPE OF (IfcObjectDefinition);
+	ObjectType : OPTIONAL IfcStrippedOptional;
+	LongName : OPTIONAL IfcStrippedOptional;
+	Phase : OPTIONAL IfcLabel;
+	RepresentationContexts : OPTIONAL SET [1:?] OF IfcStrippedOptional;
+	UnitsInContext : OPTIONAL IfcStrippedOptional;
+ INVERSE
+	IsDefinedBy : SET [0:?] OF IfcRelDefinesByProperties FOR RelatedObjects;
+END_ENTITY;
+
+ENTITY IfcExternalInformation
+ ABSTRACT SUPERTYPE OF (ONEOF
+    (IfcClassification));
+END_ENTITY;
+
+ENTITY IfcExternalReference
+ ABSTRACT SUPERTYPE OF (ONEOF
+    (IfcClassificationReference));
+	Location : OPTIONAL IfcURIReference;
+	Identification : OPTIONAL IfcIdentifier;
+	Name : OPTIONAL IfcLabel;
+ WHERE
+	WR1 : EXISTS(Identification) OR EXISTS(Location) OR EXISTS(Name);
+END_ENTITY;
+
+ENTITY IfcObjectDefinition
+ ABSTRACT SUPERTYPE OF (ONEOF
+    (IfcContext))
+ SUBTYPE OF (IfcRoot);
+ INVERSE
+	HasAssociations : SET [0:?] OF IfcRelAssociates FOR RelatedObjects;
+END_ENTITY;
+
+ENTITY IfcOrganization;
+	Identification : OPTIONAL IfcStrippedOptional;
+	Name : IfcLabel;
+	Description : OPTIONAL IfcStrippedOptional;
+	Roles : OPTIONAL LIST [1:?] OF IfcStrippedOptional;
+	Addresses : OPTIONAL LIST [1:?] OF IfcStrippedOptional;
+ INVERSE
+	Engages : SET [0:?] OF IfcPersonAndOrganization FOR TheOrganization;
+END_ENTITY;
+
+ENTITY IfcOwnerHistory;
+	OwningUser : IfcPersonAndOrganization;
+	OwningApplication : IfcApplication;
+	State : OPTIONAL IfcStrippedOptional;
+	ChangeAction : OPTIONAL IfcStrippedOptional;
+	LastModifiedDate : OPTIONAL IfcStrippedOptional;
+	LastModifyingUser : OPTIONAL IfcStrippedOptional;
+	LastModifyingApplication : OPTIONAL IfcStrippedOptional;
+	CreationDate : IfcTimeStamp;
+ WHERE
+	CorrectChangeAction : (EXISTS(LastModifiedDate)) OR
+(NOT(EXISTS(LastModifiedDate)) AND NOT(EXISTS(ChangeAction))) OR
+(NOT(EXISTS(LastModifiedDate)) AND EXISTS(ChangeAction) AND ((ChangeAction = IfcChangeActionEnum.NOTDEFINED) OR (ChangeAction = IfcChangeActionEnum.NOCHANGE)));
+END_ENTITY;
+
+ENTITY IfcPerson;
+	Identification : OPTIONAL IfcStrippedOptional;
+	FamilyName : OPTIONAL IfcStrippedOptional;
+	GivenName : OPTIONAL IfcStrippedOptional;
+	MiddleNames : OPTIONAL LIST [1:?] OF IfcStrippedOptional;
+	PrefixTitles : OPTIONAL LIST [1:?] OF IfcStrippedOptional;
+	SuffixTitles : OPTIONAL LIST [1:?] OF IfcStrippedOptional;
+	Roles : OPTIONAL LIST [1:?] OF IfcStrippedOptional;
+	Addresses : OPTIONAL LIST [1:?] OF IfcStrippedOptional;
+ INVERSE
+	EngagedIn : SET [0:?] OF IfcPersonAndOrganization FOR ThePerson;
+ WHERE
+	IdentifiablePerson : EXISTS(Identification) OR EXISTS(FamilyName) OR EXISTS(GivenName);
+	ValidSetOfNames : NOT EXISTS(MiddleNames) OR EXISTS(FamilyName) OR EXISTS(GivenName);
+END_ENTITY;
+
+ENTITY IfcPersonAndOrganization;
+	ThePerson : IfcPerson;
+	TheOrganization : IfcOrganization;
+	Roles : OPTIONAL LIST [1:?] OF IfcStrippedOptional;
+END_ENTITY;
+
+ENTITY IfcProject
+ SUBTYPE OF (IfcContext);
+ WHERE
+	HasName : EXISTS(SELF\IfcRoot.Name);
+	CorrectContext : NOT(EXISTS(SELF\IfcContext.RepresentationContexts)) OR
+(SIZEOF(QUERY(Temp <* SELF\IfcContext.RepresentationContexts |
+ 'IFC4.IFCGEOMETRICREPRESENTATIONSUBCONTEXT' IN TYPEOF(Temp)
+  )) = 0);
+	NoDecomposition : SIZEOF(SELF\IfcObjectDefinition.Decomposes) = 0;
+END_ENTITY;
+
+ENTITY IfcProjectLibrary
+ SUBTYPE OF (IfcContext);
+END_ENTITY;
+
+ENTITY IfcPropertyDefinition
+ ABSTRACT SUPERTYPE OF (ONEOF
+    (IfcPropertySetDefinition
+    ,IfcPropertyTemplateDefinition))
+ SUBTYPE OF (IfcRoot);
+ INVERSE
+	HasAssociations : SET [0:?] OF IfcRelAssociates FOR RelatedObjects;
+END_ENTITY;
+
+ENTITY IfcPropertySetDefinition
+ ABSTRACT
+ SUBTYPE OF (IfcPropertyDefinition);
+ INVERSE
+	DefinesOccurrence : SET [0:?] OF IfcRelDefinesByProperties FOR RelatingPropertyDefinition;
+END_ENTITY;
+
+ENTITY IfcPropertySetTemplate
+ SUBTYPE OF (IfcPropertyTemplateDefinition);
+	TemplateType : OPTIONAL IfcPropertySetTemplateTypeEnum;
+	ApplicableEntity : OPTIONAL IfcIdentifier;
+	HasPropertyTemplates : SET [1:?] OF IfcPropertyTemplate;
+ WHERE
+	ExistsName : EXISTS(SELF\IfcRoot.Name);
+	UniquePropertyNames : IfcUniquePropertyTemplateNames(HasPropertyTemplates);
+END_ENTITY;
+
+ENTITY IfcPropertyTemplate
+ ABSTRACT SUPERTYPE OF (ONEOF
+    (IfcSimplePropertyTemplate))
+ SUBTYPE OF (IfcPropertyTemplateDefinition);
+ INVERSE
+	PartOfPsetTemplate : SET [0:?] OF IfcPropertySetTemplate FOR HasPropertyTemplates;
+END_ENTITY;
+
+ENTITY IfcPropertyTemplateDefinition
+ ABSTRACT SUPERTYPE OF (ONEOF
+    (IfcPropertySetTemplate
+    ,IfcPropertyTemplate))
+ SUBTYPE OF (IfcPropertyDefinition);
+END_ENTITY;
+
+ENTITY IfcRelAssociates
+ ABSTRACT SUPERTYPE OF (ONEOF
+    (IfcRelAssociatesClassification))
+ SUBTYPE OF (IfcRelationship);
+	RelatedObjects : SET [1:?] OF IfcDefinitionSelect;
+END_ENTITY;
+
+ENTITY IfcRelAssociatesClassification
+ SUBTYPE OF (IfcRelAssociates);
+	RelatingClassification : IfcClassificationSelect;
+END_ENTITY;
+
+ENTITY IfcRelDefines
+ ABSTRACT SUPERTYPE OF (ONEOF
+    (IfcRelDefinesByProperties))
+ SUBTYPE OF (IfcRelationship);
+END_ENTITY;
+
+ENTITY IfcRelDefinesByProperties
+ SUBTYPE OF (IfcRelDefines);
+	RelatedObjects : SET [1:?] OF IfcObjectDefinition;
+	RelatingPropertyDefinition : IfcPropertySetDefinitionSelect;
+ WHERE
+	NoRelatedTypeObject : SIZEOF(QUERY(Types <* SELF\IfcRelDefinesByProperties.RelatedObjects |  'IFC4.IFCTYPEOBJECT' IN TYPEOF(Types))) = 0;
+END_ENTITY;
+
+ENTITY IfcRelationship
+ ABSTRACT SUPERTYPE OF (ONEOF
+    (IfcRelAssociates
+    ,IfcRelDefines))
+ SUBTYPE OF (IfcRoot);
+END_ENTITY;
+
+ENTITY IfcRoot
+ ABSTRACT SUPERTYPE OF (ONEOF
+    (IfcObjectDefinition
+    ,IfcPropertyDefinition
+    ,IfcRelationship));
+	GlobalId : IfcGloballyUniqueId;
+	OwnerHistory : OPTIONAL IfcOwnerHistory;
+	Name : OPTIONAL IfcLabel;
+	Description : OPTIONAL IfcText;
+ UNIQUE
+	UR1 : GlobalId;
+END_ENTITY;
+
+ENTITY IfcSimplePropertyTemplate
+ SUBTYPE OF (IfcPropertyTemplate);
+	TemplateType : OPTIONAL IfcSimplePropertyTemplateTypeEnum;
+	PrimaryMeasureType : OPTIONAL IfcLabel;
+	SecondaryMeasureType : OPTIONAL IfcStrippedOptional;
+	Enumerators : OPTIONAL IfcStrippedOptional;
+	PrimaryUnit : OPTIONAL IfcStrippedOptional;
+	SecondaryUnit : OPTIONAL IfcStrippedOptional;
+	Expression : OPTIONAL IfcStrippedOptional;
+	AccessState : OPTIONAL IfcStrippedOptional;
+END_ENTITY;
+
+RULE IfcSingleProjectInstance FOR
+	(IfcProject);
+
+    WHERE
+      WR1 : SIZEOF(IfcProject) <= 1;
+END_RULE;
+
+END_SCHEMA;

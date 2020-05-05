@@ -1,0 +1,54 @@
+﻿<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="../../../ifc-styles.css">
+
+    <link rel="stylesheet" type="text/css" href="../../../details-shim.css">
+    <script type="text/javascript" src="../../../details-shim.js"></script>
+    <title>IFC4 Addendum 2</title>
+
+    <style type="text/css">
+      body { counter-reset: index1 0 index2 0 index3 0 index4 -1 index5 0; }
+    </style>
+  </head>
+
+  <body>
+
+
+<script type="text/javascript">
+<!--
+    parent.index.location.replace("../../toc-f.html");
+//-->
+</script>
+
+<h4 class="std">F.3 IFC4 Addendum 2</h4>
+<p class="std">
+The Second Addendum of the IFC4 release has the main scope to provide improvements to geometry issues that had been reported during the implementation of IFC4 and IFC4 Addendum 1. It resolves these issues and addresses further implementation issues and concerns.</p>
+<p>The main changes incorporated into IFC4 ADD2 schema are:</p>
+<p>\\\\\\\\\\\\\\* Improvement of the tessellated geometry to allow for more complex tessellations then triangulation and to enable an point index for sharing Cartesian point lists.
+\\\\\\\\\\\\\\* new entities <i>IfcPolygonalFaceSet</i>, <i>IfcIndexedPolygonalFace</i>, <i>IfcIndexedPolygonalFaceWithVoids</i>,
+\\\\\\\\\\\\\\* changing the normal index to a point index at <i>IfcTriangulatedFaceSet</i>,
+\\\\\\\\\\\\\\* adding <i>IfcPolygonalFaceSet</i> and <i>IfcTriangulatedFaceSet</i> to <i>IfcBooleanOperand</i> with the rule that only closed tessellations can be used,
+\\\\\\\\\\\\\\* extensive improvement of documentation and new figures to explain the use of tessellated face sets.
+\\\\\\\\\\\\\\* Improvement of advanced boundary representation, particularly for using elementary surfaces.
+\\\\\\\\\\\\\\* new entities for elementary surfaces <i>IfcSphericalSurface</i>, <i>IfcToroidalSurface</i>,
+\\\\\\\\\\\\\\* new entities for intersection curves to enable curves defined in u,v parametric space <i>IfcSurfaceCurve</i>, <i>IfcIntersectionCurve</i>, <i>IfcSeamCurve</i>,
+\\\\\\\\\\\\\\* new enumeration <i>IfcPreferredSurfaceCurveRepresentation</i>
+\\\\\\\\\\\\\\* extensive improvement of documentation and new figures to explain the use of advanced boundary representations.</p>
+<p>Minor corrections and improvements to the IFC4 ADD1 schema include:</p>
+<p>\\\\\\\\\\\\\\* additional enumerator for <i>IfcBuildingElementProxyTypeEnum</i> to describe a provision for space,
+\\\\\\\\\\\\\\* additional enumerator for <i>IfcSensorTypeEnum</i> to describe a CO Sensor,
+\\\\\\\\\\\\\\* additional property sets, where a common property set was missing,
+\\\\\\\\\\\\\\* further improvements of property set definitions and rationalizations,
+\\\\\\\\\\\\\\* general documentation updates and improvements in the generation of the documentation.</p>
+<p> </p>
+<hr>
+<p>\\\\\\\\\\\\\\*\\\\\\\\\\\\\\*Minor corrections after release of IFC4 Add2 schema include:\\\\\\\\\\\\\\*\\\\\\\\\\\\\\*</p>
+<p>\\\\\\\\\\\\\\* 01. Aug 16 - add <i>IfcSurfaceCurve</i> to select type <i>IfcCurveOnSurface</i> to correct the use of the function <i>IfcGetBasisSurface</i> in where rule CurveIsNotPcurve in <i>IfcSurfaceCurve</i></p>
+<p><a href="https://github.com/buildingSMART/ProductData/issues/new?&title=ifc4-addendum-2:%22" target="_blank" ><img src="../../../img/external.png" style="border: 0px" title="Report issue" alt="Report issue"/>&nbsp; Report an issue</a></p>
+<p><a href="../../../link/ifc4-addendum-2.html" target="_blank" ><img src="../../../img/permlink.png" style="border: 0px" title="Link to this page" alt="Link to this page"/>&nbsp; Link to this page</a></p>
+  </body>
+</html>

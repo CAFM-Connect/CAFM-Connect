@@ -1,0 +1,112 @@
+﻿<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="../../../ifc-styles.css">
+
+    <link rel="stylesheet" type="text/css" href="../../../details-shim.css">
+    <script type="text/javascript" src="../../../details-shim.js"></script>
+    <title>IfcRelDefines</title>
+
+    <style type="text/css">
+      body { counter-reset: index1 5 index2 1 index3 3 index4 19 index5 0; }
+    </style>
+  </head>
+
+  <body>
+
+
+<script type="text/javascript">
+<!--
+    parent.index.location.replace("../../toc-5.html#5.1.3.20");
+//-->
+</script>
+
+<h4 class="num">IfcRelDefines</h4>
+<a href="../../views/construction-objects-data-view/index.html" ><img src="../../../img/view-construction-objects-data-view.png" title="Construction Objects Data View"/></a>
+<details open="open"><summary>Natural language names</summary><table>
+<table class="gridtable">
+<tr><td><img src="../../../img/locale-de.png" /></td><td><b>Definiert - Relation (allgemein)</b></td></tr>
+<tr><td><img src="../../../img/locale-en.png" /></td><td><b>Rel Defines</b></td></tr>
+<tr><td><img src="../../../img/locale-fr.png" /></td><td><b>Définition</b></td></tr>
+</table>
+</details>
+<section>
+<h5 class="num">Semantic definitions at the entity</h5>
+<details open="open"><summary>Entity definition</summary><p>A generic and abstract relationship which subtypes are used to:</p>
+<p>\\\\\\\\\\\\\\* assign a object type to an object occurrence
+\\\\\\\\\\\\\\* assign a property set to an object instance
+\\\\\\\\\\\\\\* assign a property set template to a property set</p>
+<blockquote class="example">
+<p>EXAMPLE  Several instances of windows within the IFC project model may be of the same (catalogue or manufacturer) type. Thereby they share the same properties. This relationship is established by the subtype <a href="../../ifckernel/lexical/ifcreldefinesbytype.html">IfcRelDefinesByType</a> of <span class="self-ref">IfcRelDefines</span> relationship assigning an <i>IfcWindowStyle</i> to multiple occurrences <i>IfcWindow</i>.</p>
+</blockquote>
+<blockquote class="example">
+<p>EXAMPLE  The (same) property set, e.g.  Pset_ProductManufacturerInfo, keeping the manufacturer name, label and production year of a product, can be assigned to one, or many instances of furnishing. This relationship is established by the subtype <a href="../../ifckernel/lexical/ifcreldefinesbyproperties.html">IfcRelDefinesByProperties</a> of <span class="self-ref">IfcRelDefines</span> relationship assigning an <i>IfcPropertySet</i> to one or more instances of <i>IfcFurnishingElement</i>.</p>
+</blockquote>
+
+
+</details>
+</section>
+<section>
+<h5 class="num">Inherited definitions from supertypes</h5>
+<details open="open"><summary>Entity inheritance</summary><img src="../../../diagrams/ifcreldefines.png" usemap="#f"/>
+<map name="f">
+<area shape="rect" coords="42,78,230,90" href="../../../schema/ifckernel/lexical/ifcreldefinesbyproperties.html" alt="IfcRelDefinesByProperties" />
+<area shape="rect" coords="42,102,230,114" href="../../../schema/ifckernel/lexical/ifcreldefinesbytype.html" alt="IfcRelDefinesByType" />
+<area shape="rect" coords="18,30,254,42" href="../../../schema/ifckernel/lexical/ifcrelationship.html" alt="IfcRelationship" />
+<area shape="rect" coords="6,6,266,18" href="../../../schema/ifckernel/lexical/ifcroot.html" alt="IfcRoot" />
+</map>
+</details>
+<details><summary>Attribute inheritance</summary><table class="attributes">
+<tr><th>#</th><th>Attribute</th><th>Type</th><th>Cardinality</th><th>Description</th><th>C</th></tr>
+<tr><td colspan="6"><i><a href="../../ifckernel/lexical/ifcroot.html">IfcRoot</a></i></td></tr>
+<tr><td>1</td><td>GlobalId</td><td><a href="../../ifcutilityresource/lexical/ifcgloballyuniqueid.html">IfcGloballyUniqueId</a></td><td></td><td>
+Assignment of a globally unique identifier within the entire software world.
+</td><td>X</td></tr>
+<tr><td>2</td><td>OwnerHistory</td><td><a href="../../ifcutilityresource/lexical/ifcownerhistory.html">IfcOwnerHistory</a></td><td>? </td><td>
+Assignment of the information about the current ownership of that object, including owning actor, application, local identification and information captured about the recent changes of the object,
+<blockquote class="note">
+NOTE  only the last modification in stored - either as addition, deletion or modification.
+</blockquote>
+
+</td><td>X</td></tr>
+<tr><td>3</td><td>Name</td><td><a href="../../ifcmeasureresource/lexical/ifclabel.html">IfcLabel</a></td><td>? </td><td>
+Optional name for use by the participating software systems or users. For some subtypes of IfcRoot the insertion of the Name attribute may be required. This would be enforced by a where rule.
+</td><td>X</td></tr>
+<tr><td>4</td><td>Description</td><td><a href="../../ifcmeasureresource/lexical/ifctext.html">IfcText</a></td><td>? </td><td>
+Optional description, provided for exchanging informative comments.
+</td><td>X</td></tr>
+<tr><td colspan="6"><i><a href="../../ifckernel/lexical/ifcrelationship.html">IfcRelationship</a></i></td></tr>
+<tr><td colspan="6"><i><a href="../../ifckernel/lexical/ifcreldefines.html">IfcRelDefines</a></i></td></tr>
+</table>
+</details>
+</section>
+<section>
+<h5 class="num">Formal representations</h5>
+<details><summary>XML Specification</summary><div class="xsd"><code class="xsd">&nbsp;&lt;xs:element name=&quot;<a href="../../ifckernel/lexical/ifcreldefines.html">IfcRelDefines</a>&quot; type=&quot;ifc:<a href="../../ifckernel/lexical/ifcreldefines.html">IfcRelDefines</a>&quot; abstract=&quot;true&quot; substitutionGroup=&quot;ifc:<a href="../../ifckernel/lexical/ifcrelationship.html">IfcRelationship</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
+&nbsp;&lt;xs:complexType name=&quot;<a href="../../ifckernel/lexical/ifcreldefines.html">IfcRelDefines</a>&quot; abstract=&quot;true&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../ifckernel/lexical/ifcrelationship.html">IfcRelationship</a>&quot;/&gt;<br/>
+&nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
+&nbsp;&lt;/xs:complexType&gt;<br/>
+</code></div></details>
+<details><summary>EXPRESS Specification</summary><div class="express"><code class="express">
+<span class="keyword">ENTITY</span> IfcRelDefines<br/>
+&nbsp;<span class="keyword">ABSTRACT</span> <span class="keyword">SUPERTYPE OF</span>(<span class="keyword">ONEOF</span>(<a href="../../ifckernel/lexical/ifcreldefinesbyproperties.html">IfcRelDefinesByProperties</a>, <a href="../../ifckernel/lexical/ifcreldefinesbytype.html">IfcRelDefinesByType</a>))<br/>
+&nbsp;<span class="keyword">SUBTYPE OF</span> (<a href="../../ifckernel/lexical/ifcrelationship.html">IfcRelationship</a>)<b>;</b><br/>
+<span class="keyword">END_ENTITY;</span><br/>
+<p class="std"><a href="../../../annex/annex-d/ifckernel/diagram_0000.html" ><img src="../../../img/diagram.png" style="border: 0px" title="Link to EXPRESS-G diagram" alt="Link to EXPRESS-G diagram">&nbsp;EXPRESS-G diagram</a></p>
+</code></div>
+</details>
+<details><summary>JSON Specification</summary><div class="xsd"><code class="xsd">public class <a href="../../ifckernel/lexical/ifcreldefines.html">IfcRelDefines</a> extends <a href="../../ifckernel/lexical/ifcrelationship.html">IfcRelationship</a><br/>
+{<br/>
+}<br/>
+</code></div></details>
+</section>
+</p>
+<p><a href="https://github.com/buildingSMART/ProductData/issues/new?&title=ifcreldefines:%22" target="_blank" ><img src="../../../img/external.png" style="border: 0px" title="Report issue" alt="Report issue"/>&nbsp; Report an issue</a></p>
+<p><a href="../../../link/ifcreldefines.html" target="_blank" ><img src="../../../img/permlink.png" style="border: 0px" title="Link to this page" alt="Link to this page"/>&nbsp; Link to this page</a></p>
+  </body>
+</html>

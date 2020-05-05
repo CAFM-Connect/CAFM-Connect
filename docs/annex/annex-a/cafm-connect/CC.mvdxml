@@ -1,0 +1,298 @@
+<?xml version="1.0"?>
+<mvdXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uuid="5d106769-f57d-4f8e-9da5-8ce386215b06" name="" xsi:schemaLocation="https://standards.buildingsmart.org/MVD/RELEASE/mvdXML/v1-1/mvdXML_V1.1.xsd" xmlns="https://standards.buildingsmart.org/mvd/XML/1.1">
+  <Templates>
+    <ConceptTemplate uuid="47846820-3e96-46c9-9c8a-7c1557050f15" name="CC concepts" applicableSchema="IFC4">
+      <SubTemplates>
+        <ConceptTemplate uuid="6b6f064b-a3a3-4ec7-a2db-79a0c6a777a7" name="CC_IfcClassification" applicableSchema="IFC4" applicableEntity="IfcClassification">
+          <Rules>
+            <AttributeRule AttributeName="Source">
+              <EntityRules>
+                <EntityRule EntityName="IfcLabel" />
+              </EntityRules>
+            </AttributeRule>
+            <AttributeRule AttributeName="Edition">
+              <EntityRules>
+                <EntityRule EntityName="IfcLabel" />
+              </EntityRules>
+            </AttributeRule>
+            <AttributeRule AttributeName="EditionDate">
+              <EntityRules>
+                <EntityRule EntityName="IfcDate" />
+              </EntityRules>
+            </AttributeRule>
+            <AttributeRule AttributeName="Name">
+              <EntityRules>
+                <EntityRule EntityName="IfcLabel" />
+              </EntityRules>
+            </AttributeRule>
+            <AttributeRule AttributeName="Description">
+              <EntityRules>
+                <EntityRule EntityName="IfcText" />
+              </EntityRules>
+            </AttributeRule>
+            <AttributeRule AttributeName="HasReferences">
+              <EntityRules>
+                <EntityRule EntityName="IfcClassificationReference">
+                  <AttributeRules>
+                    <AttributeRule AttributeName="Location">
+                      <EntityRules>
+                        <EntityRule EntityName="IfcURIReference" />
+                      </EntityRules>
+                    </AttributeRule>
+                    <AttributeRule AttributeName="Identification">
+                      <EntityRules>
+                        <EntityRule EntityName="IfcIdentifier" />
+                      </EntityRules>
+                    </AttributeRule>
+                    <AttributeRule AttributeName="Name">
+                      <EntityRules>
+                        <EntityRule EntityName="IfcLabel" />
+                      </EntityRules>
+                    </AttributeRule>
+                    <AttributeRule AttributeName="Description">
+                      <EntityRules>
+                        <EntityRule EntityName="IfcText" />
+                      </EntityRules>
+                    </AttributeRule>
+                    <AttributeRule AttributeName="HasReferences" />
+                    <AttributeRule AttributeName="ClassificationRefForObjects" />
+                    <AttributeRule AttributeName="ReferencedSource">
+                      <EntityRules>
+                        <EntityRule EntityName="IfcClassification">
+                          <AttributeRules>
+                            <AttributeRule AttributeName="Description">
+                              <EntityRules>
+                                <EntityRule EntityName="IfcText">
+                                  <Constraints>
+                                    <Constraint Expression="([Value] = 'CAFMConnectCatalogueOfObjectTypes' OR ([Value] = 'CAFMConnectCatalogueOfSpaceTypes' OR ([Value] = 'CAFMConnectCatalogueOfDocumentTypes' OR [Value] = 'CAFMConnectCatalogueOfBuildingTypes')))" />
+                                  </Constraints>
+                                </EntityRule>
+                              </EntityRules>
+                            </AttributeRule>
+                          </AttributeRules>
+                        </EntityRule>
+                      </EntityRules>
+                    </AttributeRule>
+                  </AttributeRules>
+                </EntityRule>
+              </EntityRules>
+            </AttributeRule>
+          </Rules>
+        </ConceptTemplate>
+        <ConceptTemplate uuid="28e7ce24-04bd-4edd-b32c-db312b41c75f" name="CC_IfcProject" applicableSchema="IFC4" applicableEntity="IfcProject">
+          <Rules>
+            <AttributeRule AttributeName="GlobalId">
+              <EntityRules>
+                <EntityRule EntityName="IfcGloballyUniqueId" />
+              </EntityRules>
+            </AttributeRule>
+            <AttributeRule AttributeName="HasAssociations">
+              <EntityRules>
+                <EntityRule EntityName="IfcRelAssociatesClassification">
+                  <AttributeRules>
+                    <AttributeRule AttributeName="RelatingClassification">
+                      <EntityRules>
+                        <EntityRule EntityName="IfcClassification" />
+                      </EntityRules>
+                    </AttributeRule>
+                  </AttributeRules>
+                </EntityRule>
+              </EntityRules>
+            </AttributeRule>
+          </Rules>
+        </ConceptTemplate>
+        <ConceptTemplate uuid="1dcda077-1514-486c-9674-c108d25a96a2" name="CC_IfcProjectLibrary" applicableSchema="IFC4" applicableEntity="IfcProjectLibrary">
+          <Rules>
+            <AttributeRule AttributeName="GlobalId">
+              <EntityRules>
+                <EntityRule EntityName="IfcGloballyUniqueId" />
+              </EntityRules>
+            </AttributeRule>
+            <AttributeRule AttributeName="OwnerHistory">
+              <EntityRules>
+                <EntityRule EntityName="IfcOwnerHistory" />
+              </EntityRules>
+            </AttributeRule>
+            <AttributeRule AttributeName="Name">
+              <EntityRules>
+                <EntityRule EntityName="IfcLabel" />
+              </EntityRules>
+            </AttributeRule>
+            <AttributeRule AttributeName="Description">
+              <EntityRules>
+                <EntityRule EntityName="IfcText" />
+              </EntityRules>
+            </AttributeRule>
+            <AttributeRule AttributeName="Phase">
+              <EntityRules>
+                <EntityRule EntityName="IfcLabel" />
+              </EntityRules>
+            </AttributeRule>
+            <AttributeRule AttributeName="IsDefinedBy">
+              <EntityRules>
+                <EntityRule EntityName="IfcRelDefinesByProperties" />
+              </EntityRules>
+            </AttributeRule>
+          </Rules>
+        </ConceptTemplate>
+        <ConceptTemplate uuid="77fcee2a-0c5b-4377-bffa-fffbb615ea5d" name="CC_IfcPropertySetTemplate" applicableSchema="IFC4" applicableEntity="IfcPropertySetTemplate">
+          <Rules>
+            <AttributeRule AttributeName="GlobalId">
+              <EntityRules>
+                <EntityRule EntityName="IfcGloballyUniqueId" />
+              </EntityRules>
+            </AttributeRule>
+            <AttributeRule AttributeName="Name">
+              <EntityRules>
+                <EntityRule EntityName="IfcLabel" />
+              </EntityRules>
+            </AttributeRule>
+            <AttributeRule AttributeName="Description">
+              <EntityRules>
+                <EntityRule EntityName="IfcText" />
+              </EntityRules>
+            </AttributeRule>
+            <AttributeRule AttributeName="TemplateType" />
+            <AttributeRule AttributeName="HasPropertyTemplates">
+              <EntityRules>
+                <EntityRule EntityName="IfcSimplePropertyTemplate">
+                  <AttributeRules>
+                    <AttributeRule AttributeName="GlobalId">
+                      <EntityRules>
+                        <EntityRule EntityName="IfcGloballyUniqueId" />
+                      </EntityRules>
+                    </AttributeRule>
+                    <AttributeRule AttributeName="Name">
+                      <EntityRules>
+                        <EntityRule EntityName="IfcLabel" />
+                      </EntityRules>
+                    </AttributeRule>
+                    <AttributeRule AttributeName="Description">
+                      <EntityRules>
+                        <EntityRule EntityName="IfcText" />
+                      </EntityRules>
+                    </AttributeRule>
+                    <AttributeRule AttributeName="PrimaryMeasureType">
+                      <EntityRules>
+                        <EntityRule EntityName="IfcLabel" />
+                      </EntityRules>
+                    </AttributeRule>
+                    <AttributeRule AttributeName="TemplateType">
+                      <EntityRules>
+                        <EntityRule EntityName="IfcSimplePropertyTemplateTypeEnum">
+                          <Constraints>
+                            <Constraint Expression="([Value] = 'P_SINGLEVALUE' OR [Value] = 'P_ENUMERATEDVALUE')" />
+                          </Constraints>
+                        </EntityRule>
+                      </EntityRules>
+                    </AttributeRule>
+                  </AttributeRules>
+                </EntityRule>
+              </EntityRules>
+            </AttributeRule>
+            <AttributeRule AttributeName="ApplicableEntity">
+              <EntityRules>
+                <EntityRule EntityName="IfcIdentifier" />
+              </EntityRules>
+            </AttributeRule>
+          </Rules>
+        </ConceptTemplate>
+      </SubTemplates>
+    </ConceptTemplate>
+    <ConceptTemplate uuid="e166fd48-87a9-4a11-bea0-bbd84f9802b3" name="_CAFM-Connect" applicableSchema="IFC4">
+      <SubTemplates>
+        <ConceptTemplate uuid="21f954d3-d6b4-403e-8a16-fb935327a212" name="NOTDEFINED" applicableSchema="IFC4" applicableEntity="IfcClassification" />
+        <ConceptTemplate uuid="ac66242d-a65c-422a-be5d-81f57ec490c3" name="NOTDEFINED" applicableSchema="IFC4" applicableEntity="IfcProject">
+          <Rules>
+            <AttributeRule AttributeName="HasAssociations" />
+          </Rules>
+        </ConceptTemplate>
+        <ConceptTemplate uuid="ec5a8123-67ce-4e4c-974f-3faae7735672" name="NOTDEFINED" applicableSchema="IFC4" applicableEntity="IfcProjectLibrary" />
+        <ConceptTemplate uuid="96bedb9a-be6a-4320-a532-aae805058b92" name="NOTDEFINED" applicableSchema="IFC4" applicableEntity="IfcPropertySetTemplate" />
+      </SubTemplates>
+    </ConceptTemplate>
+  </Templates>
+  <Views>
+    <ModelView uuid="e166fd48-87a9-4a11-bea0-bbd84f9802b3" name="CAFM-Connect" code="CC" version="3.0" author="CAFM-Connect.org" owner="CAFM-Connect.org" copyright="CAFM-Connect.org" applicableSchema="IFC4">
+      <BaseView>e166fd48-87a9-4a11-bea0-bbd84f9802b3</BaseView>
+      <ExchangeRequirements>
+        <ExchangeRequirement uuid="f039d69c-72af-4eec-978f-4751e28fc434" name="Building information" code="CC-I" version="3.0" author="CAFM-Connect.org" owner="CAFM-Connect.org" copyright="CAFM-Connect.org" applicability="both" />
+        <ExchangeRequirement uuid="1dfc37fb-95a0-4132-8040-3bd449e6cce0" name="Templates" code="CC-T" version="3.0" author="CAFM-Connect.org" owner="CAFM-Connect.org" copyright="CAFM-Connect.org" applicability="both" />
+      </ExchangeRequirements>
+      <Roots>
+        <ConceptRoot uuid="59b75784-b753-4f2a-b4aa-d3310f0f6fc1" name="IfcClassification" applicableRootEntity="IfcClassification">
+          <Applicability>
+            <Template ref="21f954d3-d6b4-403e-8a16-fb935327a212" />
+            <TemplateRules operator="and" />
+          </Applicability>
+          <Concepts>
+            <Concept uuid="91c9e067-e013-4c4d-8b92-117e63710b96" name="IfcClassification" override="false">
+              <Template ref="6b6f064b-a3a3-4ec7-a2db-79a0c6a777a7" />
+              <Requirements>
+                <Requirement applicability="import" requirement="mandatory" exchangeRequirement="1dfc37fb-95a0-4132-8040-3bd449e6cce0" />
+                <Requirement applicability="export" requirement="mandatory" exchangeRequirement="f039d69c-72af-4eec-978f-4751e28fc434" />
+              </Requirements>
+              <TemplateRules operator="and">
+                <TemplateRule />
+                <TemplateRule />
+                <TemplateRule />
+                <TemplateRule />
+                <TemplateRule />
+              </TemplateRules>
+            </Concept>
+          </Concepts>
+        </ConceptRoot>
+        <ConceptRoot uuid="208c8505-1da4-4388-9b8a-ae8a2f8cb9a9" name="IfcProject" applicableRootEntity="IfcProject">
+          <Applicability>
+            <Template ref="ac66242d-a65c-422a-be5d-81f57ec490c3" />
+            <TemplateRules operator="and" />
+          </Applicability>
+          <Concepts>
+            <Concept uuid="f810f05d-d91f-4636-951b-7c5c1dd2e25c" name="IfcProject" override="false">
+              <Template ref="28e7ce24-04bd-4edd-b32c-db312b41c75f" />
+              <Requirements>
+                <Requirement applicability="import" requirement="mandatory" exchangeRequirement="1dfc37fb-95a0-4132-8040-3bd449e6cce0" />
+                <Requirement applicability="export" requirement="mandatory" exchangeRequirement="f039d69c-72af-4eec-978f-4751e28fc434" />
+              </Requirements>
+              <TemplateRules operator="and">
+                <TemplateRule />
+              </TemplateRules>
+            </Concept>
+          </Concepts>
+        </ConceptRoot>
+        <ConceptRoot uuid="c1684b11-0102-4be4-9c44-38f5414c845b" name="IfcProjectLibrary" applicableRootEntity="IfcProjectLibrary">
+          <Applicability>
+            <Template ref="ec5a8123-67ce-4e4c-974f-3faae7735672" />
+            <TemplateRules operator="and" />
+          </Applicability>
+          <Concepts>
+            <Concept uuid="560aa838-0874-4906-ae21-0c5501498b2e" name="IfcProjectLibrary" override="false">
+              <Template ref="1dcda077-1514-486c-9674-c108d25a96a2" />
+              <Requirements>
+                <Requirement applicability="import" requirement="mandatory" exchangeRequirement="1dfc37fb-95a0-4132-8040-3bd449e6cce0" />
+                <Requirement applicability="export" requirement="mandatory" exchangeRequirement="f039d69c-72af-4eec-978f-4751e28fc434" />
+              </Requirements>
+              <TemplateRules operator="and">
+                <TemplateRule />
+              </TemplateRules>
+            </Concept>
+          </Concepts>
+        </ConceptRoot>
+        <ConceptRoot uuid="c508bf90-14c0-4569-b50d-fcaee67986bd" name="IfcPropertySetTemplate" applicableRootEntity="IfcPropertySetTemplate">
+          <Applicability>
+            <Template ref="96bedb9a-be6a-4320-a532-aae805058b92" />
+            <TemplateRules operator="and" />
+          </Applicability>
+          <Concepts>
+            <Concept uuid="dd2c304d-bff2-4b3c-93af-4ac594e91d9c" name="IfcPropertySetTemplate" override="false">
+              <Template ref="77fcee2a-0c5b-4377-bffa-fffbb615ea5d" />
+              <TemplateRules operator="and">
+                <TemplateRule />
+              </TemplateRules>
+            </Concept>
+          </Concepts>
+        </ConceptRoot>
+      </Roots>
+    </ModelView>
+  </Views>
+</mvdXML>

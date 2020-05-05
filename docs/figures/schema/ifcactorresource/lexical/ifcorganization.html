@@ -1,0 +1,143 @@
+﻿<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="../../../ifc-styles.css">
+
+    <link rel="stylesheet" type="text/css" href="../../../details-shim.css">
+    <script type="text/javascript" src="../../../details-shim.js"></script>
+    <title>IfcOrganization</title>
+
+    <style type="text/css">
+      body { counter-reset: index1 8 index2 1 index3 3 index4 0 index5 0; }
+    </style>
+  </head>
+
+  <body>
+
+
+<script type="text/javascript">
+<!--
+    parent.index.location.replace("../../toc-8.html#8.1.3.1");
+//-->
+</script>
+
+<h4 class="num">IfcOrganization</h4>
+<a href="../../views/construction-objects-data-view/index.html" ><img src="../../../img/view-construction-objects-data-view.png" title="Construction Objects Data View"/></a>
+<details open="open"><summary>Natural language names</summary><table>
+<table class="gridtable">
+<tr><td><img src="../../../img/locale-de.png" /></td><td><b>Organisation</b></td></tr>
+<tr><td><img src="../../../img/locale-en.png" /></td><td><b>Organization</b></td></tr>
+<tr><td><img src="../../../img/locale-fr.png" /></td><td><b>Organisation</b></td></tr>
+</table>
+</details>
+<details open="open"><summary>Change log</summary><table class="gridtable">
+<tr><th>Item</th><th>SPF</th><th>XML</th><th>Change</th><th>Description</th></tr>
+<td colspan=5><b><a href="../../../annex/annex-f/ifc2x3-to-ifc4/index.html">IFC2x3 to IFC4</a></b></td>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../schema/ifcactorresource/lexical/ifcorganization.html">IfcOrganization</a></td><td></td><td></td><td></td><td></td></tr>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Identification</td><td></td><td>X</td><td>MODIFIED</td><td>Name changed from <i>Id</i> to <i>Identification</i>. <br/></td></tr>
+</table>
+</details>
+<section>
+<h5 class="num">Semantic definitions at the entity</h5>
+<details open="open"><summary>Entity definition</summary><p>A named and structured grouping with a corporate identity.</p>
+<blockquote class="note">
+<p>NOTE  The relationships between <span class="self-ref">IfcOrganization</span>'s, like between department within a company, can be expressed using the objectified relationship <i>IfcOrganizationRelationship</i>.</p>
+</blockquote>
+<blockquote class="note">
+<p>NOTE  Entity adapted from \\\\\\\\\\\\\\*\\\\\\\\\\\\\\*organization\\\\\\\\\\\\\\*\\\\\\\\\\\\\\* defined in ISO 10303-41.</p>
+</blockquote>
+
+
+</details>
+<details open="open"><summary>Attribute definitions</summary><table class="attributes">
+<tr><th>#</th><th>Attribute</th><th>Type</th><th>Cardinality</th><th>Description</th>
+<th>C</th></tr>
+<tr><td>1</td><td>Identification</td><td><span class="self-ref">-</span></td><td></td><td>
+<i>This attribute is out of scope for this model view definition and shall not be set.</i></td><td></td></tr>
+<tr><td>2</td><td>Name</td><td><a href="../../ifcmeasureresource/lexical/ifclabel.html">IfcLabel</a></td><td></td><td>
+The word, or group of words, by which the organization is referred to.
+</td><td>X</td></tr>
+<tr><td>3</td><td>Description</td><td><span class="self-ref">-</span></td><td></td><td>
+<i>This attribute is out of scope for this model view definition and shall not be set.</i></td><td></td></tr>
+<tr><td>4</td><td>Roles</td><td><span class="self-ref">-</span></td><td></td><td>
+<i>This attribute is out of scope for this model view definition and shall not be set.</i></td><td></td></tr>
+<tr><td>5</td><td>Addresses</td><td><span class="self-ref">-</span></td><td></td><td>
+<i>This attribute is out of scope for this model view definition and shall not be set.</i></td><td></td></tr>
+<tr><td></td><td><i>Engages</i></td><td><a href="../../ifcactorresource/lexical/ifcpersonandorganization.html">IfcPersonAndOrganization</a><br/>@TheOrganization</td><td>S[0:?]</td><td>Inverse relationship to IfcPersonAndOrganization relationships in which IfcOrganization is engaged.
+</td><td></td></tr>
+</table>
+</details>
+</section>
+<section>
+<h5 class="num">Inherited definitions from supertypes</h5>
+<details open="open"><summary>Entity inheritance</summary><img src="../../../diagrams/ifcorganization.png" usemap="#f"/>
+<map name="f">
+</map>
+</details>
+<details><summary>Attribute inheritance</summary><table class="attributes">
+<tr><th>#</th><th>Attribute</th><th>Type</th><th>Cardinality</th><th>Description</th><th>C</th></tr>
+<tr><td colspan="6"><a href="../../ifcactorresource/lexical/ifcorganization.html">IfcOrganization</a></td></tr>
+<tr><td>1</td><td>Identification</td><td><span class="self-ref">-</span></td><td></td><td>
+<i>This attribute is out of scope for this model view definition and shall not be set.</i></td><td></td></tr>
+<tr><td>2</td><td>Name</td><td><a href="../../ifcmeasureresource/lexical/ifclabel.html">IfcLabel</a></td><td></td><td>
+The word, or group of words, by which the organization is referred to.
+</td><td>X</td></tr>
+<tr><td>3</td><td>Description</td><td><span class="self-ref">-</span></td><td></td><td>
+<i>This attribute is out of scope for this model view definition and shall not be set.</i></td><td></td></tr>
+<tr><td>4</td><td>Roles</td><td><span class="self-ref">-</span></td><td></td><td>
+<i>This attribute is out of scope for this model view definition and shall not be set.</i></td><td></td></tr>
+<tr><td>5</td><td>Addresses</td><td><span class="self-ref">-</span></td><td></td><td>
+<i>This attribute is out of scope for this model view definition and shall not be set.</i></td><td></td></tr>
+<tr><td></td><td><i>Engages</i></td><td><a href="../../ifcactorresource/lexical/ifcpersonandorganization.html">IfcPersonAndOrganization</a><br/>@TheOrganization</td><td>S[0:?]</td><td>Inverse relationship to IfcPersonAndOrganization relationships in which IfcOrganization is engaged.
+</td><td></td></tr>
+</table>
+</details>
+</section>
+<section>
+<h5 class="num">Formal representations</h5>
+<details><summary>XML Specification</summary><div class="xsd"><code class="xsd">&nbsp;&lt;xs:element name=&quot;<a href="../../ifcactorresource/lexical/ifcorganization.html">IfcOrganization</a>&quot; type=&quot;ifc:<a href="../../ifcactorresource/lexical/ifcorganization.html">IfcOrganization</a>&quot; substitutionGroup=&quot;ifc:Entity&quot; nillable=&quot;true&quot;/&gt;<br/>
+&nbsp;&lt;xs:complexType name=&quot;<a href="../../ifcactorresource/lexical/ifcorganization.html">IfcOrganization</a>&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:Entity&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute name=&quot;Name&quot; type=&quot;ifc:<a href="../../ifcmeasureresource/lexical/ifclabel.html">IfcLabel</a>&quot; use=&quot;optional&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
+&nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
+&nbsp;&lt;/xs:complexType&gt;<br/>
+</code></div></details>
+<details><summary>EXPRESS Specification</summary><div class="express"><code class="express">
+<span class="keyword">ENTITY</span> IfcOrganization<b>;</b><br/>
+&nbsp;&nbsp;Identification : <span class="keyword">OPTIONAL</span> <span class="self-ref">IfcStrippedOptional</span>;<br/>
+&nbsp;&nbsp;Name : <a href="../../ifcmeasureresource/lexical/ifclabel.html">IfcLabel</a>;<br/>
+&nbsp;&nbsp;Description : <span class="keyword">OPTIONAL</span> <span class="self-ref">IfcStrippedOptional</span>;<br/>
+&nbsp;&nbsp;Roles : <span class="keyword">OPTIONAL</span> <span class="keyword">LIST</span> [1:?] <span class="keyword">OF</span> <span class="self-ref">IfcStrippedOptional</span>;<br/>
+&nbsp;&nbsp;Addresses : <span class="keyword">OPTIONAL</span> <span class="keyword">LIST</span> [1:?] <span class="keyword">OF</span> <span class="self-ref">IfcStrippedOptional</span>;<br/>
+&nbsp;<span class="keyword">INVERSE</span><br/>
+&nbsp;&nbsp;Engages : <span class="keyword">SET</span> [0:?] OF <a href="../../ifcactorresource/lexical/ifcpersonandorganization.html">IfcPersonAndOrganization</a> <span class="keyword">FOR</span> TheOrganization;<br/>
+<span class="keyword">END_ENTITY;</span><br/>
+<p class="std"><a href="../../../annex/annex-d/ifcactorresource/diagram_0000.html" ><img src="../../../img/diagram.png" style="border: 0px" title="Link to EXPRESS-G diagram" alt="Link to EXPRESS-G diagram">&nbsp;EXPRESS-G diagram</a></p>
+</code></div>
+</details>
+<details><summary>JSON Specification</summary><div class="xsd"><code class="xsd">public class <a href="../../ifcactorresource/lexical/ifcorganization.html">IfcOrganization</a> extends IfcBase<br/>
+{<br/>
+&nbsp;private string Identification;<br/>
+&nbsp;private string Name;<br/>
+&nbsp;private string Description;<br/>
+&nbsp;private <span class="self-ref">IfcStrippedOptional</span>[] Roles;<br/>
+&nbsp;private <span class="self-ref">IfcStrippedOptional</span>[] Addresses;<br/>
+&nbsp;private <span class="self-ref">IfcStrippedOptional</span>[] IsRelatedBy;<br/>
+&nbsp;private <span class="self-ref">IfcStrippedOptional</span>[] Relates;<br/>
+&nbsp;private <a href="../../ifcactorresource/lexical/ifcpersonandorganization.html">IfcPersonAndOrganization</a>[] Engages;<br/>
+}<br/>
+</code></div></details>
+</section>
+<p><img src="../../../img/external.png" style="border: 0px" title="References" alt="References"/>&nbsp; References: <a href="../../ifcactorresource/lexical/ifcpersonandorganization.html">IfcPersonAndOrganization</a>
+<a href="../../ifcactorresource/lexical/ifcactorselect.html">IfcActorSelect</a>
+<a href="../../ifcutilityresource/lexical/ifcapplication.html">IfcApplication</a>
+</p>
+<p><a href="https://github.com/buildingSMART/ProductData/issues/new?&title=ifcorganization:%22" target="_blank" ><img src="../../../img/external.png" style="border: 0px" title="Report issue" alt="Report issue"/>&nbsp; Report an issue</a></p>
+<p><a href="../../../link/ifcorganization.html" target="_blank" ><img src="../../../img/permlink.png" style="border: 0px" title="Link to this page" alt="Link to this page"/>&nbsp; Link to this page</a></p>
+  </body>
+</html>

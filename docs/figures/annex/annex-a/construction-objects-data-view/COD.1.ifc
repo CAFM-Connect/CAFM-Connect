@@ -1,0 +1,13 @@
+ISO-10303-21;
+HEADER;
+FILE_DESCRIPTION((''),'2;1');
+FILE_NAME('','2020-03-10T10:09:49',(''),(''),'buildingSMART IfcKit','IfcDoc 12.2.0.0','');
+FILE_SCHEMA(('IFC'));
+ENDSEC;
+
+DATA;
+
+#1= IFCPROJECTLIBRARY('2OqsW47Dz0LgTmf4DAn1f4',$,'IFC Templates',$,$,$,$,$,$);
+ENDSEC;
+
+END-ISO-10303-21;

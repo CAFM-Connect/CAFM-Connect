@@ -1,0 +1,139 @@
+﻿<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="../../../ifc-styles.css">
+
+    <link rel="stylesheet" type="text/css" href="../../../details-shim.css">
+    <script type="text/javascript" src="../../../details-shim.js"></script>
+    <title>IfcMaterialDefinition</title>
+
+    <style type="text/css">
+      body { counter-reset: index1 8 index2 5 index3 3 index4 3 index5 0; }
+    </style>
+  </head>
+
+  <body>
+
+
+<script type="text/javascript">
+<!--
+    parent.index.location.replace("../../toc-8.html#8.5.3.4");
+//-->
+</script>
+
+<h4 class="num">IfcMaterialDefinition</h4>
+<a href="../../views/construction-objects-data-view/index.html" ><img src="../../../img/view-construction-objects-data-view.png" title="Construction Objects Data View"/></a>
+<details open="open"><summary>Natural language names</summary><table>
+<table class="gridtable">
+<tr><td><img src="../../../img/locale-de.png" /></td><td><b>Materialdefinition</b></td></tr>
+<tr><td><img src="../../../img/locale-en.png" /></td><td><b>Material Definition</b></td></tr>
+<tr><td><img src="../../../img/locale-fr.png" /></td><td><b>Définition de matériau</b></td></tr>
+</table>
+</details>
+<details open="open"><summary>Change log</summary><table class="gridtable">
+<tr><th>Item</th><th>SPF</th><th>XML</th><th>Change</th><th>Description</th></tr>
+<td colspan=5><b><a href="../../../annex/annex-f/ifc2x3-to-ifc4/index.html">IFC2x3 to IFC4</a></b></td>
+<tr><td>&nbsp;&nbsp;&nbsp;&nbsp;<a href="../../../schema/ifcmaterialresource/lexical/ifcmaterialdefinition.html">IfcMaterialDefinition</a></td><td></td><td></td><td>ADDED</td><td></td></tr>
+</table>
+</details>
+<section>
+<h5 class="num">Semantic definitions at the entity</h5>
+<details open="open"><summary>Entity definition</summary><p><span class="self-ref">IfcMaterialDefinition</span> is a general supertype for all material related information items in IFC that have common material related properties that may include association of material with some shape parameters or assignments to identified parts of a component.</p>
+<p>There are three ways of assigning materials to a single component or multiple components; they are characterized as:</p>
+<p>\\\\\\\\\\\\\\* by layer - assigning a material to a layer with constant thickness
+\\\\\\\\\\\\\\* by profile - assigning a material to a profile with a constant of varying shape along an extrusion
+\\\\\\\\\\\\\\* by constituents - assigning a material to an identified part of a component shape; the identification is by a keyword rather than by a shape parameter</p>
+<p>Each instantiable subtype of <span class="self-ref">IfcMaterialDefinition</span> may have material properties assigned, or have an external classification of its definition. It can be assigned to either a subtype of <i>IfcElement</i>, or a subtype of <i>IfcElementType</i> by using the objectified relationship <a href="../../ifcproductextension/lexical/ifcrelassociatesmaterial.html">IfcRelAssociatesMaterial</a>.</p>
+
+</details>
+<details open="open"><summary>Attribute definitions</summary><table class="attributes">
+<tr><th>#</th><th>Attribute</th><th>Type</th><th>Cardinality</th><th>Description</th>
+<th>C</th></tr>
+<tr><td></td><td><i>AssociatedTo</i></td><td><a href="../../ifcproductextension/lexical/ifcrelassociatesmaterial.html">IfcRelAssociatesMaterial</a><br/>@RelatingMaterial</td><td>S[0:?]</td><td>Use of the <span class="self-ref">IfcMaterialDefinition</span> subtypes within the material association of an element occurrence or element type. The association is established by the <a href="../../ifcproductextension/lexical/ifcrelassociatesmaterial.html">IfcRelAssociatesMaterial</a> relationship.
+
+
+</td><td>X</td></tr>
+<tr><td></td><td><i>HasProperties</i></td><td><a href="../../ifcmaterialresource/lexical/ifcmaterialproperties.html">IfcMaterialProperties</a><br/>@Material</td><td>S[0:?]</td><td>Material properties assigned to instances of subtypes of <span class="self-ref">IfcMaterialDefinition</span>.
+
+
+</td><td>X</td></tr>
+</table>
+</details>
+</section>
+<section>
+<h5 class="num">Inherited definitions from supertypes</h5>
+<details open="open"><summary>Entity inheritance</summary><img src="../../../diagrams/ifcmaterialdefinition.png" usemap="#f"/>
+<map name="f">
+<area shape="rect" coords="18,30,206,42" href="../../../schema/ifcmaterialresource/lexical/ifcmaterial.html" alt="IfcMaterial" />
+<area shape="rect" coords="18,54,206,66" href="../../../schema/ifcmaterialresource/lexical/ifcmaterialconstituent.html" alt="IfcMaterialConstituent" />
+<area shape="rect" coords="18,78,206,90" href="../../../schema/ifcmaterialresource/lexical/ifcmaterialconstituentset.html" alt="IfcMaterialConstituentSet" />
+<area shape="rect" coords="18,102,206,114" href="../../../schema/ifcmaterialresource/lexical/ifcmateriallayer.html" alt="IfcMaterialLayer" />
+<area shape="rect" coords="18,126,206,138" href="../../../schema/ifcmaterialresource/lexical/ifcmateriallayerset.html" alt="IfcMaterialLayerSet" />
+<area shape="rect" coords="18,150,206,162" href="../../../schema/ifcmaterialresource/lexical/ifcmaterialprofile.html" alt="IfcMaterialProfile" />
+<area shape="rect" coords="18,174,206,186" href="../../../schema/ifcmaterialresource/lexical/ifcmaterialprofileset.html" alt="IfcMaterialProfileSet" />
+</map>
+</details>
+<details><summary>Attribute inheritance</summary><table class="attributes">
+<tr><th>#</th><th>Attribute</th><th>Type</th><th>Cardinality</th><th>Description</th><th>C</th></tr>
+<tr><td colspan="6"><i><a href="../../ifcmaterialresource/lexical/ifcmaterialdefinition.html">IfcMaterialDefinition</a></i></td></tr>
+<tr><td></td><td><i>AssociatedTo</i></td><td><a href="../../ifcproductextension/lexical/ifcrelassociatesmaterial.html">IfcRelAssociatesMaterial</a><br/>@RelatingMaterial</td><td>S[0:?]</td><td>Use of the <span class="self-ref">IfcMaterialDefinition</span> subtypes within the material association of an element occurrence or element type. The association is established by the <a href="../../ifcproductextension/lexical/ifcrelassociatesmaterial.html">IfcRelAssociatesMaterial</a> relationship.
+
+
+</td><td>X</td></tr>
+<tr><td></td><td><i>HasProperties</i></td><td><a href="../../ifcmaterialresource/lexical/ifcmaterialproperties.html">IfcMaterialProperties</a><br/>@Material</td><td>S[0:?]</td><td>Material properties assigned to instances of subtypes of <span class="self-ref">IfcMaterialDefinition</span>.
+
+
+</td><td>X</td></tr>
+</table>
+</details>
+</section>
+<section>
+<h5 class="num">Formal representations</h5>
+<details><summary>XML Specification</summary><div class="xsd"><code class="xsd">&nbsp;&lt;xs:element name=&quot;<a href="../../ifcmaterialresource/lexical/ifcmaterialdefinition.html">IfcMaterialDefinition</a>&quot; type=&quot;ifc:<a href="../../ifcmaterialresource/lexical/ifcmaterialdefinition.html">IfcMaterialDefinition</a>&quot; abstract=&quot;true&quot; substitutionGroup=&quot;ifc:Entity&quot; nillable=&quot;true&quot;/&gt;<br/>
+&nbsp;&lt;xs:complexType name=&quot;<a href="../../ifcmaterialresource/lexical/ifcmaterialdefinition.html">IfcMaterialDefinition</a>&quot; abstract=&quot;true&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:Entity&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:sequence&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:element name=&quot;HasProperties&quot; nillable=&quot;true&quot; minOccurs=&quot;0&quot;&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:complexType&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:sequence&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:element ref=&quot;ifc:<a href="../../ifcmaterialresource/lexical/ifcmaterialproperties.html">IfcMaterialProperties</a>&quot; minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:sequence&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute ref=&quot;ifc:itemType&quot; fixed=&quot;ifc:<a href="../../ifcmaterialresource/lexical/ifcmaterialproperties.html">IfcMaterialProperties</a>&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute ref=&quot;ifc:cType&quot; fixed=&quot;set&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;xs:attribute ref=&quot;ifc:arraySize&quot; use=&quot;optional&quot;/&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:complexType&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:element&gt;<br/>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/xs:sequence&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;/xs:extension&gt;<br/>
+&nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
+&nbsp;&lt;/xs:complexType&gt;<br/>
+</code></div></details>
+<details><summary>EXPRESS Specification</summary><div class="express"><code class="express">
+<span class="keyword">ENTITY</span> IfcMaterialDefinition<br/>
+&nbsp;<span class="keyword">ABSTRACT</span> <span class="keyword">SUPERTYPE OF</span>(<span class="keyword">ONEOF</span>(<a href="../../ifcmaterialresource/lexical/ifcmaterial.html">IfcMaterial</a>, <a href="../../ifcmaterialresource/lexical/ifcmaterialconstituent.html">IfcMaterialConstituent</a>, <a href="../../ifcmaterialresource/lexical/ifcmaterialconstituentset.html">IfcMaterialConstituentSet</a>, <a href="../../ifcmaterialresource/lexical/ifcmateriallayer.html">IfcMaterialLayer</a>, <a href="../../ifcmaterialresource/lexical/ifcmateriallayerset.html">IfcMaterialLayerSet</a>, <a href="../../ifcmaterialresource/lexical/ifcmaterialprofile.html">IfcMaterialProfile</a>, <a href="../../ifcmaterialresource/lexical/ifcmaterialprofileset.html">IfcMaterialProfileSet</a>))<b>;</b><br/>
+&nbsp;<span class="keyword">INVERSE</span><br/>
+&nbsp;&nbsp;AssociatedTo : <span class="keyword">SET</span> [0:?] <span class="keyword">OF</span> <a href="../../ifcproductextension/lexical/ifcrelassociatesmaterial.html">IfcRelAssociatesMaterial</a> <span class="keyword">FOR</span> RelatingMaterial;<br/>
+&nbsp;&nbsp;HasProperties : <span class="keyword">SET</span> [0:?] OF <a href="../../ifcmaterialresource/lexical/ifcmaterialproperties.html">IfcMaterialProperties</a> <span class="keyword">FOR</span> Material;<br/>
+<span class="keyword">END_ENTITY;</span><br/>
+<p class="std"><a href="../../../annex/annex-d/ifcmaterialresource/diagram_0000.html" ><img src="../../../img/diagram.png" style="border: 0px" title="Link to EXPRESS-G diagram" alt="Link to EXPRESS-G diagram">&nbsp;EXPRESS-G diagram</a></p>
+</code></div>
+</details>
+<details><summary>JSON Specification</summary><div class="xsd"><code class="xsd">public class <a href="../../ifcmaterialresource/lexical/ifcmaterialdefinition.html">IfcMaterialDefinition</a> extends IfcBase<br/>
+{<br/>
+&nbsp;private <a href="../../ifcproductextension/lexical/ifcrelassociatesmaterial.html">IfcRelAssociatesMaterial</a>[] AssociatedTo;<br/>
+&nbsp;private <span class="self-ref">IfcStrippedOptional</span>[] HasExternalReferences;<br/>
+&nbsp;private <a href="../../ifcmaterialresource/lexical/ifcmaterialproperties.html">IfcMaterialProperties</a>[] HasProperties;<br/>
+}<br/>
+</code></div></details>
+</section>
+<p><img src="../../../img/external.png" style="border: 0px" title="References" alt="References"/>&nbsp; References: <a href="../../ifcmaterialresource/lexical/ifcmaterialproperties.html">IfcMaterialProperties</a>
+<a href="../../ifcmaterialresource/lexical/ifcmaterialselect.html">IfcMaterialSelect</a>
+</p>
+<p><a href="https://github.com/buildingSMART/ProductData/issues/new?&title=ifcmaterialdefinition:%22" target="_blank" ><img src="../../../img/external.png" style="border: 0px" title="Report issue" alt="Report issue"/>&nbsp; Report an issue</a></p>
+<p><a href="../../../link/ifcmaterialdefinition.html" target="_blank" ><img src="../../../img/permlink.png" style="border: 0px" title="Link to this page" alt="Link to this page"/>&nbsp; Link to this page</a></p>
+  </body>
+</html>

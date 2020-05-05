@@ -1,0 +1,144 @@
+﻿<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="../../../ifc-styles.css">
+
+    <link rel="stylesheet" type="text/css" href="../../../details-shim.css">
+    <script type="text/javascript" src="../../../details-shim.js"></script>
+    <title>IfcPropertySetDefinition</title>
+
+    <style type="text/css">
+      body { counter-reset: index1 5 index2 1 index3 3 index4 7 index5 0; }
+    </style>
+  </head>
+
+  <body>
+
+
+<script type="text/javascript">
+<!--
+    parent.index.location.replace("../../toc-5.html#5.1.3.8");
+//-->
+</script>
+
+<h4 class="num">IfcPropertySetDefinition</h4>
+<a href="../../views/construction-objects-data-view/index.html" ><img src="../../../img/view-construction-objects-data-view.png" title="Construction Objects Data View"/></a>
+<details open="open"><summary>Natural language names</summary><table>
+<table class="gridtable">
+<tr><td><img src="../../../img/locale-de.png" /></td><td><b>Definition der Merkmalliste (allgemein)</b></td></tr>
+<tr><td><img src="../../../img/locale-en.png" /></td><td><b>Property Set Definition</b></td></tr>
+<tr><td><img src="../../../img/locale-fr.png" /></td><td><b>Définition d'ensemble de propriété</b></td></tr>
+</table>
+</details>
+<section>
+<h5 class="num">Semantic definitions at the entity</h5>
+<details open="open"><summary>Entity definition</summary><p><span class="self-ref">IfcPropertySetDefinition</span> is a generalization of all individual property sets that can be assigned to an object or type object. The property set definition can be either:</p>
+<p>\\\\\\\\\\\\\\* \\\\\\\\\\\\\\*\\\\\\\\\\\\\\*Dynamically extendable property sets\\\\\\\\\\\\\\*\\\\\\\\\\\\\\* - <i>IfcPropertySet</i>, a set of properties for which the IFC specification only provides a kind of &quot;meta model&quot;, to be further declared by agreement. This means no entity definition of the properties exists within the IFC specification. The declaration is done by assigning a significant string value to the <i>Name</i> attribute of the entity as defined in the entity <i>IfcPropertySet</i> and at each subtype of <a href="../../ifcpropertyresource/lexical/ifcproperty.html">IfcProperty</a>, referenced by the property set. Dynamically defined property sets may have an underlying template provided by <a href="../../ifckernel/lexical/ifcpropertysettemplate.html">IfcPropertySetTemplate</a>.
+\\\\\\\\\\\\\\* \\\\\\\\\\\\\\*\\\\\\\\\\\\\\*Statically defined property sets\\\\\\\\\\\\\\*\\\\\\\\\\\\\\* - <i>IfcPreDefinedPropertySet</i>, a property set entity that exists within the IFC specification. The semantic meaning of each statically defined property set is declared by its entity type and the meaning of the properties is defined by the name and data type of the explicit attribute representing it.</p>
+<p>Property set definitions define information that is shared among multiple instances of objects, either object occurrences or object types. <span class="self-ref">IfcPropertySetDefinition</span>'s (by their instantiable subtypes) can participate within the following relationships:</p>
+<p>\\\\\\\\\\\\\\* \\\\\\\\\\\\\\*\\\\\\\\\\\\\\*Assignment to object types\\\\\\\\\\\\\\*\\\\\\\\\\\\\\* - an <i>DefinesType</i> direct relationship to <a href="../../ifckernel/lexical/ifctypeobject.html">IfcTypeObject</a> that applies the property set, with all included properties, to the object type. Those properties apply to all object occurrences having the same object type.
+\\\\\\\\\\\\\\* \\\\\\\\\\\\\\*\\\\\\\\\\\\\\*Assignment to object occurrences\\\\\\\\\\\\\\*\\\\\\\\\\\\\\* - an <i>DefinesOccurrence</i> relationship to <a href="../../ifckernel/lexical/ifcreldefinesbyproperties.html">IfcRelDefinesByProperties</a> that applies the property set, with all included properties, to the object occurrence.</p>
+<blockquote class="note">
+<p>NOTE  Properties assigned to object occurrences may override properties assigned to the object type. See <a href="../../ifckernel/lexical/ifcreldefinesbytype.html">IfcRelDefinesByType</a> for further information.</p>
+</blockquote>
+
+
+</details>
+<details open="open"><summary>Attribute definitions</summary><table class="attributes">
+<tr><th>#</th><th>Attribute</th><th>Type</th><th>Cardinality</th><th>Description</th>
+<th>C</th></tr>
+<tr><td></td><td><i>DefinesType</i></td><td><a href="../../ifckernel/lexical/ifctypeobject.html">IfcTypeObject</a><br/>@HasPropertySets</td><td>S[0:?]</td><td>The type object to which the property set is assigned. The property set acts as a shared property set to all occurrences of the type object.
+<blockquote class="note">
+NOTE  The relationship between the <span class="self-ref">IfcPropertySetDefinition</span> and the <a href="../../ifckernel/lexical/ifctypeobject.html">IfcTypeObject</a> is a direct relationship, not utilizing <a href="../../ifckernel/lexical/ifcreldefinesbyproperties.html">IfcRelDefinesByProperties</a>, for maintaining compatibility with earlier releases of this standard.
+</blockquote>
+
+</td><td></td></tr>
+<tr><td></td><td><i>DefinesOccurrence</i></td><td><a href="../../ifckernel/lexical/ifcreldefinesbyproperties.html">IfcRelDefinesByProperties</a><br/>@RelatingPropertyDefinition</td><td>S[0:?]</td><td>Reference to the relation to one or many object occurrences that are characterized by the property set definition. A single property set can be assigned to multiple object occurrences using the objectified relationship <i>IfcRefDefinesByProperties</i>.
+
+
+</td><td></td></tr>
+</table>
+</details>
+</section>
+<section>
+<h5 class="num">Inherited definitions from supertypes</h5>
+<details open="open"><summary>Entity inheritance</summary><img src="../../../diagrams/ifcpropertysetdefinition.png" usemap="#f"/>
+<map name="f">
+<area shape="rect" coords="18,30,230,42" href="../../../schema/ifckernel/lexical/ifcpropertydefinition.html" alt="IfcPropertyDefinition" />
+<area shape="rect" coords="6,6,242,18" href="../../../schema/ifckernel/lexical/ifcroot.html" alt="IfcRoot" />
+</map>
+</details>
+<details><summary>Attribute inheritance</summary><table class="attributes">
+<tr><th>#</th><th>Attribute</th><th>Type</th><th>Cardinality</th><th>Description</th><th>C</th></tr>
+<tr><td colspan="6"><i><a href="../../ifckernel/lexical/ifcroot.html">IfcRoot</a></i></td></tr>
+<tr><td>1</td><td>GlobalId</td><td><a href="../../ifcutilityresource/lexical/ifcgloballyuniqueid.html">IfcGloballyUniqueId</a></td><td></td><td>
+Assignment of a globally unique identifier within the entire software world.
+</td><td>X</td></tr>
+<tr><td>2</td><td>OwnerHistory</td><td><a href="../../ifcutilityresource/lexical/ifcownerhistory.html">IfcOwnerHistory</a></td><td>? </td><td>
+Assignment of the information about the current ownership of that object, including owning actor, application, local identification and information captured about the recent changes of the object,
+<blockquote class="note">
+NOTE  only the last modification in stored - either as addition, deletion or modification.
+</blockquote>
+
+</td><td>X</td></tr>
+<tr><td>3</td><td>Name</td><td><a href="../../ifcmeasureresource/lexical/ifclabel.html">IfcLabel</a></td><td>? </td><td>
+Optional name for use by the participating software systems or users. For some subtypes of IfcRoot the insertion of the Name attribute may be required. This would be enforced by a where rule.
+</td><td>X</td></tr>
+<tr><td>4</td><td>Description</td><td><a href="../../ifcmeasureresource/lexical/ifctext.html">IfcText</a></td><td>? </td><td>
+Optional description, provided for exchanging informative comments.
+</td><td>X</td></tr>
+<tr><td colspan="6"><i><a href="../../ifckernel/lexical/ifcpropertydefinition.html">IfcPropertyDefinition</a></i></td></tr>
+<tr><td></td><td><i>HasContext</i></td><td><a href="../../ifckernel/lexical/ifcreldeclares.html">IfcRelDeclares</a><br/>@RelatedDefinitions</td><td>S[0:1]</td><td></td><td></td></tr>
+<tr><td></td><td><i>HasAssociations</i></td><td><a href="../../ifckernel/lexical/ifcrelassociates.html">IfcRelAssociates</a><br/>@RelatedObjects</td><td>S[0:?]</td><td>Reference to the relationship IfcRelAssociates and thus to those externally defined concepts, like classifications, documents, or library information, which are associated to the property definition.
+</td><td>X</td></tr>
+<tr><td colspan="6"><i><a href="../../ifckernel/lexical/ifcpropertysetdefinition.html">IfcPropertySetDefinition</a></i></td></tr>
+<tr><td></td><td><i>DefinesType</i></td><td><a href="../../ifckernel/lexical/ifctypeobject.html">IfcTypeObject</a><br/>@HasPropertySets</td><td>S[0:?]</td><td>The type object to which the property set is assigned. The property set acts as a shared property set to all occurrences of the type object.
+<blockquote class="note">
+NOTE  The relationship between the <span class="self-ref">IfcPropertySetDefinition</span> and the <a href="../../ifckernel/lexical/ifctypeobject.html">IfcTypeObject</a> is a direct relationship, not utilizing <a href="../../ifckernel/lexical/ifcreldefinesbyproperties.html">IfcRelDefinesByProperties</a>, for maintaining compatibility with earlier releases of this standard.
+</blockquote>
+
+</td><td></td></tr>
+<tr><td></td><td><i>DefinesOccurrence</i></td><td><a href="../../ifckernel/lexical/ifcreldefinesbyproperties.html">IfcRelDefinesByProperties</a><br/>@RelatingPropertyDefinition</td><td>S[0:?]</td><td>Reference to the relation to one or many object occurrences that are characterized by the property set definition. A single property set can be assigned to multiple object occurrences using the objectified relationship <i>IfcRefDefinesByProperties</i>.
+
+
+</td><td></td></tr>
+</table>
+</details>
+</section>
+<section>
+<h5 class="num">Formal representations</h5>
+<details><summary>XML Specification</summary><div class="xsd"><code class="xsd">&nbsp;&lt;xs:element name=&quot;<a href="../../ifckernel/lexical/ifcpropertysetdefinition.html">IfcPropertySetDefinition</a>&quot; type=&quot;ifc:<a href="../../ifckernel/lexical/ifcpropertysetdefinition.html">IfcPropertySetDefinition</a>&quot; abstract=&quot;true&quot; substitutionGroup=&quot;ifc:<a href="../../ifckernel/lexical/ifcpropertydefinition.html">IfcPropertyDefinition</a>&quot; nillable=&quot;true&quot;/&gt;<br/>
+&nbsp;&lt;xs:complexType name=&quot;<a href="../../ifckernel/lexical/ifcpropertysetdefinition.html">IfcPropertySetDefinition</a>&quot; abstract=&quot;true&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;xs:complexContent&gt;<br/>
+&nbsp;&nbsp;&nbsp;&lt;xs:extension base=&quot;ifc:<a href="../../ifckernel/lexical/ifcpropertydefinition.html">IfcPropertyDefinition</a>&quot;/&gt;<br/>
+&nbsp;&nbsp;&lt;/xs:complexContent&gt;<br/>
+&nbsp;&lt;/xs:complexType&gt;<br/>
+</code></div></details>
+<details><summary>EXPRESS Specification</summary><div class="express"><code class="express">
+<span class="keyword">ENTITY</span> IfcPropertySetDefinition<br/>
+&nbsp;<span class="keyword">SUBTYPE OF</span> (<a href="../../ifckernel/lexical/ifcpropertydefinition.html">IfcPropertyDefinition</a>)<b>;</b><br/>
+&nbsp;<span class="keyword">INVERSE</span><br/>
+&nbsp;&nbsp;DefinesType : <span class="keyword">SET</span> [0:?] OF <a href="../../ifckernel/lexical/ifctypeobject.html">IfcTypeObject</a> <span class="keyword">FOR</span> HasPropertySets;<br/>
+&nbsp;&nbsp;DefinesOccurrence : <span class="keyword">SET</span> [0:?] <span class="keyword">OF</span> <a href="../../ifckernel/lexical/ifcreldefinesbyproperties.html">IfcRelDefinesByProperties</a> <span class="keyword">FOR</span> RelatingPropertyDefinition;<br/>
+<span class="keyword">END_ENTITY;</span><br/>
+<p class="std"><a href="../../../annex/annex-d/ifckernel/diagram_0000.html" ><img src="../../../img/diagram.png" style="border: 0px" title="Link to EXPRESS-G diagram" alt="Link to EXPRESS-G diagram">&nbsp;EXPRESS-G diagram</a></p>
+</code></div>
+</details>
+<details><summary>JSON Specification</summary><div class="xsd"><code class="xsd">public class <a href="../../ifckernel/lexical/ifcpropertysetdefinition.html">IfcPropertySetDefinition</a> extends <a href="../../ifckernel/lexical/ifcpropertydefinition.html">IfcPropertyDefinition</a><br/>
+{<br/>
+&nbsp;private <a href="../../ifckernel/lexical/ifctypeobject.html">IfcTypeObject</a>[] DefinesType;<br/>
+&nbsp;private <span class="self-ref">IfcStrippedOptional</span>[] IsDefinedBy;<br/>
+&nbsp;private <a href="../../ifckernel/lexical/ifcreldefinesbyproperties.html">IfcRelDefinesByProperties</a>[] DefinesOccurrence;<br/>
+}<br/>
+</code></div></details>
+</section>
+<p><img src="../../../img/external.png" style="border: 0px" title="References" alt="References"/>&nbsp; References: <a href="../../ifckernel/lexical/ifctypeobject.html">IfcTypeObject</a>
+<a href="../../ifckernel/lexical/ifcpropertysetdefinitionselect.html">IfcPropertySetDefinitionSelect</a>
+</p>
+<p><a href="https://github.com/buildingSMART/ProductData/issues/new?&title=ifcpropertysetdefinition:%22" target="_blank" ><img src="../../../img/external.png" style="border: 0px" title="Report issue" alt="Report issue"/>&nbsp; Report an issue</a></p>
+<p><a href="../../../link/ifcpropertysetdefinition.html" target="_blank" ><img src="../../../img/permlink.png" style="border: 0px" title="Link to this page" alt="Link to this page"/>&nbsp; Link to this page</a></p>
+  </body>
+</html>

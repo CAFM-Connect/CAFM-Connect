@@ -1,0 +1,87 @@
+﻿<!DOCTYPE HTML>
+
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <link rel="stylesheet" type="text/css" href="../../../ifc-styles.css">
+
+    <link rel="stylesheet" type="text/css" href="../../../details-shim.css">
+    <script type="text/javascript" src="../../../details-shim.js"></script>
+    <title>IfcText</title>
+
+    <style type="text/css">
+      body { counter-reset: index1 8 index2 6 index3 2 index4 4 index5 0; }
+    </style>
+  </head>
+
+  <body>
+
+
+<script type="text/javascript">
+<!--
+    parent.index.location.replace("../../toc-8.html#8.6.2.5");
+//-->
+</script>
+
+<h4 class="num">IfcText</h4>
+<a href="../../views/construction-objects-data-view/index.html" ><img src="../../../img/view-construction-objects-data-view.png" title="Construction Objects Data View"/></a>
+<details open="open"><summary>Natural language names</summary><table>
+<table class="gridtable">
+<tr><td><img src="../../../img/locale-de.png" /></td><td><b>Text</b></td></tr>
+<tr><td><img src="../../../img/locale-en.png" /></td><td><b>Text</b></td></tr>
+<tr><td><img src="../../../img/locale-fr.png" /></td><td><b>Texte</b></td></tr>
+</table>
+</details>
+<section>
+<h5 class="num">Semantic definitions at the type</h5>
+<details open="open"><summary>Type definition</summary><p>An <span class="self-ref">IfcText</span> is an alphanumeric string of characters which is intended to be read and understood by a human being. It is for information purposes only.</p>
+<p>Type: STRING</p>
+<blockquote class="note">
+<p>NOTE  Type adapted from \\\\\\\\\\\\\\*\\\\\\\\\\\\\\*text\\\\\\\\\\\\\\*\\\\\\\\\\\\\\* defined in ISO 10303-41.</p>
+</blockquote>
+
+<blockquote class="note">
+<p>NOTE  The set of characters that may appear in STRINGs exchanged in the exchange structure as defined in ISO 10303.21 is provided in ISO 10646. The encoding of characters in case of file-based exchange is defined in ISO 10303-21 and ISO 10303-28. Among else, these specifications define the encoding of 8-bit characters from ISO 8859-1...-16 and of 2-byte and 4-byte Unicode characters from ISO 10646.</p>
+</blockquote>
+<blockquote class="note">
+<p>Note that while <span class="self-ref">IfcText</span> is not formally restricted in length, the size of a string in ISO 10303-21 conforming exchange files must not exceed 32767 octets after encoding and escaping.</p>
+</blockquote>
+</details>
+</section>
+<section>
+<h5 class="num">Formal representations</h5>
+<details><summary>XML Specification</summary><div class="xsd"><code class="xsd">&nbsp;&lt;xs:simpleType name=&quot;<a href="../../ifcmeasureresource/lexical/ifctext.html">IfcText</a>&quot;&gt;<br/>
+&nbsp;&nbsp;&lt;xs:restriction base=&quot;xs:normalizedString&quot;/&gt;<br/>
+&nbsp;&lt;/xs:simpleType&gt;<br/>
+</code></div></details>
+<details><summary>EXPRESS Specification</summary><div class="express"><code class="express">
+<span class="keyword">TYPE</span> IfcText = <span class="self-ref">STRING</span>;<br/><span class="keyword">END_TYPE;</span><br/>
+</p>
+<p class="std"><a href="../../../annex/annex-d/ifcmeasureresource/diagram_0000.html" ><img src="../../../img/diagram.png" style="border: 0px" title="Link to EXPRESS-G diagram" alt="Link to EXPRESS-G diagram">&nbsp;EXPRESS-G diagram</a></p>
+</code></div>
+</details>
+<details><summary>JSON Specification</summary><div class="xsd"><code class="xsd">/* <a href="../../ifcmeasureresource/lexical/ifctext.html">IfcText</a> : STRING (Java does not support structures, so usage of defined types are inline for efficiency.) */<br/>
+</code></div></details>
+</section>
+<p><img src="../../../img/external.png" style="border: 0px" title="References" alt="References"/>&nbsp; References: <a href="../../ifckernel/lexical/ifcroot.html">IfcRoot</a>
+<a href="../../ifcactorresource/lexical/ifcorganization.html">IfcOrganization</a>
+<a href="../../ifcexternalreferenceresource/lexical/ifcclassification.html">IfcClassification</a>
+<a href="../../ifcexternalreferenceresource/lexical/ifcclassificationreference.html">IfcClassificationReference</a>
+<a href="../../ifcexternalreferenceresource/lexical/ifclibraryinformation.html">IfcLibraryInformation</a>
+<a href="../../ifcexternalreferenceresource/lexical/ifclibraryreference.html">IfcLibraryReference</a>
+<a href="../../ifcmaterialresource/lexical/ifcmaterial.html">IfcMaterial</a>
+<a href="../../ifcmaterialresource/lexical/ifcmaterialconstituent.html">IfcMaterialConstituent</a>
+<a href="../../ifcmaterialresource/lexical/ifcmaterialconstituentset.html">IfcMaterialConstituentSet</a>
+<a href="../../ifcmaterialresource/lexical/ifcmateriallayer.html">IfcMaterialLayer</a>
+<a href="../../ifcmaterialresource/lexical/ifcmateriallayerset.html">IfcMaterialLayerSet</a>
+<a href="../../ifcmaterialresource/lexical/ifcmaterialprofile.html">IfcMaterialProfile</a>
+<a href="../../ifcmaterialresource/lexical/ifcmaterialprofileset.html">IfcMaterialProfileSet</a>
+<a href="../../ifcmeasureresource/lexical/ifcsimplevalue.html">IfcSimpleValue</a>
+<a href="../../ifcpropertyresource/lexical/ifcextendedproperties.html">IfcExtendedProperties</a>
+<a href="../../ifcpropertyresource/lexical/ifcproperty.html">IfcProperty</a>
+</p>
+<p><a href="https://github.com/buildingSMART/ProductData/issues/new?&title=ifctext:%22" target="_blank" ><img src="../../../img/external.png" style="border: 0px" title="Report issue" alt="Report issue"/>&nbsp; Report an issue</a></p>
+<p><a href="../../../link/ifctext.html" target="_blank" ><img src="../../../img/permlink.png" style="border: 0px" title="Link to this page" alt="Link to this page"/>&nbsp; Link to this page</a></p>
+  </body>
+</html>
