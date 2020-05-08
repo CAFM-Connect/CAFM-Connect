@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<mvdXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uuid="5d106769-f57d-4f8e-9da5-8ce386215b06" name="" xsi:schemaLocation="https://standards.buildingsmart.org/MVD/RELEASE/mvdXML/v1-1/mvdXML_V1.1.xsd" xmlns="https://standards.buildingsmart.org/mvd/XML/1.1">
+<mvdXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uuid="1ce93042-fb8e-40e6-89e1-f89b9594ef5c" name="" xsi:schemaLocation="https://standards.buildingsmart.org/MVD/RELEASE/mvdXML/v1-1/mvdXML_V1.1.xsd" xmlns="https://standards.buildingsmart.org/mvd/XML/1.1">
   <Templates>
     <ConceptTemplate uuid="47846820-3e96-46c9-9c8a-7c1557050f15" name="CC concepts" applicableSchema="IFC4">
       <SubTemplates>
@@ -214,10 +214,30 @@
   </Templates>
   <Views>
     <ModelView uuid="e166fd48-87a9-4a11-bea0-bbd84f9802b3" name="CAFM-Connect" code="CC" version="3.0" author="CAFM-Connect.org" owner="CAFM-Connect.org" copyright="CAFM-Connect.org" applicableSchema="IFC4">
+      <Definitions>
+        <Definition>
+          <Body><![CDATA[# How Is A CAFM-Connect File Structured?
+Every file, that is based on the "CAFM-Connect" specification is a native IFC file. In IFC there are two different file formats: STEP and IfcXML. A CAFM-Connect file is a file in the format IfcXML.
+
+* Filename extension: *.ifcxml
+* IFC version: IFC4 (final)
+* IFC specification: http://www.buildingsmart-tech.org/ifc/IFC4/final/html]
+* IFC scheme file (xsd): http://www.buildingsmart-tech.org/ifcXML/IFC4/Add1/IFC4_ADD1.xsd
+
+In case of conflicts between the specification explained on this page and the officical IFC specification the IFC specification wins.
+
+In CAFM-Connect there are two type of files:
+
+* Catalogue file: This file contains the units, classifications and property sets of CAFM-Connect
+* Data file: This file contains the content of the catalogue file (embedded catalogue) and the data itself
+
+The following figure explaines the structure of a CAFM-Connect file. It shows the code blocks contained in the files. A CAFM-Connect file can be created easily by inserting the data in the template of the catalogue file. Please see the detailed explanation of the [File Structure](../File Structure).]]></Body>
+        </Definition>
+      </Definitions>
       <BaseView>e166fd48-87a9-4a11-bea0-bbd84f9802b3</BaseView>
       <ExchangeRequirements>
-        <ExchangeRequirement uuid="f039d69c-72af-4eec-978f-4751e28fc434" name="Building information" code="CC-I" version="3.0" author="CAFM-Connect.org" owner="CAFM-Connect.org" copyright="CAFM-Connect.org" applicability="both" />
-        <ExchangeRequirement uuid="1dfc37fb-95a0-4132-8040-3bd449e6cce0" name="Templates" code="CC-T" version="3.0" author="CAFM-Connect.org" owner="CAFM-Connect.org" copyright="CAFM-Connect.org" applicability="both" />
+        <ExchangeRequirement uuid="f039d69c-72af-4eec-978f-4751e28fc434" name="Data file" code="CC-I" version="3.0" author="CAFM-Connect.org" owner="CAFM-Connect.org" copyright="CAFM-Connect.org" applicability="both" />
+        <ExchangeRequirement uuid="1dfc37fb-95a0-4132-8040-3bd449e6cce0" name="Catalogue file" code="CC-T" version="3.0" author="CAFM-Connect.org" owner="CAFM-Connect.org" copyright="CAFM-Connect.org" applicability="both" />
       </ExchangeRequirements>
       <Roots>
         <ConceptRoot uuid="59b75784-b753-4f2a-b4aa-d3310f0f6fc1" name="IfcClassification" applicableRootEntity="IfcClassification">

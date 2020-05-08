@@ -29,10 +29,25 @@
 <tr><th>Code</th><th>Version</th><th>Status</th><th>Author</th><th>Copyright</th></tr>
 <tr><td>CC</td><td>3.0</td><td>Official</td><td>CAFM-Connect.org</td><td>CAFM-Connect.org</td></tr>
 </table>
+<h1>How Is A CAFM-Connect File Structured?</h1>
+<p>Every file, that is based on the &quot;CAFM-Connect&quot; specification is a native IFC file. In IFC there are two different file formats: STEP and IfcXML. A CAFM-Connect file is a file in the format IfcXML.</p>
+<ul>
+<li>Filename extension: *.ifcxml</li>
+<li>IFC version: IFC4 (final)</li>
+<li>IFC specification: http://www.buildingsmart-tech.org/ifc/IFC4/final/html]</li>
+<li>IFC scheme file (xsd): http://www.buildingsmart-tech.org/ifcXML/IFC4/Add1/IFC4_ADD1.xsd</li>
+</ul>
+<p>In case of conflicts between the specification explained on this page and the officical IFC specification the IFC specification wins.</p>
+<p>In CAFM-Connect there are two type of files:</p>
+<ul>
+<li>Catalogue file: This file contains the units, classifications and property sets of CAFM-Connect</li>
+<li>Data file: This file contains the content of the catalogue file (embedded catalogue) and the data itself</li>
+</ul>
+<p>The following figure explaines the structure of a CAFM-Connect file. It shows the code blocks contained in the files. A CAFM-Connect file can be created easily by inserting the data in the template of the catalogue file. Please see the detailed explanation of the [File Structure](../File Structure).</p>
 <h5>IfcClassification</h5>
 <table class="gridtable">
 <tr><th>Field</th><th>Mapping</th><th>Definition</th>
-<th>Building information</th><th>Templates</th></tr>
+<th>Data file</th><th>Catalogue file</th></tr>
 <tr><th>(Query)</th><th>\<a href="../../ifcexternalreferenceresource/lexical/ifcclassification.html">IfcClassification</a><br>
 </th><th></th><th></th><th></th></tr>
 <tr><td>IfcClassification</td><td>\<a href="../../ifcexternalreferenceresource/lexical/ifcclassification.html">IfcClassification</a>.Source<br>\<a href="../../ifcmeasureresource/lexical/ifclabel.html">IfcLabel</a><br></td><td>Source (or publisher) for this classification.
@@ -40,20 +55,20 @@
 <h5>IfcProject</h5>
 <table class="gridtable">
 <tr><th>Field</th><th>Mapping</th><th>Definition</th>
-<th>Building information</th><th>Templates</th></tr>
+<th>Data file</th><th>Catalogue file</th></tr>
 <tr><th>(Query)</th><th>\<a href="../../ifckernel/lexical/ifcproject.html">IfcProject</a>.HasAssociations[*]<br></th><th></th><th></th><th></th></tr>
 <tr><td>IfcProject</td><td>\<a href="../../ifckernel/lexical/ifcproject.html">IfcProject</a>.GlobalId<br>\<a href="../../ifcutilityresource/lexical/ifcgloballyuniqueid.html">IfcGloballyUniqueId</a><br></td><td>Assignment of a globally unique identifier within the entire software world.</td><td><img width="16" src="../../../img/attr-mandatory.png" title="Mandatory" /></td><td><img width="16" src="../../../img/attr-mandatory.png" title="Mandatory" /></td></tr></table>
 <h5>IfcProjectLibrary</h5>
 <table class="gridtable">
 <tr><th>Field</th><th>Mapping</th><th>Definition</th>
-<th>Building information</th><th>Templates</th></tr>
+<th>Data file</th><th>Catalogue file</th></tr>
 <tr><th>(Query)</th><th>\<a href="../../ifckernel/lexical/ifcprojectlibrary.html">IfcProjectLibrary</a><br>
 </th><th></th><th></th><th></th></tr>
 <tr><td>IfcProjectLibrary</td><td>\<a href="../../ifckernel/lexical/ifcprojectlibrary.html">IfcProjectLibrary</a>.GlobalId<br>\<a href="../../ifcutilityresource/lexical/ifcgloballyuniqueid.html">IfcGloballyUniqueId</a><br></td><td>Assignment of a globally unique identifier within the entire software world.</td><td><img width="16" src="../../../img/attr-mandatory.png" title="Mandatory" /></td><td><img width="16" src="../../../img/attr-mandatory.png" title="Mandatory" /></td></tr></table>
 <h5>IfcPropertySetTemplate</h5>
 <table class="gridtable">
 <tr><th>Field</th><th>Mapping</th><th>Definition</th>
-<th>Building information</th><th>Templates</th></tr>
+<th>Data file</th><th>Catalogue file</th></tr>
 <tr><th>(Query)</th><th>\<a href="../../ifckernel/lexical/ifcpropertysettemplate.html">IfcPropertySetTemplate</a><br>
 </th><th></th><th></th><th></th></tr>
 <tr><td>IfcPropertySetTemplate</td><td>\<a href="../../ifckernel/lexical/ifcpropertysettemplate.html">IfcPropertySetTemplate</a>.GlobalId<br>\<a href="../../ifcutilityresource/lexical/ifcgloballyuniqueid.html">IfcGloballyUniqueId</a><br></td><td>Assignment of a globally unique identifier within the entire software world.</td><td></td><td></td></tr></table>
