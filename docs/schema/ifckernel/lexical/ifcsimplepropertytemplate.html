@@ -42,10 +42,10 @@
 <section>
 <h5 class="num">Semantic definitions at the entity</h5>
 <details open="open"><summary>Entity definition</summary><p>The <span class="self-ref">IfcSimplePropertyTemplate</span> defines the template for all dynamically extensible properties, either the subtypes of <i>IfcSimpleProperty</i>, or the subtypes of <i>IfcPhysicalSimpleQuantity</i>. The individual property templates are interpreted according to their <i>Name</i> attribute and may have a predefined template type, property units, and property measure types. The correct interpretation of the attributes:</p>
-<p>\\* <i>PrimaryUnit</i>
-\\* <i>SecondaryUnit</i>
-\\* <i>PrimaryMeasureType</i>
-\\* <i>SecondaryMeasureType</i></p>
+<p>\\\* <i>PrimaryUnit</i>
+\\\* <i>SecondaryUnit</i>
+\\\* <i>PrimaryMeasureType</i>
+\\\* <i>SecondaryMeasureType</i></p>
 <p>is determined by the <i>TemplateType</i>. The attributes Enumerators and Expression only apply to instances of <span class="self-ref">IfcSimplePropertyTemplate</span> having a particular <i>TemplateType</i>. The <i>TemplateType</i> also controls, which subtype of either <i>IfcSimpleProperty</i> or <i>IfcPhysicalSimpleQuantity</i> shall be used for property occurrences corresponding to this template.</p>
 <p>The <span class="self-ref">IfcSimplePropertyTemplate</span> is part of the set of templates included in the <a href="../../ifckernel/lexical/ifcpropertysettemplate.html">IfcPropertySetTemplate</a>. The template can be accessed throught the inverse attribute <i>PartOfPsetTemplate</i> The <a href="../../ifckernel/lexical/ifcpropertysettemplate.html">IfcPropertySetTemplate</a> may define one or several instances of <i>IfcPropertySet</i> (or <i>IfcElementQuantity</i>). The definition assignment is established by the objectified relationship <i>IfcRelDefinesByTemplate</i> as shown in Figure 6. There is no direct link between an <span class="self-ref">IfcSimplePropertyTemplate</span> and a subtype of either <i>IfcSimpleProperty</i> or <i>IfcPhysicalSimpleQuantity</i>. The definition relationship between the template and the individual properties (or quantities) is established by the <i>Name</i> attributes.</p>
 <blockquote class="note">
@@ -67,12 +67,12 @@ NOTE  the value of this property determines the correct use of the <i>PrimaryUn
 </td><td>X</td></tr>
 <tr><td>6</td><td>PrimaryMeasureType</td><td><a href="../../ifcmeasureresource/lexical/ifclabel.html">IfcLabel</a></td><td>? </td><td>
 Primary measure type assigned to the definition of the property. It should be provided, if the <i>PropertyType</i> is set to:
-\\* <small>P_SINGLEVALUE</small>: determining the measure type of <i>IfcPropertySingleValue.NominalValue</i>
-\\* <small>P_ENUMERATEDVALUE</small>: determining the measure type of <i>IfcPropertyEnumeratedValue.EnumerationValues</i>
-\\* <small>P_BOUNDEDVALUE</small>: determining the measure type of <i>IfcPropertyBoundedValue.LowerBoundValue</i>
-\\* <small>P_LISTVALUE</small>: determining the measure type of <i>IfcPropertyListValue.ListValues</i>
-\\* <small>P_TABLEVALUE</small>: determining the measure type of <i>IfcPropertyTableValue.DefiningValues</i>
-\\* <small>P_REFERENCEVALUE</small>: determining the measure type of <i>IfcPropertyTableValue.PropertyReference</i>
+\\\* <small>P_SINGLEVALUE</small>: determining the measure type of <i>IfcPropertySingleValue.NominalValue</i>
+\\\* <small>P_ENUMERATEDVALUE</small>: determining the measure type of <i>IfcPropertyEnumeratedValue.EnumerationValues</i>
+\\\* <small>P_BOUNDEDVALUE</small>: determining the measure type of <i>IfcPropertyBoundedValue.LowerBoundValue</i>
+\\\* <small>P_LISTVALUE</small>: determining the measure type of <i>IfcPropertyListValue.ListValues</i>
+\\\* <small>P_TABLEVALUE</small>: determining the measure type of <i>IfcPropertyTableValue.DefiningValues</i>
+\\\* <small>P_REFERENCEVALUE</small>: determining the measure type of <i>IfcPropertyTableValue.PropertyReference</i>
 <blockquote class="note">
 NOTE  The value range of the measure type is within the select type <a href="../../ifcmeasureresource/lexical/ifcvalue.html">IfcValue</a> for all <i>PropertyType</i>'s with the exeption of <small>P_REFERENCEVALUE</small>. Here it is within the select type <i>IfcObjectReferenceSelect</i>.
 </blockquote>
@@ -139,12 +139,12 @@ NOTE  the value of this property determines the correct use of the <i>PrimaryUn
 </td><td>X</td></tr>
 <tr><td>6</td><td>PrimaryMeasureType</td><td><a href="../../ifcmeasureresource/lexical/ifclabel.html">IfcLabel</a></td><td>? </td><td>
 Primary measure type assigned to the definition of the property. It should be provided, if the <i>PropertyType</i> is set to:
-\\* <small>P_SINGLEVALUE</small>: determining the measure type of <i>IfcPropertySingleValue.NominalValue</i>
-\\* <small>P_ENUMERATEDVALUE</small>: determining the measure type of <i>IfcPropertyEnumeratedValue.EnumerationValues</i>
-\\* <small>P_BOUNDEDVALUE</small>: determining the measure type of <i>IfcPropertyBoundedValue.LowerBoundValue</i>
-\\* <small>P_LISTVALUE</small>: determining the measure type of <i>IfcPropertyListValue.ListValues</i>
-\\* <small>P_TABLEVALUE</small>: determining the measure type of <i>IfcPropertyTableValue.DefiningValues</i>
-\\* <small>P_REFERENCEVALUE</small>: determining the measure type of <i>IfcPropertyTableValue.PropertyReference</i>
+\\\* <small>P_SINGLEVALUE</small>: determining the measure type of <i>IfcPropertySingleValue.NominalValue</i>
+\\\* <small>P_ENUMERATEDVALUE</small>: determining the measure type of <i>IfcPropertyEnumeratedValue.EnumerationValues</i>
+\\\* <small>P_BOUNDEDVALUE</small>: determining the measure type of <i>IfcPropertyBoundedValue.LowerBoundValue</i>
+\\\* <small>P_LISTVALUE</small>: determining the measure type of <i>IfcPropertyListValue.ListValues</i>
+\\\* <small>P_TABLEVALUE</small>: determining the measure type of <i>IfcPropertyTableValue.DefiningValues</i>
+\\\* <small>P_REFERENCEVALUE</small>: determining the measure type of <i>IfcPropertyTableValue.PropertyReference</i>
 <blockquote class="note">
 NOTE  The value range of the measure type is within the select type <a href="../../ifcmeasureresource/lexical/ifcvalue.html">IfcValue</a> for all <i>PropertyType</i>'s with the exeption of <small>P_REFERENCEVALUE</small>. Here it is within the select type <i>IfcObjectReferenceSelect</i>.
 </blockquote>
@@ -163,7 +163,6 @@ NOTE  The value range of the measure type is within the select type <a href="..
 <i>This attribute is out of scope for this model view definition and shall not be set.</i></td><td></td></tr>
 </table>
 </details>
-</section>
 </section>
 <section>
 <h5 class="num">Formal representations</h5>

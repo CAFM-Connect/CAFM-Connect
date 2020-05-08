@@ -36,11 +36,11 @@
 <section>
 <h5 class="num">Semantic definitions at the entity</h5>
 <details open="open"><summary>Entity definition</summary><p><span class="self-ref">IfcPropertySetDefinition</span> is a generalization of all individual property sets that can be assigned to an object or type object. The property set definition can be either:</p>
-<p>\\* \\*\\*Dynamically extendable property sets\\*\\* - <i>IfcPropertySet</i>, a set of properties for which the IFC specification only provides a kind of &quot;meta model&quot;, to be further declared by agreement. This means no entity definition of the properties exists within the IFC specification. The declaration is done by assigning a significant string value to the <i>Name</i> attribute of the entity as defined in the entity <i>IfcPropertySet</i> and at each subtype of <i>IfcProperty</i>, referenced by the property set. Dynamically defined property sets may have an underlying template provided by <a href="../../ifckernel/lexical/ifcpropertysettemplate.html">IfcPropertySetTemplate</a>.
-\\* \\*\\*Statically defined property sets\\*\\* - <i>IfcPreDefinedPropertySet</i>, a property set entity that exists within the IFC specification. The semantic meaning of each statically defined property set is declared by its entity type and the meaning of the properties is defined by the name and data type of the explicit attribute representing it.</p>
+<p>\\\* \\\<i>\\\<i>Dynamically extendable property sets\\\</i>\\\</i> - <i>IfcPropertySet</i>, a set of properties for which the IFC specification only provides a kind of &quot;meta model&quot;, to be further declared by agreement. This means no entity definition of the properties exists within the IFC specification. The declaration is done by assigning a significant string value to the <i>Name</i> attribute of the entity as defined in the entity <i>IfcPropertySet</i> and at each subtype of <i>IfcProperty</i>, referenced by the property set. Dynamically defined property sets may have an underlying template provided by <a href="../../ifckernel/lexical/ifcpropertysettemplate.html">IfcPropertySetTemplate</a>.
+\\\* \\\<i>\\\<i>Statically defined property sets\\\</i>\\\</i> - <i>IfcPreDefinedPropertySet</i>, a property set entity that exists within the IFC specification. The semantic meaning of each statically defined property set is declared by its entity type and the meaning of the properties is defined by the name and data type of the explicit attribute representing it.</p>
 <p>Property set definitions define information that is shared among multiple instances of objects, either object occurrences or object types. <span class="self-ref">IfcPropertySetDefinition</span>'s (by their instantiable subtypes) can participate within the following relationships:</p>
-<p>\\* \\*\\*Assignment to object types\\*\\* - an <i>DefinesType</i> direct relationship to <i>IfcTypeObject</i> that applies the property set, with all included properties, to the object type. Those properties apply to all object occurrences having the same object type.
-\\* \\*\\*Assignment to object occurrences\\*\\* - an <i>DefinesOccurrence</i> relationship to <a href="../../ifckernel/lexical/ifcreldefinesbyproperties.html">IfcRelDefinesByProperties</a> that applies the property set, with all included properties, to the object occurrence.</p>
+<p>\\\* \\\<i>\\\<i>Assignment to object types\\\</i>\\\</i> - an <i>DefinesType</i> direct relationship to <i>IfcTypeObject</i> that applies the property set, with all included properties, to the object type. Those properties apply to all object occurrences having the same object type.
+\\\* \\\<i>\\\<i>Assignment to object occurrences\\\</i>\\\</i> - an <i>DefinesOccurrence</i> relationship to <a href="../../ifckernel/lexical/ifcreldefinesbyproperties.html">IfcRelDefinesByProperties</a> that applies the property set, with all included properties, to the object occurrence.</p>
 <blockquote class="note">
 <p>NOTE  Properties assigned to object occurrences may override properties assigned to the object type. See <i>IfcRelDefinesByType</i> for further information.</p>
 </blockquote>
@@ -104,7 +104,6 @@ IFC4 CHANGE Inverse attribute renamed from PropertyDefinitionOf with upward comp
 </td><td></td></tr>
 </table>
 </details>
-</section>
 </section>
 <section>
 <h5 class="num">Formal representations</h5>

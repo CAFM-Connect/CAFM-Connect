@@ -48,9 +48,9 @@
 <h5 class="num">Semantic definitions at the entity</h5>
 <details open="open"><summary>Entity definition</summary><p>An <span class="self-ref">IfcClassificationReference</span> is a reference into a classification system or source (see <a href="../../ifcexternalreferenceresource/lexical/ifcclassification.html">IfcClassification</a>) for a specific classification key (or notation).</p>
 <p>The inherited attributes have the following meaning:</p>
-<p>\\* <i>Identification</i>: holds the key provided for a specific references to classification items (or tables).
-\\* <i>Name</i>: allows for a human interpretable designation of a classification notation.
-\\* <i>Location</i>: optionally holds a direct URI link into the classification system (or source) to hyperlink the classification key.</p>
+<p>\\\* <i>Identification</i>: holds the key provided for a specific references to classification items (or tables).
+\\\* <i>Name</i>: allows for a human interpretable designation of a classification notation.
+\\\* <i>Location</i>: optionally holds a direct URI link into the classification system (or source) to hyperlink the classification key.</p>
 <p>The <span class="self-ref">IfcClassificationReference</span> can either be assigned directly to the <a href="../../ifcexternalreferenceresource/lexical/ifcclassification.html">IfcClassification</a>, such as if no classification hierarchy has to be included, or it references the parent classification notation, if the fully classification hierarchy is included in the data set. The first is refered to as &quot;lightweight classification&quot;, and the second as &quot;full classification&quot;. The attribute <i>ReferencedSource</i> then holds the following information (choice by <a href="../../ifcexternalreferenceresource/lexical/ifcclassificationreferenceselect.html">IfcClassificationReferenceSelect</a>):</p>
 <ol>
 <li>being of type <a href="../../ifcexternalreferenceresource/lexical/ifcclassification.html">IfcClassification</a>: direct reference to the classification system (with meta information provided);</li>
@@ -120,9 +120,9 @@ IFC4 CHANGE  The data type has been changed from <a href="../../ifcmeasureresou
 </td><td>X</td></tr>
 <tr><td>2</td><td>Identification</td><td><a href="../../ifcmeasureresource/lexical/ifcidentifier.html">IfcIdentifier</a></td><td>? </td><td>
 The <i>Identification</i> provides a unique identifier of the referenced item within the external source (classification, document or library). It may be provided as
-\\* a key, e.g. a classification notation, like NF2.3
-\\* a handle
-\\* a uuid or guid
+\\\* a key, e.g. a classification notation, like NF2.3
+\\\* a handle
+\\\* a uuid or guid
 It may be human readable (such as a key) or not (such as a handle or uuid) depending on the context of its usage (which has to be determined by local agreement).
 
 <blockquote>
@@ -163,7 +163,6 @@ IFC4 CHANGE New inverse attribute.
 </td><td>X</td></tr>
 </table>
 </details>
-</section>
 </section>
 <section>
 <h5 class="num">Formal representations</h5>

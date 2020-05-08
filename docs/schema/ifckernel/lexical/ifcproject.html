@@ -46,13 +46,13 @@
 <h5 class="num">Semantic definitions at the entity</h5>
 <details open="open"><summary>Entity definition</summary><p><span class="self-ref">IfcProject</span> indicates the undertaking of some design, engineering, construction, or maintenance activities leading towards a product. The project establishes the context for information to be exchanged or shared, and it may represent a construction project but does not have to. The <span class="self-ref">IfcProject</span>'s main purpose in an exchange structure is to provide the root instance and the context for all other information items included.</p>
 <p>The context provided by the <span class="self-ref">IfcProject</span> includes:</p>
-<p>\\* the default units
-\\* the geometric representation context for exchange structures including shape representations
-\\* the project coordinate system
-\\* the coordinate space dimension
-\\* the precision used within the geometric representations
-\\* optionally the indication of the true north
-\\* optionally the map conversion between the project coordinate system and the geospatial coordinate reference system.</p>
+<p>\\\* the default units
+\\\* the geometric representation context for exchange structures including shape representations
+\\\* the project coordinate system
+\\\* the coordinate space dimension
+\\\* the precision used within the geometric representations
+\\\* optionally the indication of the true north
+\\\* optionally the map conversion between the project coordinate system and the geospatial coordinate reference system.</p>
 <blockquote class="history">
 <p>HISTORY  New entity in IFC1.0</p>
 </blockquote>
@@ -131,55 +131,6 @@ IFC4 CHANGE  The data type has been changed from <a href="../../ifckernel/lexic
 <tr><td colspan="6"><a href="../../ifckernel/lexical/ifcproject.html">IfcProject</a></td></tr>
 </table>
 </details>
-</section>
-<section>
-<h5 class="num">Definitions applying to CAFM-Connect</h5>
-<p><a href="../../../annex/annex-d/cafm-connect/ifcproject.html"><img style="border: 0px" src="../../../img/diagram.png" />&nbsp;Instance diagram</a></p><hr />
-<h5>IfcProject</h5><details open="open">
-<summary>Concept usage</summary>
-<a id="cc_ifcproject" />
-<p class="use-head">IfcProject</p>
-<p>The <a href="../../templates/cc_ifcproject.html">CC_IfcProject</a> concept template applies to this entity as shown in Table 1.<table>
-<tr><td>
-</td></tr>
-<tr><td><p class="table">Table 1 &mdash; IfcProject CC_IfcProject</td></tr></table>
-
-<br/><br/>
-
-</details>
-<details><summary>mvdXML Specification</summary>
-<div class="xsd"><code class="xsd">
-&lt;?xml version=&quot;1.0&quot;?&gt;<br/>
-&lt;ConceptRoot xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; uuid=&quot;208c8505-1da4-4388-9b8a-ae8a2f8cb9a9&quot; name=&quot;IfcProject&quot; applicableRootEntity=&quot;IfcProject&quot;&gt;<br/>
-&nbsp;&nbsp;&lt;Applicability&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;ac66242d-a65c-422a-be5d-81f57ec490c3&quot; /&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot; /&gt;<br/>
-&nbsp;&nbsp;&lt;/Applicability&gt;<br/>
-&nbsp;&nbsp;&lt;Concepts&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Concept uuid=&quot;f810f05d-d91f-4636-951b-7c5c1dd2e25c&quot; name=&quot;IfcProject&quot; override=&quot;false&quot;&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;28e7ce24-04bd-4edd-b32c-db312b41c75f&quot; /&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;import&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;1dfc37fb-95a0-4132-8040-3bd449e6cce0&quot; /&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;f039d69c-72af-4eec-978f-4751e28fc434&quot; /&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule /&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;/Concept&gt;<br/>
-&nbsp;&nbsp;&lt;/Concepts&gt;<br/>
-&lt;/ConceptRoot&gt;<br/>
-
-</code></div></details>
-<section>
-<details>
-<summary>Concept inheritance</summary>
-<p><table class="attributes">
-<tr><th><b>#</b></th><th><b>Concept</b></th><th><b>Template</b></th><th><b>Model View</b></th></tr>
-<tr><td colspan="3"><a href="../../ifckernel/lexical/ifcproject.html">IfcProject</a></td></tr><tr><td> </td><td><a href="../../ifckernel/lexical/ifcproject.html#cc_ifcproject">IfcProject</a></td><td><a href="../../templates/cc_ifcproject.html">CC_IfcProject</a></td><td>CAFM-Connect</td></tr>
-
-</table>
-</details>
-</section>
 </section>
 <section>
 <h5 class="num">Formal representations</h5>

@@ -42,11 +42,11 @@
 <h5 class="num">Semantic definitions at the entity</h5>
 <details open="open"><summary>Entity definition</summary><p>An <span class="self-ref">IfcProjectLibrary</span> collects all library elements that are included within a referenced project data set.</p>
 <p>Examples for project libraries include:</p>
-<p>\\* type libraries (also called style or family libraries): a collection of subtypes of <i>IfcTypeObject</i>
-\\* property definition libraries: a collections of <a href="../../ifckernel/lexical/ifcpropertysettemplate.html">IfcPropertySetTemplate</a> or <i>IfcPropertyTemplates</i></p>
+<p>\\\* type libraries (also called style or family libraries): a collection of subtypes of <i>IfcTypeObject</i>
+\\\* property definition libraries: a collections of <a href="../../ifckernel/lexical/ifcpropertysettemplate.html">IfcPropertySetTemplate</a> or <i>IfcPropertyTemplates</i></p>
 <p>The inherited attributes <i>RepresentationContext</i> and <i>UnitsInContext</i> have the following meaning:</p>
-<p>\\* Context of the representations used within the project library. When the project library includes shape representations for its library type objects, one or several geometric representation contexts need to be included that define the coordinate system, the coordinate space dimensions, and/or the precision factor,
-\\* Units locally assigned to measure types used within the context of this project library.</p>
+<p>\\\* Context of the representations used within the project library. When the project library includes shape representations for its library type objects, one or several geometric representation contexts need to be included that define the coordinate system, the coordinate space dimensions, and/or the precision factor,
+\\\* Units locally assigned to measure types used within the context of this project library.</p>
 <blockquote class="note">
 <p>NOTE  It is generally discouraged to use a different length measure and plane angle measure in an included project library compared with the project itself. It may lead to unexpected results for the shape representation of items included in the project library.</p>
 </blockquote>
@@ -110,55 +110,6 @@ IFC4 CHANGE  The data type has been changed from <a href="../../ifckernel/lexic
 <tr><td colspan="6"><a href="../../ifckernel/lexical/ifcprojectlibrary.html">IfcProjectLibrary</a></td></tr>
 </table>
 </details>
-</section>
-<section>
-<h5 class="num">Definitions applying to CAFM-Connect</h5>
-<p><a href="../../../annex/annex-d/cafm-connect/ifcprojectlibrary.html"><img style="border: 0px" src="../../../img/diagram.png" />&nbsp;Instance diagram</a></p><hr />
-<h5>IfcProjectLibrary</h5><details open="open">
-<summary>Concept usage</summary>
-<a id="cc_ifcprojectlibrary" />
-<p class="use-head">IfcProjectLibrary</p>
-<p>The <a href="../../templates/cc_ifcprojectlibrary.html">CC_IfcProjectLibrary</a> concept template applies to this entity as shown in Table 2.<table>
-<tr><td>
-</td></tr>
-<tr><td><p class="table">Table 2 &mdash; IfcProjectLibrary CC_IfcProjectLibrary</td></tr></table>
-
-<br/><br/>
-
-</details>
-<details><summary>mvdXML Specification</summary>
-<div class="xsd"><code class="xsd">
-&lt;?xml version=&quot;1.0&quot;?&gt;<br/>
-&lt;ConceptRoot xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; uuid=&quot;c1684b11-0102-4be4-9c44-38f5414c845b&quot; name=&quot;IfcProjectLibrary&quot; applicableRootEntity=&quot;IfcProjectLibrary&quot;&gt;<br/>
-&nbsp;&nbsp;&lt;Applicability&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;ec5a8123-67ce-4e4c-974f-3faae7735672&quot; /&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot; /&gt;<br/>
-&nbsp;&nbsp;&lt;/Applicability&gt;<br/>
-&nbsp;&nbsp;&lt;Concepts&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Concept uuid=&quot;560aa838-0874-4906-ae21-0c5501498b2e&quot; name=&quot;IfcProjectLibrary&quot; override=&quot;false&quot;&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;1dcda077-1514-486c-9674-c108d25a96a2&quot; /&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirements&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;import&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;1dfc37fb-95a0-4132-8040-3bd449e6cce0&quot; /&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Requirement applicability=&quot;export&quot; requirement=&quot;mandatory&quot; exchangeRequirement=&quot;f039d69c-72af-4eec-978f-4751e28fc434&quot; /&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/Requirements&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule /&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;/Concept&gt;<br/>
-&nbsp;&nbsp;&lt;/Concepts&gt;<br/>
-&lt;/ConceptRoot&gt;<br/>
-
-</code></div></details>
-<section>
-<details>
-<summary>Concept inheritance</summary>
-<p><table class="attributes">
-<tr><th><b>#</b></th><th><b>Concept</b></th><th><b>Template</b></th><th><b>Model View</b></th></tr>
-<tr><td colspan="3"><a href="../../ifckernel/lexical/ifcprojectlibrary.html">IfcProjectLibrary</a></td></tr><tr><td> </td><td><a href="../../ifckernel/lexical/ifcprojectlibrary.html#cc_ifcprojectlibrary">IfcProjectLibrary</a></td><td><a href="../../templates/cc_ifcprojectlibrary.html">CC_IfcProjectLibrary</a></td><td>CAFM-Connect</td></tr>
-
-</table>
-</details>
-</section>
 </section>
 <section>
 <h5 class="num">Formal representations</h5>

@@ -46,8 +46,8 @@
 <p>NOTE  By convention an <span class="self-ref">IfcPropertySetTemplate</span> can also be used as a template for an <i>IfcElementQuantity</i>, being a particular type of a property set definition.</p>
 </blockquote>
 <p>Property set templates can form part of a property library used and declared within a project. Depending on the <i>TemplateType</i> the <span class="self-ref">IfcPropertySetTemplate</span> defines a template for:</p>
-<p>\\* &quot;Pset_&quot; - occurrences of <i>IfcPropertySet</i>
-\\* &quot;QTO_&quot; - occurrences of <i>IfcElementQuantity</i></p>
+<p>\\\* &quot;Pset_&quot; - occurrences of <i>IfcPropertySet</i>
+\\\* &quot;QTO_&quot; - occurrences of <i>IfcElementQuantity</i></p>
 <p>The inherited <i>HasContext</i> inverse relation to <i>IfcRelDeclares</i> is used to declare the <span class="self-ref">IfcPropertySetTemplate</span> within a project library. If included in an exchange data set it can then be traversed through the <a href="../../ifckernel/lexical/ifcprojectlibrary.html">IfcProjectLibrary</a>. The <i>Defines</i> inverse relation to <i>IfcRelDefinesByTemplate</i> is provided to keep the definition relationship between the <span class="self-ref">IfcPropertySetTemplate</span> and the one to many <i>IfcPropertySet</i>'s, for which it provides the template. Figure 5 illustrates relationships used for property set templates.</p>
 <p> </p>
 <p><table><tr><td style="width: 600px"><img src="../../../figures/ifcpropertysettemplate_fig-1.png" alt="&quot;property set template&quot;" title="Figure 5 &mdash; Property set template relationships"></td></tr><tr><td><p class="figure">Figure 5 &mdash; Property set template relationships</p></td></tr></table></p>
@@ -65,10 +65,10 @@ The attribute <i>ApplicableEntity</i> may further refine the applicability to a 
 </td><td>X</td></tr>
 <tr><td>6</td><td>ApplicableEntity</td><td><a href="../../ifcmeasureresource/lexical/ifcidentifier.html">IfcIdentifier</a></td><td>? </td><td>
 The attribute optionally defines the data type of the applicable type or occurrence object, to which the assigned property set template can relate. If not present, no instruction is given to which type or occurrence object the property set template is applicable. The following conventions are used:
-\\* The IFC entity name of the applicable entity using the IFC naming convention, CamelCase with IFC prefix
-\\* It can be optionally followed by the predefined type after the separator &quot;/&quot; (forward slash), using upper case
-\\* If a performance history object of a particular distribution object is attributes by the property set template, then the entity name (and potentially amended by the predefined type) is expanded by adding '[PerformanceHistory]'
-\\* If one property set template is applicable to many type and/or occurrence objects, then those object names should be separate by comma &quot;,&quot; forming a comma separated string.
+\\\* The IFC entity name of the applicable entity using the IFC naming convention, CamelCase with IFC prefix
+\\\* It can be optionally followed by the predefined type after the separator &quot;/&quot; (forward slash), using upper case
+\\\* If a performance history object of a particular distribution object is attributes by the property set template, then the entity name (and potentially amended by the predefined type) is expanded by adding '[PerformanceHistory]'
+\\\* If one property set template is applicable to many type and/or occurrence objects, then those object names should be separate by comma &quot;,&quot; forming a comma separated string.
 <blockquote class="example">
 EXAMPLE Refering to a boiler type as applicable entity would be expressed as 'IfcBoilerType', refering to a steam boiler type as applicable entity would be expressed as 'IfcBoilerType/STEAM', refering to a wall and wall standard case and a wall type would be expressed as 'IfcWall, IfcWallStandardCase, IfcWallType'. An applicable <i>IfcPerformanceHistory</i> assigned to an occurrence or type object would be indicated by IfcBoilerType[PerformanceHistory], or respectively IfcBoilerType/STEAM[PerformanceHistory].
 </blockquote>
@@ -129,10 +129,10 @@ The attribute <i>ApplicableEntity</i> may further refine the applicability to a 
 </td><td>X</td></tr>
 <tr><td>6</td><td>ApplicableEntity</td><td><a href="../../ifcmeasureresource/lexical/ifcidentifier.html">IfcIdentifier</a></td><td>? </td><td>
 The attribute optionally defines the data type of the applicable type or occurrence object, to which the assigned property set template can relate. If not present, no instruction is given to which type or occurrence object the property set template is applicable. The following conventions are used:
-\\* The IFC entity name of the applicable entity using the IFC naming convention, CamelCase with IFC prefix
-\\* It can be optionally followed by the predefined type after the separator &quot;/&quot; (forward slash), using upper case
-\\* If a performance history object of a particular distribution object is attributes by the property set template, then the entity name (and potentially amended by the predefined type) is expanded by adding '[PerformanceHistory]'
-\\* If one property set template is applicable to many type and/or occurrence objects, then those object names should be separate by comma &quot;,&quot; forming a comma separated string.
+\\\* The IFC entity name of the applicable entity using the IFC naming convention, CamelCase with IFC prefix
+\\\* It can be optionally followed by the predefined type after the separator &quot;/&quot; (forward slash), using upper case
+\\\* If a performance history object of a particular distribution object is attributes by the property set template, then the entity name (and potentially amended by the predefined type) is expanded by adding '[PerformanceHistory]'
+\\\* If one property set template is applicable to many type and/or occurrence objects, then those object names should be separate by comma &quot;,&quot; forming a comma separated string.
 <blockquote class="example">
 EXAMPLE Refering to a boiler type as applicable entity would be expressed as 'IfcBoilerType', refering to a steam boiler type as applicable entity would be expressed as 'IfcBoilerType/STEAM', refering to a wall and wall standard case and a wall type would be expressed as 'IfcWall, IfcWallStandardCase, IfcWallType'. An applicable <i>IfcPerformanceHistory</i> assigned to an occurrence or type object would be indicated by IfcBoilerType[PerformanceHistory], or respectively IfcBoilerType/STEAM[PerformanceHistory].
 </blockquote>
@@ -142,51 +142,6 @@ Set of <a href="../../ifckernel/lexical/ifcpropertytemplate.html">IfcPropertyTem
 </td><td>X</td></tr>
 </table>
 </details>
-</section>
-<section>
-<h5 class="num">Definitions applying to CAFM-Connect</h5>
-<p><a href="../../../annex/annex-d/cafm-connect/ifcpropertysettemplate.html"><img style="border: 0px" src="../../../img/diagram.png" />&nbsp;Instance diagram</a></p><hr />
-<h5>IfcPropertySetTemplate</h5><details open="open">
-<summary>Concept usage</summary>
-<a id="cc_ifcpropertysettemplate" />
-<p class="use-head">IfcPropertySetTemplate</p>
-<p>The <a href="../../templates/cc_ifcpropertysettemplate.html">CC_IfcPropertySetTemplate</a> concept template applies to this entity as shown in Table 3.<table>
-<tr><td>
-</td></tr>
-<tr><td><p class="table">Table 3 &mdash; IfcPropertySetTemplate CC_IfcPropertySetTemplate</td></tr></table>
-
-<br/><br/>
-
-</details>
-<details><summary>mvdXML Specification</summary>
-<div class="xsd"><code class="xsd">
-&lt;?xml version=&quot;1.0&quot;?&gt;<br/>
-&lt;ConceptRoot xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot; xmlns:xsd=&quot;http://www.w3.org/2001/XMLSchema&quot; uuid=&quot;c508bf90-14c0-4569-b50d-fcaee67986bd&quot; name=&quot;IfcPropertySetTemplate&quot; applicableRootEntity=&quot;IfcPropertySetTemplate&quot;&gt;<br/>
-&nbsp;&nbsp;&lt;Applicability&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;96bedb9a-be6a-4320-a532-aae805058b92&quot; /&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot; /&gt;<br/>
-&nbsp;&nbsp;&lt;/Applicability&gt;<br/>
-&nbsp;&nbsp;&lt;Concepts&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;Concept uuid=&quot;dd2c304d-bff2-4b3c-93af-4ac594e91d9c&quot; name=&quot;IfcPropertySetTemplate&quot; override=&quot;false&quot;&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;Template ref=&quot;77fcee2a-0c5b-4377-bffa-fffbb615ea5d&quot; /&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRules operator=&quot;and&quot;&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;TemplateRule /&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;/TemplateRules&gt;<br/>
-&nbsp;&nbsp;&nbsp;&nbsp;&lt;/Concept&gt;<br/>
-&nbsp;&nbsp;&lt;/Concepts&gt;<br/>
-&lt;/ConceptRoot&gt;<br/>
-
-</code></div></details>
-<section>
-<details>
-<summary>Concept inheritance</summary>
-<p><table class="attributes">
-<tr><th><b>#</b></th><th><b>Concept</b></th><th><b>Template</b></th><th><b>Model View</b></th></tr>
-<tr><td colspan="3"><a href="../../ifckernel/lexical/ifcpropertysettemplate.html">IfcPropertySetTemplate</a></td></tr><tr><td> </td><td><a href="../../ifckernel/lexical/ifcpropertysettemplate.html#cc_ifcpropertysettemplate">IfcPropertySetTemplate</a></td><td><a href="../../templates/cc_ifcpropertysettemplate.html">CC_IfcPropertySetTemplate</a></td><td>CAFM-Connect</td></tr>
-
-</table>
-</details>
-</section>
 </section>
 <section>
 <h5 class="num">Formal representations</h5>
