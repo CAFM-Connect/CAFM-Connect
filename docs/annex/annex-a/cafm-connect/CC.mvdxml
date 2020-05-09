@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<mvdXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uuid="f267f2e0-7b16-4a58-beb1-ccbf8b96f112" name="" xsi:schemaLocation="https://standards.buildingsmart.org/MVD/RELEASE/mvdXML/v1-1/mvdXML_V1.1.xsd" xmlns="https://standards.buildingsmart.org/mvd/XML/1.1">
+<mvdXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" uuid="9fd474b7-43ca-4ac4-99ca-560ba1a5d8e7" name="" xsi:schemaLocation="https://standards.buildingsmart.org/MVD/RELEASE/mvdXML/v1-1/mvdXML_V1.1.xsd" xmlns="https://standards.buildingsmart.org/mvd/XML/1.1">
   <Templates>
     <ConceptTemplate uuid="47846820-3e96-46c9-9c8a-7c1557050f15" name="CC concepts" applicableSchema="IFC4">
       <SubTemplates>
@@ -222,9 +222,9 @@ With CAFM-Connect the data of buildings can be easily exchanged in an open and w
 
 Use of BIM in the operational phase The introduction of BIM processes in property management naturally leads to an initial expenditure by all involved that has to be recouped quickly for this model to establish itself. The benefit comes from saving working time for recurrent processes such as:
 
-\* Simple tendering of facility services through an automated calculation of quantities from the BIM model
-\* Legally sound description of the rented property by avoiding differences in areas
-\* Reliable assessment of the property's condition by updating the property data record
+\\* Simple tendering of facility services through an automated calculation of quantities from the BIM model
+\\* Legally sound description of the rented property by avoiding differences in areas
+\\* Reliable assessment of the property's condition by updating the property data record
 
 # Standards and IT systems
 There are a number of standards and IT systems available on the market today to implement BIM processes and these have already been put to successful use in numerous projects. These include CAFM-Connect, a free interface from the CAFM Ring that has been developed to forward data from the construction phase into operation as well as the later interoperability of CAFM systems during operation. It supports the safe and agreement-free exchange of room lists. Rooms can be exchanged between software systems without losses for complete building portfolios. As of 2014 there is also the possibility of exchanging data on the technical facilities (objects). The exchange of the facility data is based on a basic catalogue of facility types and attributes that is being developed jointly by TÜV-Süd, REG-IS and the Technology Study Group of the CAFM-Ring.
